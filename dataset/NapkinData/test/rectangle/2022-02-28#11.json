@@ -1,0 +1,111 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "1qeg310806wwd",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "1qeg310806wwd",
+            "box": [ 412.5, 243, 413.5, 246 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 413.5, 246, 632, 412.5, 243, 775, 413.5, 147, 906, 413.5, 143, 1000, 418.5, 143, 1090, 466.5, 144, 1139, 581.5, 165, 1206, 614.5, 170, 1297, 618.5, 170, 1803 ]
+            ],
+            "curvesBox": [ 412.5, 243, 413.5, 246 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9e59e551--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cff6a158--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "1qeg310806wwd": {
+          "curves": [
+            [ 414.29998779296875, 148.39999389648438, 632, 616.5, 148.39999389648438, 924.75, 616.5, 244.5, 1217.5, 414.29998779296875, 244.5, 1510.25, 414.29998779296875, 148.39999389648438, 1803 ]
+          ],
+          "id": "1qeg310806wwd",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9571534991264343,
+              "type": "rectangle",
+              "minMax": [ 414.29998779296875, 148.39999389648438, 616.5, 244.5 ]
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

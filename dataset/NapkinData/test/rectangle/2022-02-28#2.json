@@ -1,0 +1,151 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "1uom01w6m7k09",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "1uom01w6m7k09",
+            "box": [ 409.5, 236, 409.5, 245 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 409.5, 236, 867, 409.5, 245, 1022, 409.5, 288, 1090, 409.5, 293, 1123, 414.5, 294, 1324, 434.5, 291, 1356, 504.5, 289, 1423, 545.5, 285, 1488, 559.5, 284, 1573, 560.5, 282, 1823, 558.5, 229, 1956, 557.5, 225, 2023, 555.5, 224, 2356, 532.5, 225, 2438, 474.5, 229, 2505, 450.5, 229, 2573, 444.5, 228, 2639, 442.5, 228, 2790, 434.5, 228, 2939 ]
+            ],
+            "curvesBox": [ 409.5, 236, 409.5, 245 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cff6a158--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0c599ca1--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cbbcf70b--blockHook",
+            "box": [ 240, 276, 960, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9e836532--blockHook",
+            "box": [ 240, 300, 960, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-95f25cbd--blockHook",
+            "box": [ 240, 324, 960, 348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6ae0a623--blockHook",
+            "box": [ 240, 348, 960, 372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-702f1827--blockHook",
+            "box": [ 240, 372, 960, 396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "1uom01w6m7k09": {
+          "curves": [
+            [ 410.5, 227.22222900390625, 867, 558.2999877929688, 227.22222900390625, 1385, 558.2999877929688, 290, 1903, 410.5, 290, 2421, 410.5, 227.22222900390625, 2939 ]
+          ],
+          "id": "1uom01w6m7k09",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.8662446141242981,
+              "type": "rectangle",
+              "minMax": [ 410.5, 227.22222900390625, 558.2999877929688, 290 ]
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

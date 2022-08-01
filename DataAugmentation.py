@@ -24,7 +24,9 @@ def random_rotate_sample(sample, class_name):
     return np.transpose(R @ np.transpose(sample))
 
 
-def random_symmetry_sample(sample):
+def random_symmetry_sample(sample, className):
+    if className in ['curly_braces_e', 'bracket_w', 'bracket_n', 'curly_braces_w', 'bracket_s', 'curly_braces_n', 'curly_braces_s', 'bracket_e']:
+        return sample
     transformation = random.randrange(0, 4)
     if transformation == 0:
         return sample * [-1.0, -1.0]
@@ -104,7 +106,7 @@ class DataAugmentation:
             if random.uniform(0, 1) < 0.5:
                 sample = random_rotate_sample(sample, className)
             if random.uniform(0, 1) < 0.5:
-                sample = random_symmetry_sample(sample)
+                sample = random_symmetry_sample(sample, className)
             sample = translate_to_topLeft(sample)
             samples.append(sample)
         return samples

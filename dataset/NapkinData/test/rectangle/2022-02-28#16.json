@@ -1,0 +1,119 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "qrhi9w5rw2z3",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "qrhi9w5rw2z3",
+            "box": [ 410.5, 185, 410.5, 187 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 410.5, 185, 992, 410.5, 187, 1083, 410.5, 259, 1186, 412.5, 260, 1282, 553.5, 252, 1416, 581.5, 248, 1482, 588.5, 248, 1549, 589.5, 246, 2732, 588.5, 231, 2799, 588.5, 227, 2849, 588.5, 224, 3284, 588.5, 210, 3400, 588.5, 208, 3450 ]
+            ],
+            "curvesBox": [ 410.5, 185, 410.5, 187 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cff6a158--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0c599ca1--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cbbcf70b--blockHook",
+            "box": [ 240, 276, 960, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "qrhi9w5rw2z3": {
+          "curves": [
+            [ 411, 186, 992, 587.75, 186, 1606.5, 587.75, 257, 2221, 411, 257, 2835.5, 411, 186, 3450 ]
+          ],
+          "id": "qrhi9w5rw2z3",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9805918335914612,
+              "type": "rectangle",
+              "minMax": [ 411, 186, 587.75, 257 ]
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

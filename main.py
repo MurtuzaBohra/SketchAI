@@ -4,32 +4,68 @@ from DataLoader import DataLoader
 import numpy as np
 import time
 
-# Mutable variable setting
-dataset = 'Napkin'  # '1$'
-load_mode = 'train'
+import tensorflow as tf
+print('no. of gpus  ', tf.config.experimental.list_physical_devices("GPU"))
 
+
+# test on old recognition dataset
+class Parameters:
+    pad = True
+    normalize = True
+    include_fingerup = False
+    test_size = 0.2
+    method = 'G3'
+    dataset = 'Napkin'
+    load_mode = 'test'
+    augmentFactor = 3,
+    datasetFolder = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test'
+    fileType = 'json'
+    labelJsonPath = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test/labelDict.json'
+    topology = 'mts'
+    batchSize = 128
+    modelPath = '/Users/murtuza/Desktop/SketchAI/checkpoints/models/Napkin_latest_copy'
+
+# train on Napkin dataset.
+# class Parameters:
+#     pad = True
+#     include_fingerup = False
+#     test_size = 0.2
+#     method = 'G3'
+#     dataset = 'Napkin'
+#     load_mode = 'train'
+#     augmentFactor = 3
+#     datasetFolder = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/csv'
+#     fileType = 'csv'
+#     labelJsonPath = None
+#     topology = 'mts'
+#     batchSize = 64
+#     modelPath = '/Users/murtuza/Desktop/SketchAI/checkpoints/models/Napkin_latest_copy'
+
+
+p = Parameters()
 # Data loading
-dl = DataLoader(dataset=dataset, resample=False, normalize=False, robust_normalization=False, load_mode='train')
+dl = DataLoader(dataset=p.dataset, load_mode=p.load_mode, labelJsonPath=p.labelJsonPath, datasetFolder=p.datasetFolder,
+                fileType=p.fileType, include_fingerup=p.include_fingerup, augmentFactor=p.augmentFactor)
 
 print(dl.validation_set_classifier[0].shape)
 print(dl.train_set_classifier[0].shape)
 for k, v in dl.labels_dict.items():
     print('{} - {}'.format(v, k))
 
-
-
-
 # model initialization.
-model_mts = GestuReNN(dataset=dataset, plot=False, topology='mts', labels_dict=dl.labels_dict, batch_size=128)
-graphic_manager = GraphicManager(dataset=dataset, n_bins=10)
+model_mts = GestuReNN(dataset=p.dataset, plot=False, topology=p.topology, labelJsonPath=p.labelJsonPath,
+                      batch_size=p.batchSize, model_path=p.modelPath, include_fingerup=p.include_fingerup)
+graphic_manager = GraphicManager(dataset=p.dataset, n_bins=10)
 
-if load_mode == 'train':
+if p.load_mode == 'train':
     model_mts.fit_model(dl.train_set_classifier,
                         dl.validation_set_classifier,
                         dl.train_set_regressor,
                         dl.validation_set_regressor)
 else:
+    print("loading model ...")
     model_mts.load_model()
+    print('Model Loaded!!')
     graphic_manager.generate_progressive_accuracy(model_mts, dl.test_set_classifier, plot_clf=True, plot_reg=False,
                                                   best_of=1, indexToLabel=dl.get_index_to_label())
 

@@ -6,6 +6,8 @@ import tensorflow as tf
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from DataAugmentation import DataAugmentation
+import json
+from HelperFunctions import readJsonContentTestData
 
 # Used dataset macros
 ONE_DOLLAR_G3_SYNTH = "dataset/GGG/1$/csv-1dollar-synth-best"
@@ -22,24 +24,25 @@ Napkin_HUMAN = "/Users/murtuza/Desktop/ShapeRecognition/deep-stroke/dataset/Napk
 class DataLoader:
 
     # Constructor of the class
-    def __init__(self, pad=True, resample=True,
-                 normalize=True, include_fingerup=False, robust_normalization=True,
-                 test_size=0.2, method='G3', dataset='1$', load_mode='full', augmentFactor=3):
+    def __init__(self, pad=True, include_fingerup=False, test_size=0.2,
+                 method='G3', dataset='1$', load_mode='full', augmentFactor=3,
+                 datasetFolder=Napkin_HUMAN, fileType='', labelJsonPath=None):
 
         print('Starting the DataLoader construction ...')
 
         # Setting general data loader attributes
         self.use_padding = pad
-        self.use_resampling = resample
-        self.use_normalization = normalize
         self.include_fingerup = include_fingerup
         self.test_size = test_size
         self.method = method
         self.stroke_dataset = dataset
         self.load_mode = load_mode
-        self.robust_normalization = robust_normalization
         self.augmentFactor = augmentFactor
         self.labels_dict = {}
+        self.fileType = fileType
+        self.datasetFolder = datasetFolder
+        if labelJsonPath is not None:
+            self.labels_dict = json.load(open(labelJsonPath, 'r'))
         print("stroke_dataset - {}".format(self.stroke_dataset))
 
         print('.. Done with attribute settings. Loading the data ...')
@@ -172,27 +175,26 @@ class DataLoader:
 
         return tensor_x, tensor_y
 
-    # Function designed to load the $1 dataset
-    def __load_dataset(self, stroke_type, preprocess=True):
+    def __load_json_data(self):
+        subFolders = [f.path for f in os.scandir(self.datasetFolder) if f.is_dir()]
+        tensor_x = []
+        tensor_y = []
+        for folder in subFolders:
+            label = folder.split('/')[-1]
+            files = [f.path for f in os.scandir(folder) if (not f.is_dir()) and f.path.split('/')[-1][0] != '.']
+            for file in files:
+                tensor_x.append(readJsonContentTestData(file))
+                tensor_y.append(self.labels_dict[label])
+        return tensor_x, tensor_y
 
-        # Computing dataset folder path
-        dataset_folder = ''
-        if self.stroke_dataset == '1$':
-            if stroke_type == 'SYNTH':
-                dataset_folder = ONE_DOLLAR_G3_SYNTH
-            elif stroke_type == 'HUMAN':
-                dataset_folder = ONE_DOLLAR_G3_HUMAN
-        elif self.stroke_dataset == 'N$':
-            if stroke_type == 'SYNTH':
-                dataset_folder = N_DOLLAR_G3_SYNTH
-            elif stroke_type == 'HUMAN':
-                dataset_folder = N_DOLLAR_G3_HUMAN
-        elif self.stroke_dataset == 'Napkin':
-            dataset_folder = Napkin_HUMAN
-            print("----loading Napkin Data----")
+    # Function designed to load the $1 dataset
+    def __load_dataset(self, stroke_type='', preprocess=True):
 
         # Loading the dataset
-        x, y = self.__load_dataset_on_folder(dataset_folder)
+        if self.fileType == 'json' and self.load_mode == 'test':
+            x, y = self.__load_json_data()
+        else:
+            x, y = self.__load_dataset_on_folder(self.datasetFolder)
         x, y = np.array(x), np.array(y)
 
         x_raw = x
@@ -208,7 +210,7 @@ class DataLoader:
         (x, y), x_raw = self.__load_dataset(stroke_type=stroke_type, preprocess=False)
 
         # Splitting into test and training set
-        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=self.test_size, random_state=4)
+        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=self.test_size, random_state=4, stratify=y)
 
         # Normalize x_train
         print('preprocessing train set ...')

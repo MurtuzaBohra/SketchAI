@@ -1,0 +1,151 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "18ga5dw62b5zh",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "18ga5dw62b5zh",
+            "box": [ 651.5, 235, 656.5, 235 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 656.5, 235, 608, 651.5, 235, 739, 505.5, 232, 872, 497.5, 232, 905, 495.5, 232, 955, 495.5, 234, 1222, 494.5, 259, 1288, 493.5, 267, 1322, 493.5, 271, 1388, 495.5, 271, 1707, 587.5, 270, 1838, 590.5, 270, 1855 ]
+            ],
+            "curvesBox": [ 651.5, 235, 656.5, 235 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cff6a158--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0c599ca1--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cbbcf70b--blockHook",
+            "box": [ 240, 276, 960, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9e836532--blockHook",
+            "box": [ 240, 300, 960, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-95f25cbd--blockHook",
+            "box": [ 240, 324, 960, 348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6ae0a623--blockHook",
+            "box": [ 240, 348, 960, 372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-702f1827--blockHook",
+            "box": [ 240, 372, 960, 396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "18ga5dw62b5zh": {
+          "curves": [
+            [ 494.6666564941406, 233.3333282470703, 608, 656.5, 233.3333282470703, 919.75, 656.5, 270.5, 1231.5, 494.6666564941406, 270.5, 1543.25, 494.6666564941406, 233.3333282470703, 1855 ]
+          ],
+          "id": "18ga5dw62b5zh",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9334018230438232,
+              "type": "rectangle",
+              "minMax": [ 494.6666564941406, 233.3333282470703, 656.5, 270.5 ]
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

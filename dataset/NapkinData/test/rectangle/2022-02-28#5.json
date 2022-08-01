@@ -1,0 +1,104 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "mgood08u1gxv",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "mgood08u1gxv",
+            "box": [ 470.5, 219, 470.5, 221 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 470.5, 221, 627, 470.5, 219, 809, 470.5, 189, 927, 472.5, 183, 1049, 475.5, 183, 1182, 514.5, 186, 1333, 524.5, 188, 1433, 526.5, 190, 1891, 524.5, 202, 2108, 524.5, 210, 2527, 524.5, 214, 2666 ]
+            ],
+            "curvesBox": [ 470.5, 219, 470.5, 221 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cff6a158--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "mgood08u1gxv": {
+          "curves": [
+            [ 526.1986083984375, 203.6217803955078, 627, 522.7578735351562, 217.58131408691406, 783.8461303710938, 513.2239379882812, 228.3428955078125, 940.6923217773438, 499.7809143066406, 233.441162109375, 1097.5384521484375, 485.5084228515625, 231.7081756591797, 1254.3846435546875, 473.6761169433594, 223.54092407226562, 1411.230712890625, 466.9946594238281, 210.81044006347656, 1568.076904296875, 466.9946594238281, 196.43312072753906, 1724.923095703125, 473.6761169433594, 183.70263671875, 1881.769287109375, 485.5084228515625, 175.53538513183594, 2038.6153564453125, 499.7809143066406, 173.80239868164062, 2195.46142578125, 513.2239379882812, 178.90066528320312, 2352.3076171875, 522.7578735351562, 189.66224670410156, 2509.15380859375, 526.1986083984375, 203.6217803955078, 2666 ]
+          ],
+          "id": "mgood08u1gxv",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.7123743891716003,
+              "type": "circle",
+              "center": [ 496.1601867675781, 203.6217803955078 ],
+              "radius": 30.038398179063574
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "1usdn105idcsn",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "1usdn105idcsn",
+            "box": [ 531.5, 236, 531.5, 241 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 531.5, 236, 1184, 531.5, 241, 1315, 533.5, 273, 1381, 548.5, 293, 1414, 570.5, 307, 1448, 592.5, 315, 1481, 610.5, 316, 1515, 626.5, 313, 1547, 660.5, 297, 1614, 670.5, 289, 1648, 678.5, 277, 1681, 681.5, 256, 1715, 680.5, 219, 1781, 673.5, 197, 1914, 667.5, 190, 1998 ]
+            ],
+            "curvesBox": [ 531.5, 236, 531.5, 241 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cf4ed6ca--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-01d9f560--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a792fcd9--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0054c967--blockHook",
+            "box": [ 240, 276, 960, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9c2e8b71--blockHook",
+            "box": [ 240, 300, 960, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0351d9fa--blockHook",
+            "box": [ 240, 324, 960, 348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e8450fc4--blockHook",
+            "box": [ 240, 348, 960, 372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-644d1b98--blockHook",
+            "box": [ 240, 372, 960, 396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c60a14b4--blockHook",
+            "box": [ 240, 396, 960, 420 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "1usdn105idcsn": {
+          "curves": [
+            [ 685.1900634765625, 239.85462951660156, 1184, 678.4802856445312, 271.4217224121094, 1238.2667236328125, 659.5110473632812, 297.53057861328125, 1292.5333251953125, 631.5624389648438, 313.666748046875, 1346.800048828125, 599.4668579101562, 317.0401306152344, 1401.066650390625, 568.7741088867188, 307.0674133300781, 1455.3333740234375, 544.7910766601562, 285.4730224609375, 1509.5999755859375, 531.6647338867188, 255.9907989501953, 1563.86669921875, 531.6647338867188, 223.7184600830078, 1618.13330078125, 544.7910766601562, 194.23623657226562, 1672.4000244140625, 568.7741088867188, 172.64183044433594, 1726.6666259765625, 599.4668579101562, 162.66912841796875, 1780.933349609375, 631.5624389648438, 166.04251098632812, 1835.199951171875, 659.5110473632812, 182.17868041992188, 1889.4666748046875, 678.4802856445312, 208.28753662109375, 1943.7332763671875, 685.1900634765625, 239.85462951660156, 1998 ]
+          ],
+          "id": "1usdn105idcsn",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9723663330078125,
+              "type": "circle",
+              "center": [ 607.5794067382812, 239.85462951660156 ],
+              "radius": 77.61065445069121
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

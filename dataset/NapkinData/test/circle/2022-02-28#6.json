@@ -1,0 +1,144 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "1urrff84y1jb9",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "1urrff84y1jb9",
+            "box": [ 516.5, 177, 518.5, 177 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 518.5, 177, 391, 516.5, 177, 474, 492.5, 177, 524, 467.5, 188, 557, 454.5, 207, 590, 449.5, 232, 624, 449.5, 258, 657, 457.5, 282, 691, 473.5, 306, 723, 487.5, 318, 757, 507.5, 328, 791, 533.5, 332, 823, 556.5, 331, 857, 575.5, 324, 890, 586.5, 315, 924, 596.5, 297, 990, 605.5, 271, 1057, 607.5, 253, 1125, 603.5, 237, 1191, 594.5, 220, 1257, 571.5, 192, 1424, 553.5, 182, 1607, 537.5, 180, 1874, 530.5, 179, 2059 ]
+            ],
+            "curvesBox": [ 516.5, 177, 518.5, 177 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1febfe01--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f495cdf2--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2fb55cf3--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-10b74303--blockHook",
+            "box": [ 240, 276, 960, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-90f5f517--blockHook",
+            "box": [ 240, 300, 960, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2b714fa1--blockHook",
+            "box": [ 240, 324, 960, 348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4b496753--blockHook",
+            "box": [ 240, 348, 960, 372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "1urrff84y1jb9": {
+          "curves": [
+            [ 606.4553833007812, 254.24024963378906, 391, 599.5834350585938, 286.5704040527344, 502.20001220703125, 580.1557006835938, 313.3103942871094, 613.4000244140625, 551.5314331054688, 329.83660888671875, 724.5999755859375, 518.6600952148438, 333.29150390625, 835.7999877929688, 487.225341796875, 323.0777587890625, 947, 462.66259765625, 300.96136474609375, 1058.199951171875, 449.2189636230469, 270.7664794921875, 1169.4000244140625, 449.2189636230469, 237.7140350341797, 1280.5999755859375, 462.66259765625, 207.51913452148438, 1391.800048828125, 487.225341796875, 185.40274047851562, 1503, 518.6600952148438, 175.18898010253906, 1614.199951171875, 551.5314331054688, 178.64390563964844, 1725.4000244140625, 580.1557006835938, 195.1701202392578, 1836.5999755859375, 599.5834350585938, 221.91009521484375, 1947.800048828125, 606.4553833007812, 254.24024963378906, 2059 ]
+          ],
+          "id": "1urrff84y1jb9",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9397535920143127,
+              "type": "circle",
+              "center": [ 526.9686889648438, 254.24024963378906 ],
+              "radius": 79.48670388949992
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

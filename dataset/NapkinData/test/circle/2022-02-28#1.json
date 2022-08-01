@@ -1,0 +1,111 @@
+{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "pipeline",
+      "interestingSession": true,
+      "commandString": "stroke",
+      "brushTypeString": "pen",
+      "nodeId": "8wh32s62dwjp",
+      "type": "AiRequestPipelineStroke"
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "8wh32s62dwjp",
+            "box": [ 542.5, 223, 542.5, 223 ],
+            "layerId": "static_layer_CgsiCWxvY2FsaG9zdBIJCgRQYWdlEIoB",
+            "curves": [
+              [ 542.5, 223, 400, 546.5, 223, 583, 560.5, 223, 646, 572.5, 230, 745, 577.5, 262, 913, 570.5, 271, 980, 560.5, 277, 1080, 540.5, 277, 1246, 533.5, 273, 1347, 531.5, 272, 1731, 527.5, 265, 1864, 526.5, 257, 2248 ]
+            ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-cde76fa5--blockHook",
+            "box": [ 240, 60, 960, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-72472142--blockHook",
+            "box": [ 240, 156, 960, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e330a8e--blockHook",
+            "box": [ 240, 180, 960, 204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cf4ed6ca--blockHook",
+            "box": [ 240, 204, 960, 228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-01d9f560--blockHook",
+            "box": [ 240, 228, 960, 252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-425ad8b8--blockHook",
+            "box": [ 240, 252, 960, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "pipeline",
+      "variant": "23"
+    }
+  },
+  "output": {
+    "version": "2022-02-28",
+    "response": {
+      "featureName": "pipeline",
+      "autoCorrects": {},
+      "autoSuggests": {
+        "8wh32s62dwjp": {
+          "curves": [
+            [ 580.2674560546875, 250.36264038085938, 400, 577.0120239257812, 263.57049560546875, 542.1538696289062, 567.991455078125, 273.7525939941406, 684.3076782226562, 555.2723388671875, 278.57635498046875, 826.4615478515625, 541.7683715820312, 276.9366760253906, 968.6153564453125, 530.5731811523438, 269.2091979980469, 1110.769287109375, 524.25146484375, 257.1642150878906, 1252.923095703125, 524.25146484375, 243.56106567382812, 1395.076904296875, 530.5731811523438, 231.51608276367188, 1537.230712890625, 541.7683715820312, 223.7886199951172, 1679.3846435546875, 555.2723388671875, 222.14894104003906, 1821.5384521484375, 567.991455078125, 226.97268676757812, 1963.6922607421875, 577.0120239257812, 237.15478515625, 2105.84619140625, 580.2674560546875, 250.36264038085938, 2248 ]
+          ],
+          "id": "8wh32s62dwjp",
+          "aiDataPatch": {
+            "source": "_runAutoCompleteTransform",
+            "shape": {
+              "probability": 0.9261783957481384,
+              "type": "circle",
+              "center": [ 551.8465576171875, 250.36264038085938 ],
+              "radius": 28.420922693185695
+            },
+            "need_post_processing": true,
+            "connections": []
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}

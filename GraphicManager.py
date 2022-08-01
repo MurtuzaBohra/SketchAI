@@ -125,7 +125,7 @@ class GraphicManager:
         else:
             print((str(reg_errors).replace(',', '&')).replace('\'', ''))
 
-    def generate_progressive_accuracy(self, model, data, plot_clf=True, plot_reg=True, best_of=1, indexToLabel={}):
+    def generate_progressive_accuracy(self, model, data, plot_clf=True, plot_reg=True, best_of=1, indexToLabel=None):
 
         # Basic data manipulation
         x, y = data
@@ -183,34 +183,57 @@ class GraphicManager:
         plt.show()
 
     def make_predictions(self, model, x):
+        curr_clf_pred = None
+        curr_reg_pred = None
         if type(model) is GestuReNN:
             if model.topology == 'mts' or model.topology == 'mtm':
                 curr_clf_pred, curr_reg_pred = model.model(x)
                 curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
         return curr_clf_pred, curr_reg_pred
 
+    # def __make_predictions(self, model, x, best_of=1):
+    #     # Predicting the values
+    #     clf_pred = []
+    #     reg_pred = []
+    #     rankings = []
+    #     if type(model) is GestuReNN:
+    #         if model.topology == 'mts' or model.topology == 'mtm':
+    #             len_preds = x.shape[0]
+    #             for i in range(self.iterations):
+    #                 start = i * (len_preds // self.iterations)
+    #                 end = (i + 1) * (len_preds // self.iterations)
+    #                 curr_clf_pred, curr_reg_pred = model.model(x[start:end])
+    #                 curr_rankings = np.argsort(curr_clf_pred, axis=2)[:, :, -best_of:]
+    #                 curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
+    #                 if i == 0:
+    #                     clf_pred = curr_clf_pred
+    #                     reg_pred = curr_reg_pred
+    #                     rankings = curr_rankings
+    #                 else:
+    #                     clf_pred = np.concatenate((clf_pred, curr_clf_pred), axis=0)
+    #                     reg_pred = np.concatenate((reg_pred, curr_reg_pred), axis=0)
+    #                     rankings = np.concatenate((rankings, curr_rankings), axis=0)
+    #         else:
+    #             clf_pred = model.classifier.predict(x)
+    #             reg_pred = model.regressor.predict(x)
+    #             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
+    #             clf_pred = np.argmax(clf_pred, axis=2)
+    #     else:
+    #         print('Classifier and regressor should be instances of GestuReNN.')
+    #         exit(1)
+    #
+    #     return clf_pred, reg_pred, rankings
+
     def __make_predictions(self, model, x, best_of=1):
-        # Predicting the values
         clf_pred = []
         reg_pred = []
         rankings = []
+        # Predicting the values
         if type(model) is GestuReNN:
             if model.topology == 'mts' or model.topology == 'mtm':
-                len_preds = x.shape[0]
-                for i in range(self.iterations):
-                    start = i * (len_preds // self.iterations)
-                    end = (i + 1) * (len_preds // self.iterations)
-                    curr_clf_pred, curr_reg_pred = model.model(x[start:end])
-                    curr_rankings = np.argsort(curr_clf_pred, axis=2)[:, :, -best_of:]
-                    curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
-                    if i == 0:
-                        clf_pred = curr_clf_pred
-                        reg_pred = curr_reg_pred
-                        rankings = curr_rankings
-                    else:
-                        clf_pred = np.concatenate((clf_pred, curr_clf_pred), axis=0)
-                        reg_pred = np.concatenate((reg_pred, curr_reg_pred), axis=0)
-                        rankings = np.concatenate((rankings, curr_rankings), axis=0)
+                clf_pred, reg_pred = model.model(x)
+                rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
+                clf_pred = np.argmax(clf_pred, axis=2)
             else:
                 clf_pred = model.classifier.predict(x)
                 reg_pred = model.regressor.predict(x)
@@ -222,7 +245,7 @@ class GraphicManager:
 
         return clf_pred, reg_pred, rankings
 
-    def __compute_histogram(self, clf_pred, reg_pred, ground_truth, rankings, big_mask, indexToLabel={}):
+    def __compute_histogram(self, clf_pred, reg_pred, ground_truth, rankings, big_mask, indexToLabel=None):
 
         n_predictions = clf_pred.shape[0]
 
@@ -231,7 +254,7 @@ class GraphicManager:
         hist_reg = np.zeros(self.n_bins)
         regressor_mse = np.zeros(self.n_bins)
 
-        prediction_statistics = np.zeros((16, 16))
+        prediction_statistics = np.zeros((len(indexToLabel), len(indexToLabel)))
 
         for i in range(n_predictions):
             print("--------Sample - {}----------".format(i))
@@ -264,8 +287,9 @@ class GraphicManager:
 
         return hist_tot, hist_clf, hist_reg, regressor_mse
 
-    def print_prediction_statistics(self, prediction_statistics, indexToLabel={}):
-        if len(indexToLabel) == 0:
+    def print_prediction_statistics(self, prediction_statistics, indexToLabel=None):
+        print('========================================')
+        if indexToLabel is None:
             for i in range(16):
                 strng = "{} - ".format(i)
                 for j in range(16):
@@ -280,4 +304,3 @@ class GraphicManager:
                         strng += "| {}: {}".format(indexToLabel[j], prediction_statistics[i, j])
                 strng += "  | {}%".format((prediction_statistics[i, i] * 100) / np.sum(prediction_statistics[i, :]))
                 print(strng)
-

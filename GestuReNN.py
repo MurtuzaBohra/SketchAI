@@ -1,6 +1,8 @@
 from numpy.random import seed
+
 seed(0)
 from tensorflow import random
+
 random.set_seed(0)
 
 import tensorflow as tf
@@ -8,6 +10,7 @@ import numpy as np
 from tensorflow.keras.models import Sequential, Model
 from tensorflow.keras.layers import Dense, Dropout, LSTM, GRU, Masking, Input, concatenate
 import matplotlib.pyplot as plt
+import json
 
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 assert len(physical_devices) > 0, "Not enough GPU hardware devices available"
@@ -16,37 +19,40 @@ config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
 class GestuReNN:
 
-    def __init__(self, dataset='1$', topology='stl', labels_dict= {}, plot=True, include_fingerup=False, robust_normalization=True, batch_size=128):
-
+    def __init__(self, dataset='1$', topology='stl', labelJsonPath='', plot=True, include_fingerup=False,
+                 robust_normalization=True, batch_size=128, model_path=None):
         self.plot = plot
-        self.n_labels = len(labels_dict)
         self.topology = topology
         self.robust_normalization = robust_normalization
 
-#         self.gesture_dict_1dollar = {
-#             0: 'arrow',     1: 'caret',     2: 'check', 3: 'O',
-#             4: 'delete',    5: '{',         6: '[',     7: 'pig-tail',
-#             8: '?',         9: 'rectangle', 10: '}',    11: ']',
-#             12: 'star',     13: 'triangle', 14: 'V',    15: 'X'
-#         }
-        self.gesture_dict_1dollar = labels_dict
+        if labelJsonPath is not None:
+            self.gesture_dict_1dollar = json.load(open(labelJsonPath, 'r'))
+        else:
+            self.gesture_dict_1dollar = {
+                0: 'arrow', 1: 'caret', 2: 'check', 3: 'O',
+                4: 'delete', 5: '{', 6: '[', 7: 'pig-tail',
+                8: '?', 9: 'rectangle', 10: '}', 11: ']',
+                12: 'star', 13: 'triangle', 14: 'V', 15: 'X'
+            }
 
         self.gesture_dict_ndollar = {
-            0: 'arrowhead',         1: '*',                 2: 'D',         3: '!',
-            4: 'five-point-star',   5: 'H',                 6: 'half-note', 7: 'I',
-            8: 'line',              9: 'N',                 10: 'null',     11: 'P',
-            12: 'pitchfork',        13: 'six-point-star',   14: 'T',        15: 'X',
+            0: 'arrowhead', 1: '*', 2: 'D', 3: '!',
+            4: 'five-point-star', 5: 'H', 6: 'half-note', 7: 'I',
+            8: 'line', 9: 'N', 10: 'null', 11: 'P',
+            12: 'pitchfork', 13: 'six-point-star', 14: 'T', 15: 'X',
         }
 
         self.stroke_mapping_ndollar = np.array([2, 3, 2, 2, 1, 3, 2, 3, 1, 3, 2, 2, 2, 2, 2, 2])
 
         # Hyperparameters for optimizing
+        self.n_labels = len(self.gesture_dict_1dollar)
         self.metrics = ['accuracy']
         self.loss_clf = 'sparse_categorical_crossentropy'
         self.loss_reg = 'mse'
         self.batch_size = batch_size
-        self.epochs = 100
-        self.opt = tf.keras.optimizers.Adam(lr=1e-3, decay=1e-5, beta_1=0.8, beta_2=0.85)
+        self.epochs = 200
+        # self.opt = tf.keras.optimizers.Adam(lr=1e-3, decay=1e-5, beta_1=0.8, beta_2=0.85)
+        self.opt = tf.keras.optimizers.Adam(learning_rate=1e-3, decay=1e-4, beta_1=0.8, beta_2=0.85)
 
         # Setting up checkpoint root
         root = "checkpoints/models/" + dataset
@@ -54,7 +60,7 @@ class GestuReNN:
         # Checkpoints
         self.sts_clf_path, self.sts_reg_path = root + "/cp_sml_robust.ckpt", root + "/rgcp_sml_robust.ckpt"
         self.stl_clf_path, self.stl_reg_path = root + "/cp_robust.ckpt", root + "/rgcp_robust.ckpt"
-        self.mts_path = root + "/mdcp_robust.ckpt"
+        self.mts_path = root if model_path is None else model_path + "/mdcp_robust.ckpt"
         self.mtm_path = root + "/mdvarcp_robust.ckpt"
 
         # Loss figure settings
@@ -103,8 +109,8 @@ class GestuReNN:
             self.regressor.add(Dropout(0.2, seed=0))
 
         # Final Classifier and Regressor layers
-        self.classifier.add(Dense(self.n_labels, activation='softmax'))     # Probability distribution of 16 classes
-        self.regressor.add(Dense(1, activation='sigmoid'))                  # Probability distribution of completion 0-1
+        self.classifier.add(Dense(self.n_labels, activation='softmax'))  # Probability distribution of 16 classes
+        self.regressor.add(Dense(1, activation='sigmoid'))  # Probability distribution of completion 0-1
 
         # Compiling the model
         self.classifier.compile(loss=self.loss_clf, optimizer=self.opt, metrics=self.metrics)
@@ -224,6 +230,7 @@ class GestuReNN:
 
     def load_model(self):
         if self.topology == 'mts' or self.topology == 'mtm':
+            print(self.model_path)
             self.model.load_weights(self.model_path)
         else:
             self.load_reg()
@@ -232,7 +239,3 @@ class GestuReNN:
     def classify(self, gesture):
         prediction = self.classifier.predict([gesture])
         return np.argmax(prediction, axis=1)[0]
-
-
-
-
