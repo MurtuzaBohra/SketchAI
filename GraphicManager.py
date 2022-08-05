@@ -188,7 +188,7 @@ class GraphicManager:
         if type(model) is GestuReNN:
             if model.topology == 'mts' or model.topology == 'mtm':
                 curr_clf_pred, curr_reg_pred = model.model(x)
-                curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
+                # curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
         return curr_clf_pred, curr_reg_pred
 
     # def __make_predictions(self, model, x, best_of=1):

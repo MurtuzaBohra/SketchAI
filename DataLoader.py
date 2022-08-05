@@ -48,17 +48,15 @@ class DataLoader:
         print('.. Done with attribute settings. Loading the data ...')
 
         # Loading train, validation and test sets
-        if (self.load_mode != 'test'):
+        if self.load_mode in ['train', 'validation']:
             self.train_set, self.validation_set, self.train_raw, self.validation_raw = self.__load_dataset_splitted(
                 stroke_type='SYNTH')
-            if self.load_mode == 'train':
-                self.test_set = self.validation_set
-                self.test_raw = self.validation_raw
-        if self.load_mode != 'train':
+            self.test_set = self.validation_set
+            self.test_raw = self.validation_raw
+        if self.load_mode == 'test':
             self.test_set, self.test_raw = self.__load_dataset(stroke_type='HUMAN')
-            if self.load_mode == 'test':
-                self.train_set, self.validation_set = self.test_set, self.test_set
-                self.train_raw, self.validation_raw = self.test_raw, self.test_raw
+            self.train_set, self.validation_set = self.test_set, self.test_set
+            self.train_raw, self.validation_raw = self.test_raw, self.test_raw
 
         self.raw_dataset = self.train_raw, self.validation_raw, self.test_raw
         self.raw_labels = self.train_set[1], self.validation_set[1], self.test_set[1]
@@ -91,6 +89,10 @@ class DataLoader:
     def __read_csv_1dollar(self, file_name):
         df = pd.read_csv(file_name, sep=',')
         df = df[['x', 'y']]  # / 100
+
+        # normalize w.r.t to initial point.
+        df['x'] -= df['x'].iloc[0]
+        df['y'] -= df['y'].iloc[0]
 
         # Adding fingerup serie
         if self.include_fingerup:
@@ -153,7 +155,16 @@ class DataLoader:
             if self.method == 'G3':
                 if self.stroke_dataset == "Napkin":
                     label = file.split('-')[0].lower()
-                    current_label = label if label != 'square' else 'rectangle'
+                    if label == 'square':
+                        current_label = 'rectangle'
+                    elif 'curly' in label:
+                        current_label = 'curly_braces'
+                    elif 'bracket' in label:
+                        current_label = 'bracket'
+                    else:
+                        current_label = label
+
+                    # current_label = label if label != 'square' else 'rectangle'
                 else:
                     current_label = file.split('-')[1]
 

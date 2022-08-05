@@ -46,6 +46,7 @@ class GestuReNN:
 
         # Hyperparameters for optimizing
         self.n_labels = len(self.gesture_dict_1dollar)
+        print("----#classes = {}------".format(self.n_labels))
         self.metrics = ['accuracy']
         self.loss_clf = 'sparse_categorical_crossentropy'
         self.loss_reg = 'mse'

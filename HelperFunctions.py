@@ -195,7 +195,7 @@ def writeStringToFile(filename, strng):
 if __name__ == "__main__":
     # filename = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test/circle/2022-02-28#1.json'
 
-    userStrokePoints = readJsonContentTestData('/Users/murtuza/Desktop/brackets/curly_braces.json')
+    userStrokePoints = readJsonContentTestData('/Users/murtuza/Desktop/brackets/w_curly_braces.json')
     templateBracket = readJsonContentTestData('/Users/murtuza/Desktop/brackets/templateBracket.json')
     # writeStringToFile('/Users/murtuza/Desktop/template.svg', convert_curve_points_to_svg(templateBracket))
     # writeStringToFile('/Users/murtuza/Desktop/brackets/square_bracket.svg',
