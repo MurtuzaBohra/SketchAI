@@ -1,0 +1,4047 @@
+{"body":{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "move_contact",
+      "interestingSession": true,
+      "type": "AiRequestDecomposeSketch",
+      "itemId": "i0ut1t14how76",
+      "hoverAtStartId": "",
+      "hoverAtEndId": ""
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "u5fe10lhxqa",
+            "box": [ 343.5, 456, 370.5, 481 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 17, 0, 1, 15, 112, 25, 0, 196, 27, 0, 357, 26, 9, 413, 20, 21, 462, 17, 25, 512, 15, 25, 665, 2, 18, 771 ]
+            ],
+            "curvesBox": [ 0, 0, 27, 25 ],
+            "itemAiData": {},
+            "topLeft": [ 343.5, 456 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v8kk5610luknc",
+            "box": [ 489.5, 466, 524.5, 491 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 1, 771, 21, 11, 772, 35, 18, 845, 33, 18, 962, 12, 23, 1045, 8, 25, 1070, 6, 25, 1220, 4, 4, 1328, 3, 0, 1362 ]
+            ],
+            "curvesBox": [ 0, 0, 35, 25 ],
+            "itemAiData": {},
+            "topLeft": [ 489.5, 466 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mffmka10lcbnm",
+            "box": [ 589.5, 481, 622.5, 511 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 32, 0, 1362, 29, 2, 1501, 2, 25, 1575, 0, 27, 1600, 2, 27, 1725, 31, 30, 1850, 32, 27, 2041, 33, 8, 2133, 33, 4, 2233 ]
+            ],
+            "curvesBox": [ 0, 0, 33, 30 ],
+            "itemAiData": {},
+            "topLeft": [ 589.5, 481 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18isdtm10lm5u1",
+            "box": [ 689.5, 429, 714.5, 455 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 24, 2233, 3, 24, 2347, 25, 24, 2446, 23, 21, 2571, 11, 0, 2646, 10, 2, 2863, 8, 20, 2937, 6, 26, 2997 ]
+            ],
+            "curvesBox": [ 0, 0, 25, 26 ],
+            "itemAiData": {},
+            "topLeft": [ 689.5, 429 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4jsjy210lhxxe",
+            "box": [ 387.5, 559, 419.5, 578 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 29, 0, 2997, 26, 2, 3198, 4, 16, 3265, 0, 19, 3316, 3, 19, 3417, 32, 18, 3516 ]
+            ],
+            "curvesBox": [ 0, 0, 32, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 387.5, 559 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "htdq7u10lozk3",
+            "box": [ 534.5, 548, 555.5, 585 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 37, 3516, 0, 35, 3619, 3, 10, 3685, 6, 0, 3768, 8, 1, 3877, 19, 21, 3961, 21, 25, 4010, 21, 27, 4253, 3, 31, 4360, 1, 31, 4544 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 37 ],
+            "itemAiData": {},
+            "topLeft": [ 534.5, 548 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1um435m10vg2kv",
+            "box": [ 685.5, 581, 714.5, 593 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 8, 0, 4544, 10, 0, 4646, 27, 9, 4738, 29, 9, 4854, 27, 9, 4963, 6, 10, 5037, 0, 12, 5071 ]
+            ],
+            "curvesBox": [ 0, 0, 29, 12 ],
+            "itemAiData": {},
+            "topLeft": [ 685.5, 581 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "9579x610vhiiz",
+            "box": [ 756.5, 517, 775.5, 544 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 11, 5071, 1, 13, 5167, 5, 23, 5216, 8, 27, 5325, 9, 25, 5542, 18, 4, 5633, 19, 0, 5759 ]
+            ],
+            "curvesBox": [ 0, 0, 19, 27 ],
+            "itemAiData": {},
+            "topLeft": [ 756.5, 517 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1ltlptm10v94hs",
+            "box": [ 613.5, 614, 634.5, 647 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 14, 0, 5759, 14, 3, 5870, 21, 33, 5962, 19, 33, 6095, 9, 26, 6162, 0, 17, 6361 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 33 ],
+            "itemAiData": {},
+            "topLeft": [ 613.5, 614 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hxq67u10vre2t",
+            "box": [ 397.5, 662, 446.5, 682 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 6361, 3, 0, 6522, 43, 0, 6589, 49, 0, 6630, 47, 0, 6791, 11, 20, 6899 ]
+            ],
+            "curvesBox": [ 0, 0, 49, 20 ],
+            "itemAiData": {},
+            "topLeft": [ 397.5, 662 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1umr37e10vu4g6",
+            "box": [ 797.5, 638, 834.5, 663 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 37, 0, 6899, 34, 0, 7029, 2, 15, 7134, 0, 16, 7152, 6, 17, 7260, 26, 24, 7326, 28, 25, 7351 ]
+            ],
+            "curvesBox": [ 0, 0, 37, 25 ],
+            "itemAiData": {},
+            "topLeft": [ 797.5, 638 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qd6lfe10vg2kh",
+            "box": [ 298.5, 801, 465.5, 936 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 72, 0, 7351, 71, 3, 7457, 9, 121, 7564, 1, 133, 7595, 0, 135, 7622, 2, 135, 7722, 87, 134, 7796, 147, 132, 7863, 166, 132, 7937, 167, 130, 8088, 137, 81, 8230, 115, 53, 8297, 84, 18, 8479, 77, 9, 8522, 74, 7, 8629 ]
+            ],
+            "curvesBox": [ 0, 0, 167, 135 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 298.5, 801 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v4tz3u10vg2kt",
+            "box": [ 571.5, 800, 723.5, 931 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 59, 4, 8629, 58, 7, 8698, 20, 83, 8764, 1, 125, 8831, 0, 129, 8872, 2, 131, 8990, 61, 125, 9055, 126, 123, 9122, 152, 125, 9222, 150, 123, 9348, 86, 32, 9495, 71, 14, 9606, 57, 0, 9764, 55, 0, 9806 ]
+            ],
+            "curvesBox": [ 0, 0, 152, 131 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 571.5, 800 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lyme4a10vah34",
+            "box": [ 854.5, 812, 953.5, 929 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 4, 3, 9806, 6, 3, 9935, 63, 1, 10002, 94, 0, 10068, 98, 0, 10101, 99, 2, 10227, 92, 13, 10285, 44, 90, 10359, 31, 116, 10419, 29, 117, 10537, 24, 107, 10602, 18, 88, 10634, 11, 40, 10701, 1, 7, 10961, 0, 3, 11085 ]
+            ],
+            "curvesBox": [ 0, 0, 99, 117 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 854.5, 812 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q7kum210vbv9n",
+            "box": [ 514.5, 971, 605.5, 1089 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 11085, 0, 3, 11188, 0, 107, 11330, 0, 117, 11363, 2, 118, 11480, 53, 116, 11547, 87, 116, 11639, 91, 116, 11689, 90, 114, 11789, 61, 70, 11855, 25, 30, 11997, 13, 14, 12147, 8, 3, 12214 ]
+            ],
+            "curvesBox": [ 0, 0, 91, 118 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 514.5, 971 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "m7aku2115tsee",
+            "box": [ 280.5, 986, 397.5, 1098 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 117, 0, 12214, 117, 2, 12368, 117, 111, 12493, 115, 112, 12660, 50, 94, 12727, 2, 89, 12809, 0, 88, 12876, 2, 86, 13002, 84, 17, 13134, 103, 8, 13210, 108, 4, 13284 ]
+            ],
+            "curvesBox": [ 0, 0, 117, 112 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 280.5, 986 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qodam2115a2oe",
+            "box": [ 104.5, 841, 237.5, 972 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 78, 2, 13284, 77, 4, 13404, 4, 108, 13538, 0, 114, 13579, 4, 114, 13696, 37, 114, 13729, 129, 130, 13804, 133, 131, 13837, 133, 129, 13979, 125, 115, 14013, 99, 50, 14079, 91, 22, 14135, 89, 16, 14170, 87, 12, 14279, 82, 2, 14358, 82, 0, 14395 ]
+            ],
+            "curvesBox": [ 0, 0, 133, 131 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 104.5, 841 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "ddjfne115fqbw",
+            "box": [ 754.5, 953, 847.5, 1038 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 14395, 8, 0, 14509, 67, 0, 14574, 91, 0, 14650, 93, 0, 14667, 93, 3, 14883, 80, 77, 14982, 79, 85, 15025, 76, 82, 15166, 59, 59, 15233, 22, 20, 15383, 14, 12, 15441, 3, 1, 15642 ]
+            ],
+            "curvesBox": [ 0, 0, 93, 85 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 754.5, 953 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dcx81m115jvnr",
+            "box": [ 852.5, 955, 1020.5, 1083 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 69, 11, 15642, 68, 13, 15856, 56, 28, 15888, 14, 100, 15954, 4, 114, 15988, 0, 119, 16047, 3, 119, 16129, 34, 119, 16163, 135, 128, 16230, 166, 128, 16305, 168, 127, 16388, 154, 110, 16455, 103, 46, 16521, 60, 0, 16676 ]
+            ],
+            "curvesBox": [ 0, 0, 168, 128 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 852.5, 955 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v4tvy2115mpds",
+            "box": [ 598.5, 961, 736.5, 1041 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 68, 1, 16676, 69, 4, 16805, 78, 16, 16821, 126, 64, 16889, 138, 79, 16939, 136, 80, 17114, 103, 80, 17155, 44, 75, 17188, 12, 75, 17228, 2, 75, 17280, 0, 75, 17382, 1, 73, 17583, 24, 36, 17655, 44, 11, 17730, 51, 4, 17788, 56, 0, 18015 ]
+            ],
+            "curvesBox": [ 0, 0, 138, 80 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 598.5, 961 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qckdtm115piiy",
+            "box": [ 123.5, 990, 211.5, 1084 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 1, 2, 18015, 1, 6, 18125, 1, 79, 18258, 1, 94, 18333, 4, 94, 18516, 62, 87, 18583, 87, 87, 18650, 88, 85, 18900, 80, 77, 19000, 42, 38, 19158, 26, 25, 19233, 11, 11, 19383, 0, 0, 19541 ]
+            ],
+            "curvesBox": [ 0, 0, 88, 94 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 123.5, 990 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v2xuka11frwg7",
+            "box": [ 182.5, 1284, 345.5, 1357 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 3, 3, 19541, 3, 7, 19630, 1, 55, 19694, 1, 72, 19753, 3, 73, 19902, 153, 72, 20039, 163, 73, 20094, 163, 71, 20236, 163, 46, 20269, 159, 6, 20336, 157, 4, 20578, 110, 0, 20652, 32, 0, 20785, 12, 0, 20895, 0, 0, 21052 ]
+            ],
+            "curvesBox": [ 0, 0, 163, 73 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 182.5, 1284 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qd68sa11frx1l",
+            "box": [ 574.5, 1267, 762.5, 1338 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 4, 63, 21052, 4, 60, 21173, 1, 14, 21239, 0, 1, 21289, 2, 1, 21431, 182, 0, 21551, 188, 1, 21606, 188, 3, 21747, 188, 70, 21881, 185, 71, 22040, 167, 68, 22074, 105, 67, 22139, 50, 70, 22206, 27, 68, 22272, 9, 68, 22398, 0, 69, 22448 ]
+            ],
+            "curvesBox": [ 0, 0, 188, 71 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 574.5, 1267 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hd639611frwub",
+            "box": [ 469.5, 1289, 871.5, 1467 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 6, 26, 22448, 6, 28, 22544, 3, 109, 22610, 3, 154, 22678, 0, 175, 22784, 2, 176, 22893, 38, 175, 22938, 212, 175, 22997, 315, 178, 23042, 357, 175, 23077, 396, 168, 23144, 402, 167, 23184, 402, 165, 23335, 402, 150, 23369, 401, 131, 23385, 382, 28, 23451, 380, 11, 23489, 378, 11, 23702, 207, 14, 23821, 176, 6, 23860, 121, 1, 23927, 43, 0, 24071, 23, 3, 24176, 15, 5, 24244 ]
+            ],
+            "curvesBox": [ 0, 0, 402, 178 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 469.5, 1289 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "13zuf3u11fchza",
+            "box": [ 563.5, 1337, 704.5, 1416 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 8, 0, 24244, 8, 3, 24358, 8, 27, 24390, 14, 78, 24474, 16, 79, 24574, 82, 77, 24650, 130, 79, 24737, 140, 79, 24790, 141, 76, 24924, 133, 18, 25074, 131, 15, 25307, 118, 10, 25366, 58, 1, 25499, 21, 0, 25674, 2, 0, 25832, 0, 0, 25866 ]
+            ],
+            "curvesBox": [ 0, 0, 141, 79 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 563.5, 1337 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mdkdmi11fgphe",
+            "box": [ 113.5, 1358, 236.5, 1451 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 122, 90, 25866, 123, 86, 25952, 123, 21, 26018, 123, 1, 26069, 121, 0, 26161, 107, 0, 26203, 67, 5, 26237, 7, 7, 26330, 7, 10, 26561, 4, 59, 26636, 2, 73, 26669, 0, 88, 26836, 4, 88, 26978, 59, 88, 27044, 90, 93, 27119, 108, 93, 27202, 120, 93, 27386 ]
+            ],
+            "curvesBox": [ 0, 0, 123, 93 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 113.5, 1358 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qv9hbu11fgohv",
+            "box": [ 291.5, 1330, 419.5, 1414 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 6, 0, 27386, 6, 2, 27466, 6, 79, 27599, 6, 83, 27625, 8, 84, 27691, 25, 81, 27733, 91, 82, 27799, 121, 84, 27875, 125, 84, 27932, 126, 82, 28024, 128, 36, 28173, 128, 21, 28275, 128, 19, 28499, 127, 13, 28574, 125, 11, 28784, 98, 9, 28849, 53, 1, 28924, 25, 0, 28991, 0, 0, 29191 ]
+            ],
+            "curvesBox": [ 0, 0, 128, 84 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 291.5, 1330 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hrh2pm11psy6a",
+            "box": [ 858.5, 1268, 1009.5, 1330 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 4, 29191, 0, 6, 29296, 0, 62, 29404, 5, 62, 29470, 28, 57, 29503, 123, 56, 29571, 150, 56, 29628, 151, 54, 29754, 151, 9, 29895, 151, 1, 29962, 149, 0, 30154, 68, 1, 30288, 25, 1, 30428, 1, 1, 30620 ]
+            ],
+            "curvesBox": [ 0, 0, 151, 62 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 858.5, 1268 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zqvp4q11pkhe3",
+            "box": [ 918.5, 1310, 1029.5, 1415 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 7, 0, 30620, 7, 4, 30739, 7, 98, 30864, 11, 99, 30915, 37, 96, 30948, 79, 99, 30986, 109, 105, 31073, 110, 102, 31165, 110, 41, 31265, 111, 12, 31456, 109, 12, 31581, 101, 10, 31624, 26, 9, 31756, 6, 9, 31840, 0, 8, 31898 ]
+            ],
+            "curvesBox": [ 0, 0, 111, 105 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 918.5, 1310 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qq95oa11pj4zk",
+            "box": [ 91.5, 1245, 156.5, 1411 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 10, 0, 31898, 10, 2, 31988, 7, 29, 32027, 5, 131, 32093, 0, 159, 32150, 0, 161, 32252, 6, 162, 32329, 53, 166, 32419, 61, 165, 32561, 62, 163, 32652, 63, 151, 32702, 64, 48, 32835, 65, 11, 32921, 65, 4, 32968, 65, 2, 33094, 61, 2, 33194, 22, 2, 33410, 8, 2, 33602 ]
+            ],
+            "curvesBox": [ 0, 0, 65, 166 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 91.5, 1245 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v47i0q11p9amm",
+            "box": [ 405.5, 1273, 465.5, 1467 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 7, 2, 33602, 7, 6, 33738, 1, 88, 33804, 0, 169, 33887, 1, 186, 33931, 2, 193, 33988, 4, 193, 34088, 55, 193, 34264, 59, 194, 34354, 60, 192, 34547, 60, 164, 34622, 55, 55, 34764, 54, 18, 34855, 54, 14, 34972, 54, 0, 35063, 52, 0, 35205, 27, 1, 35289, 7, 4, 35371, 1, 4, 35438 ]
+            ],
+            "curvesBox": [ 0, 0, 60, 194 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 405.5, 1273 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q87bp611p99mp",
+            "box": [ 170.5, 1700, 240.5, 1940 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 70, 0, 35438, 68, 0, 35515, 20, 0, 35581, 0, 0, 35665, 1, 5, 35915, 15, 110, 35982, 20, 198, 36021, 20, 240, 36107, 22, 240, 36223, 35, 238, 36331, 39, 238, 36523, 51, 238, 36615 ]
+            ],
+            "curvesBox": [ 0, 0, 70, 240 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 170.5, 1700 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qozldm11zei2q",
+            "box": [ 358.5, 1702, 401.5, 1937 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 36615, 4, 0, 36686, 35, 0, 36753, 39, 0, 36778, 40, 4, 36913, 42, 149, 37063, 43, 210, 37137, 43, 214, 37161, 43, 218, 37330, 43, 235, 37444, 41, 235, 37570, 2, 227, 37695 ]
+            ],
+            "curvesBox": [ 0, 0, 43, 235 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 358.5, 1702 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "72jne11z7fnl",
+            "box": [ 539.5, 1705, 803.5, 1747 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 42, 37695, 0, 40, 37792, 0, 1, 37891, 2, 0, 38067, 131, 4, 38134, 246, 4, 38232, 258, 2, 38283, 264, 3, 38384, 264, 5, 38516, 264, 28, 38624 ]
+            ],
+            "curvesBox": [ 0, 0, 264, 42 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 539.5, 1705 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "93yl8a11zpqtp",
+            "box": [ 539.5, 1781, 848.5, 1822 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 38624, 0, 3, 38728, 0, 33, 38795, 0, 37, 38820, 2, 38, 38961, 25, 37, 38994, 101, 37, 39027, 228, 41, 39068, 301, 41, 39126, 308, 41, 39161, 309, 39, 39395, 307, 19, 39461, 307, 15, 39504 ]
+            ],
+            "curvesBox": [ 0, 0, 309, 41 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 539.5, 1781 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lw3yt611zei2z",
+            "box": [ 981.5, 1689, 1029.5, 1930 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 1, 39504, 7, 1, 39614, 42, 0, 39681, 48, 0, 39730, 48, 5, 39856, 44, 19, 39890, 39, 60, 39922, 39, 166, 39995, 38, 205, 40066, 37, 240, 40164, 33, 241, 40264, 9, 238, 40331, 3, 238, 40381 ]
+            ],
+            "curvesBox": [ 0, 0, 48, 241 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 981.5, 1689 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8vurqy11zskqz",
+            "box": [ 890.5, 1707, 924.5, 1915 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 10, 0, 40381, 14, 0, 40459, 33, 0, 40543, 34, 3, 40743, 32, 162, 40898, 29, 180, 40943, 28, 204, 41189, 26, 208, 41252, 2, 206, 41385, 0, 206, 41409 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 208 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 890.5, 1707 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q6bgmy11zsjrd",
+            "box": [ 443.5, 1719, 502.5, 1936 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 1, 41409, 2, 1, 41489, 58, 0, 41597, 59, 2, 41839, 56, 17, 41872, 54, 114, 41941, 55, 194, 42014, 55, 204, 42071, 54, 215, 42188, 52, 216, 42314, 27, 217, 42397, 23, 217, 42430 ]
+            ],
+            "curvesBox": [ 0, 0, 59, 217 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 443.5, 1719 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v47unu11zk2dk",
+            "box": [ 551.5, 1825, 887.5, 1910 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 28, 42430, 0, 32, 42517, 0, 79, 42583, 0, 85, 42624, 12, 80, 42691, 57, 67, 42717, 151, 59, 42751, 245, 59, 42784, 303, 63, 42817, 334, 63, 42884, 336, 63, 43008, 336, 60, 43092, 329, 14, 43159, 327, 0, 43217 ]
+            ],
+            "curvesBox": [ 0, 0, 336, 85 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 551.5, 1825 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyyuwq129ib66",
+            "box": [ 321.5, 1667, 366.5, 2005 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 45, 1, 43217, 0, 0, 43354, 1, 4, 43478, 4, 60, 43553, 4, 248, 43632, 6, 306, 43671, 8, 327, 43704, 9, 335, 43779, 11, 338, 43879, 36, 336, 43954, 42, 336, 43996 ]
+            ],
+            "curvesBox": [ 0, 0, 45, 338 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 321.5, 1667 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dij20q129ba4g",
+            "box": [ 244.5, 1745, 278.5, 2005 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 5, 0, 43996, 7, 0, 44117, 32, 0, 44184, 34, 0, 44209, 34, 2, 44438, 28, 40, 44482, 26, 161, 44554, 26, 242, 44657, 29, 259, 44726, 27, 260, 44868, 4, 255, 44935, 0, 255, 44960 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 260 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 244.5, 1745 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qodk3e1298ge8",
+            "box": [ 240.5, 2248, 274.5, 2282 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 34, 44960, 2, 32, 45064, 22, 7, 45114, 27, 0, 45156, 19, 3, 45272, 16, 5, 45497, 29, 22, 45638, 34, 27, 45681 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 34 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 240.5, 2248 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "9ksmy1299vk1",
+            "box": [ 359.5, 2227, 373.5, 2250 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 6, 23, 45681, 7, 20, 45792, 12, 10, 45849, 10, 2, 45959, 6, 0, 46033, 0, 8, 46117, 1, 12, 46192, 13, 17, 46275, 14, 19, 46400 ]
+            ],
+            "curvesBox": [ 0, 0, 14, 23 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 359.5, 2227 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4ma0hm129fif7",
+            "box": [ 477.5, 2237, 509.5, 2252 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 20, 0, 46400, 20, 2, 46503, 10, 13, 46570, 6, 13, 46620, 0, 1, 46712, 2, 2, 46770, 29, 12, 46844, 31, 13, 46862, 32, 15, 46961 ]
+            ],
+            "curvesBox": [ 0, 0, 32, 15 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 477.5, 2237 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "13yldru129gwsl",
+            "box": [ 586.5, 2233, 616.5, 2255 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 30, 0, 46961, 28, 1, 47067, 5, 19, 47133, 1, 21, 47157, 0, 17, 47266, 2, 14, 47333, 14, 14, 47382, 28, 22, 47458 ]
+            ],
+            "curvesBox": [ 0, 0, 30, 22 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 586.5, 2233 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lu8t16129gvt0",
+            "box": [ 689.5, 2222, 722.5, 2255 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 6, 33, 47458, 6, 30, 47604, 18, 0, 47677, 16, 1, 47779, 0, 7, 47870, 1, 10, 47979, 31, 30, 48045, 33, 32, 48062 ]
+            ],
+            "curvesBox": [ 0, 0, 33, 33 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 689.5, 2222 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dj5csa12jrq4t",
+            "box": [ 821.5, 2220, 840.5, 2262 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 42, 0, 4, 40, 76, 9, 29, 118, 10, 10, 210, 8, 1, 251, 4, 0, 319, 5, 4, 436, 14, 20, 526, 18, 23, 818, 19, 25, 877 ]
+            ],
+            "curvesBox": [ 0, 0, 19, 42 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 821.5, 2220 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hds7p612jngue",
+            "box": [ 726.5, 2320, 756.5, 2345 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 17, 0, 877, 17, 4, 972, 12, 17, 1006, 5, 24, 1047, 0, 24, 1105, 4, 18, 1256, 28, 22, 1331, 30, 23, 1356, 30, 25, 1438 ]
+            ],
+            "curvesBox": [ 0, 0, 30, 25 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 726.5, 2320 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1um4fsq12jrpj6",
+            "box": [ 488.5, 2308, 520.5, 2332 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 32, 0, 1438, 32, 3, 1523, 12, 23, 1590, 8, 24, 1615, 1, 15, 1698, 0, 7, 1789, 20, 6, 1881, 24, 7, 1907, 26, 10, 1965, 28, 10, 2098 ]
+            ],
+            "curvesBox": [ 0, 0, 32, 24 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 488.5, 2308 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyzapm12j9fcw",
+            "box": [ 348.5, 2288, 386.5, 2312 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 19, 0, 2098, 19, 2, 2178, 7, 23, 2260, 5, 19, 2369, 0, 6, 2435, 5, 6, 2577, 34, 21, 2643, 38, 24, 2694 ]
+            ],
+            "curvesBox": [ 0, 0, 38, 24 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 348.5, 2288 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hrhrzu12j9g5l",
+            "box": [ 251.5, 2305, 284.5, 2336 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 6, 2694, 2, 7, 2805, 29, 24, 2885, 32, 27, 2918, 32, 24, 3002, 32, 11, 3035, 33, 0, 3093, 33, 4, 3202, 13, 26, 3277, 9, 31, 3318 ]
+            ],
+            "curvesBox": [ 0, 0, 33, 31 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 251.5, 2305 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8zlpfe12jf3t7",
+            "box": [ 379.5, 2320, 413.5, 2357 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 22, 3318, 30, 22, 3496, 34, 22, 3613, 31, 2, 3730, 30, 0, 3746, 29, 2, 3947, 13, 33, 4037, 11, 37, 4140 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 37 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 379.5, 2320 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyd9fe12jc9hj",
+            "box": [ 585.5, 2321, 626.5, 2377 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 4140, 3, 3, 4259, 36, 33, 4333, 41, 38, 4366, 41, 36, 4485, 41, 20, 4583, 37, 22, 4740, 7, 52, 4808, 3, 56, 4833 ]
+            ],
+            "curvesBox": [ 0, 0, 41, 56 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 585.5, 2321 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hs4ovu12joy6e",
+            "box": [ 211.5, 2549, 416.5, 2622 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 1, 71, 4833, 0, 73, 4861, 3, 72, 4980, 86, 37, 5037, 144, 16, 5103, 188, 2, 5203, 196, 0, 5261, 193, 0, 5361, 159, 0, 5503, 162, 0, 5644, 204, 1, 5828, 205, 3, 5878, 203, 3, 6179, 175, 23, 6295 ]
+            ],
+            "curvesBox": [ 0, 0, 205, 73 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 211.5, 2549 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4mx3p612jqa68",
+            "box": [ 440.5, 2584, 612.5, 2664 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 80, 6295, 4, 79, 6374, 106, 37, 6439, 145, 18, 6477, 160, 9, 6520, 166, 7, 6559, 167, 5, 6623, 157, 2, 6715, 138, 1, 6815, 142, 1, 6940, 165, 0, 7007, 170, 2, 7040, 172, 5, 7116, 157, 28, 7206, 151, 32, 7290, 140, 4, 7415 ]
+            ],
+            "curvesBox": [ 0, 0, 172, 80 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 440.5, 2584 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qs3yt612tiups",
+            "box": [ 653.5, 2625, 769.5, 2678 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 44, 7415, 2, 44, 7510, 34, 33, 7543, 81, 21, 7577, 116, 20, 7652, 115, 18, 7785, 97, 9, 7827, 73, 2, 7869, 50, 0, 7910, 41, 0, 7960, 43, 0, 8110, 64, 0, 8143, 92, 8, 8177, 106, 15, 8210, 115, 18, 8302, 114, 20, 8418, 88, 44, 8510, 75, 53, 8777 ]
+            ],
+            "curvesBox": [ 0, 0, 116, 53 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 653.5, 2625 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cxc8hm12tg3cy",
+            "box": [ 568, 2774, 714, 2841 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 146, 38, 8777, 144, 38, 8851, 28, 38, 8951, 4, 40, 8988, 2, 40, 9009, 7, 36, 9101, 49, 2, 9171, 53, 0, 9200, 51, 1, 9284, 20, 16, 9359, 0, 29, 9434, 2, 30, 9517, 22, 39, 9550, 58, 66, 9634, 60, 67, 9676 ]
+            ],
+            "curvesBox": [ 0, 0, 146, 67 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 568, 2774 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v7xtkq12tafig",
+            "box": [ 301, 2800, 431, 2842 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 130, 23, 9676, 126, 23, 9829, 45, 21, 9896, 2, 21, 9987, 0, 19, 10146, 2, 15, 10190, 15, 5, 10231, 26, 1, 10288, 30, 0, 10463, 34, 1, 10504, 44, 22, 10588, 45, 34, 10671, 45, 36, 10871, 43, 42, 10946, 39, 40, 11038, 9, 18, 11113, 5, 15, 11137 ]
+            ],
+            "curvesBox": [ 0, 0, 130, 42 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 301, 2800 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9tf5m12tbu9z",
+            "box": [ 194.5, 2695, 380.5, 2774 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 18, 11137, 6, 16, 11190, 80, 16, 11241, 173, 35, 11318, 175, 35, 11329, 174, 37, 11516, 160, 55, 11545, 144, 69, 11571, 126, 79, 11632, 125, 77, 11774, 134, 0, 11923, 136, 1, 12101, 169, 26, 12173, 181, 37, 12206, 186, 42, 12273 ]
+            ],
+            "curvesBox": [ 0, 0, 186, 79 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 194.5, 2695 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hsqtbu12t69l5",
+            "box": [ 475.5, 2702, 640.5, 2773 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 38, 12273, 5, 38, 12376, 155, 39, 12486, 161, 39, 12517, 158, 40, 12634, 112, 53, 12686, 67, 70, 12743, 65, 71, 12758, 75, 69, 12824, 106, 60, 12858, 161, 36, 12925, 165, 33, 12950, 151, 29, 13033, 127, 15, 13066, 113, 4, 13099, 106, 0, 13142 ]
+            ],
+            "curvesBox": [ 0, 0, 165, 71 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 475.5, 2702 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "htddkq12thgqz",
+            "box": [ 769.5, 2707, 950.5, 2769 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 35, 13142, 7, 35, 13253, 135, 32, 13321, 181, 32, 13386, 179, 32, 13504, 166, 32, 13531, 144, 41, 13553, 118, 62, 13620, 122, 59, 13695, 169, 25, 13761, 176, 20, 13795, 173, 19, 13903, 106, 0, 14028 ]
+            ],
+            "curvesBox": [ 0, 0, 181, 62 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 769.5, 2707 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyzqii12trapu",
+            "box": [ 796.5, 2576, 972.5, 2652 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 176, 43, 14028, 172, 43, 14096, 33, 43, 14181, 3, 43, 14241, 5, 41, 14312, 50, 18, 14353, 77, 0, 14404, 74, 1, 14487, 0, 46, 14620, 0, 48, 14680, 74, 75, 14786, 76, 76, 14803 ]
+            ],
+            "curvesBox": [ 0, 0, 176, 76 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 796.5, 2576 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cwpo8q133h2it",
+            "box": [ 105.5, 2622, 383.5, 2767 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 145, 14803, 2, 141, 14956, 45, 92, 15023, 67, 76, 15039, 96, 61, 15055, 218, 25, 15122, 271, 11, 15189, 278, 11, 15247, 276, 10, 15347, 229, 0, 15497, 235, 0, 15581, 250, 3, 15614, 268, 14, 15680, 274, 16, 15755, 266, 26, 15822, 238, 45, 15888, 234, 48, 15930 ]
+            ],
+            "curvesBox": [ 0, 0, 278, 145 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 105.5, 2622 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1undkai1337956",
+            "box": [ 310.5, 3100, 507.5, 3189 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 84, 4, 15930, 76, 4, 16025, 42, 6, 16092, 21, 15, 16125, 8, 24, 16158, 2, 32, 16200, 0, 42, 16243, 1, 56, 16283, 7, 66, 16317, 18, 73, 16351, 39, 81, 16387, 72, 87, 16428, 141, 89, 16527, 180, 82, 16585, 194, 75, 16648, 197, 64, 16708, 197, 54, 16742, 184, 35, 16817, 167, 20, 16909, 130, 9, 17074, 113, 3, 17149, 94, 1, 17216, 85, 0, 17275, 71, 5, 17333 ]
+            ],
+            "curvesBox": [ 0, 0, 197, 89 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 310.5, 3100 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4m9xbu133qvbi",
+            "box": [ 697.5, 3128, 848.5, 3198 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 80, 0, 17333, 76, 0, 17410, 37, 2, 17494, 12, 12, 17560, 4, 18, 17594, 0, 25, 17619, 3, 51, 17686, 15, 60, 17719, 30, 66, 17753, 64, 70, 17819, 91, 70, 17885, 127, 63, 18024, 139, 57, 18091, 146, 51, 18195, 151, 43, 18286, 151, 34, 18377, 136, 16, 18503, 119, 7, 18586, 109, 3, 18653, 92, 2, 18805, 73, 1, 18885 ]
+            ],
+            "curvesBox": [ 0, 0, 151, 70 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 697.5, 3128 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1utmnsq1335tl8",
+            "box": [ 926.5, 3070, 1003.5, 3238 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 6, 34, 18885, 6, 36, 18954, 0, 64, 19020, 0, 136, 19154, 19, 166, 19242, 35, 168, 19285, 52, 166, 19326, 62, 159, 19362, 72, 138, 19429, 77, 113, 19496, 76, 61, 19629, 65, 20, 19769, 58, 11, 19820, 40, 2, 19895, 21, 0, 19987, 9, 16, 20061, 4, 29, 20136 ]
+            ],
+            "curvesBox": [ 0, 0, 77, 168 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 926.5, 3070 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hri4my1335tzf",
+            "box": [ 581.5, 3056, 667.5, 3218 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 5, 27, 20136, 1, 38, 20219, 0, 120, 20353, 0, 134, 20386, 6, 147, 20420, 17, 155, 20455, 43, 161, 20494, 51, 162, 20514, 63, 155, 20555, 84, 117, 20662, 86, 99, 20728, 76, 69, 20795, 69, 35, 20862, 65, 16, 20945, 59, 7, 21004, 38, 0, 21086, 28, 1, 21137, 10, 14, 21237, 6, 24, 21287, 6, 34, 21311 ]
+            ],
+            "curvesBox": [ 0, 0, 86, 162 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 581.5, 3056 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q8tmgq133o45o",
+            "box": [ 101.5, 3169, 311.5, 3253 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 133, 0, 21311, 131, 0, 21388, 28, 3, 21522, 18, 9, 21564, 2, 33, 21636, 0, 42, 21672, 0, 46, 21689, 13, 58, 21730, 40, 72, 21764, 73, 80, 21797, 102, 84, 21831, 132, 84, 21864, 173, 73, 21932, 208, 59, 22068, 210, 54, 22106, 197, 31, 22189, 188, 20, 22222, 163, 8, 22288, 138, 2, 22356, 101, 0, 22472 ]
+            ],
+            "curvesBox": [ 0, 0, 210, 84 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 101.5, 3169 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q8tssa133h2bo",
+            "box": [ 372.5, 3221, 612.5, 3323 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 182, 5, 22472, 179, 5, 22549, 119, 0, 22615, 76, 0, 22648, 45, 7, 22683, 7, 26, 22767, 0, 35, 22818, 1, 53, 22865, 15, 71, 22898, 38, 87, 22932, 59, 95, 22949, 100, 102, 22982, 174, 102, 23049, 198, 101, 23082, 227, 92, 23160, 238, 84, 23209, 240, 78, 23242, 228, 49, 23327, 215, 36, 23391, 176, 14, 23532, 168, 12, 23565, 156, 15, 23598 ]
+            ],
+            "curvesBox": [ 0, 0, 240, 102 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 372.5, 3221 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18n4ttm13dgnwh",
+            "box": [ 862.5, 3132, 914.5, 3310 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 10, 17, 23598, 8, 22, 23665, 2, 44, 23699, 0, 121, 23765, 0, 163, 23841, 7, 172, 23892, 20, 178, 23933, 30, 177, 23957, 40, 165, 23990, 47, 148, 24024, 51, 122, 24091, 51, 82, 24224, 52, 37, 24374, 50, 26, 24407, 45, 16, 24441, 35, 5, 24499, 15, 0, 24590, 5, 4, 24630, 1, 7, 24657, 0, 11, 24724 ]
+            ],
+            "curvesBox": [ 0, 0, 52, 178 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 862.5, 3132 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dhwuey13dnpqg",
+            "box": [ 111.5, 3048, 185.5, 3160 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 10, 11, 25685, 8, 20, 25762, 3, 36, 25796, 0, 87, 25863, 0, 103, 25938, 18, 108, 26021, 29, 111, 26056, 47, 112, 26094, 62, 103, 26130, 69, 88, 26163, 74, 39, 26297, 72, 17, 26388, 56, 1, 26471, 34, 0, 26543, 11, 10, 26655 ]
+            ],
+            "curvesBox": [ 0, 0, 74, 112 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 111.5, 3048 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v7blyy13df951",
+            "box": [ 103.5, 3264, 291.5, 3349 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 132, 5, 26655, 128, 5, 26735, 70, 3, 26802, 16, 0, 26868, 5, 6, 26901, 0, 18, 26934, 3, 55, 27001, 14, 71, 27035, 24, 78, 27043, 72, 85, 27110, 103, 83, 27143, 159, 75, 27224, 182, 71, 27301, 188, 65, 27368, 187, 55, 27402, 170, 31, 27469, 155, 15, 27535, 135, 8, 27626, 118, 1, 27718, 111, 1, 27759 ]
+            ],
+            "curvesBox": [ 0, 0, 188, 85 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 103.5, 3264 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qbxtkq13d6vid",
+            "box": [ 672.5, 3234, 824.5, 3302 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 101, 12, 27759, 93, 10, 27822, 62, 3, 27856, 7, 0, 27924, 1, 6, 27957, 0, 31, 28024, 2, 47, 28073, 27, 55, 28115, 92, 67, 28190, 129, 68, 28257, 138, 66, 28291, 148, 60, 28348, 152, 50, 28394, 149, 34, 28439, 143, 25, 28473, 133, 17, 28506, 110, 9, 28539, 70, 6, 28612, 52, 0, 28675 ]
+            ],
+            "curvesBox": [ 0, 0, 152, 68 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 672.5, 3234 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1utls6y13nj1tu",
+            "box": [ 259.5, 3509, 265.5, 3515 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 2, 1, 0, 0, 5, 130, 6, 6, 263, 5, 0, 380 ]
+            ],
+            "curvesBox": [ 0, 0, 6, 6 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 259.5, 3509 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d0gflm13nkglc",
+            "box": [ 346.5, 3515, 355.5, 3524 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 4, 0, 380, 3, 2, 468, 0, 9, 518, 2, 9, 652, 6, 8, 701, 9, 2, 792, 7, 1, 992 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 9 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 346.5, 3515 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hx3it613nnbpq",
+            "box": [ 428.5, 3521, 439.5, 3527 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 5, 1, 992, 1, 2, 1093, 0, 4, 1109, 2, 6, 1235, 9, 6, 1285, 11, 3, 1560, 9, 0, 1626 ]
+            ],
+            "curvesBox": [ 0, 0, 11, 6 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 428.5, 3521 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lylloa13n50y4",
+            "box": [ 529.5, 3525, 538.5, 3533 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 3, 2, 1626, 0, 4, 1721, 2, 6, 1854, 6, 8, 1929, 9, 5, 2071, 7, 1, 2228, 5, 0, 2254 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 8 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 529.5, 3525 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qv8ovu13nanlt",
+            "box": [ 611.5, 3529, 623.5, 3537 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 9, 0, 2254, 7, 0, 2392, 3, 1, 2426, 0, 5, 2475, 8, 8, 2617, 12, 7, 2726, 12, 3, 2784 ]
+            ],
+            "curvesBox": [ 0, 0, 12, 8 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 611.5, 3529 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4nisca13ndhxl",
+            "box": [ 698.5, 3539, 707.5, 3545 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 3, 0, 2784, 1, 0, 2904, 0, 4, 3012, 8, 6, 3262, 9, 4, 3388, 7, 0, 3445 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 6 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 698.5, 3539 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v62kmy13nq2vi",
+            "box": [ 264.5, 3555, 281.5, 3567 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 3, 0, 3445, 3, 2, 3558, 0, 9, 3616, 4, 10, 3716, 17, 12, 3798, 15, 12, 3919, 9, 4, 4008, 7, 3, 4057 ]
+            ],
+            "curvesBox": [ 0, 0, 17, 12 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 264.5, 3555 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4haayi13n6fib",
+            "box": [ 359.5, 3570, 377.5, 3575 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 5, 1, 4057, 5, 5, 4161, 9, 5, 4318, 17, 4, 4401, 18, 2, 4502, 10, 0, 4652, 0, 4, 4735 ]
+            ],
+            "curvesBox": [ 0, 0, 18, 5 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 359.5, 3570 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1uomv3u13nc35u",
+            "box": [ 448.5, 3574, 459.5, 3584 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 11, 0, 4735, 7, 2, 4812, 0, 10, 4871, 7, 8, 5029, 9, 0, 5171 ]
+            ],
+            "curvesBox": [ 0, 0, 11, 10 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 448.5, 3574 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hbb0my13neuiz",
+            "box": [ 561.5, 3581, 570.5, 3598 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 2, 6, 5171, 0, 7, 5319, 2, 15, 5426, 6, 17, 5501, 9, 1, 5710, 5, 0, 5793, 1, 3, 5826 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 17 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 561.5, 3581 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mb2kfu13nj287",
+            "box": [ 221.5, 3892, 397.5, 4056 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 47, 10, 5826, 38, 10, 5879, 25, 16, 5919, 8, 31, 5953, 1, 46, 5987, 0, 69, 6019, 4, 95, 6042, 23, 125, 6078, 46, 146, 6112, 70, 160, 6146, 89, 164, 6163, 107, 163, 6179, 128, 153, 6202, 146, 137, 6238, 169, 106, 6296, 175, 85, 6337, 176, 74, 6371, 171, 58, 6405, 154, 34, 6470, 119, 6, 6570, 100, 2, 6617, 73, 0, 6705, 45, 1, 6776, 21, 21, 6829 ]
+            ],
+            "curvesBox": [ 0, 0, 176, 164 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 221.5, 3892 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "94m12y13n99u7",
+            "box": [ 518.5, 3917, 664.5, 4053 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 70, 1, 6829, 33, 1, 6932, 25, 5, 6950, 15, 16, 6965, 7, 31, 6982, 0, 62, 7015, 0, 101, 7066, 3, 108, 7083, 18, 120, 7115, 45, 131, 7149, 69, 136, 7182, 91, 136, 7207, 113, 128, 7241, 125, 114, 7275, 143, 74, 7342, 146, 65, 7374, 145, 55, 7425, 137, 37, 7491, 126, 21, 7558, 109, 4, 7641, 88, 0, 7732, 64, 0, 7808 ]
+            ],
+            "curvesBox": [ 0, 0, 146, 136 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 518.5, 3917 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1urqcxm13xo93b",
+            "box": [ 795.5, 3916, 924.5, 4042 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 58, 4, 7808, 60, 3, 7896, 85, 0, 7962, 99, 3, 7995, 114, 12, 8029, 123, 25, 8062, 129, 54, 8130, 128, 87, 8196, 124, 97, 8229, 115, 103, 8279, 77, 121, 8346, 59, 126, 8379, 45, 125, 8413, 20, 106, 8479, 5, 86, 8546, 0, 74, 8588, 0, 44, 8687, 11, 26, 8780, 28, 13, 8887, 61, 8, 9063 ]
+            ],
+            "curvesBox": [ 0, 0, 129, 126 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 795.5, 3916 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hrh91613xmubn",
+            "box": [ 648.5, 4012, 782.5, 4129 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 47, 9, 9063, 51, 7, 9143, 77, 0, 9218, 112, 18, 9284, 122, 23, 9326, 129, 35, 9377, 134, 68, 9442, 131, 80, 9476, 114, 103, 9547, 109, 108, 9577, 65, 116, 9668, 27, 117, 9770, 15, 113, 9808, 2, 87, 9876, 0, 67, 9944, 5, 44, 10010, 9, 34, 10060, 20, 24, 10126, 38, 16, 10194, 50, 11, 10293 ]
+            ],
+            "curvesBox": [ 0, 0, 134, 117 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 648.5, 4012 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "7p3wa13xiole",
+            "box": [ 376.5, 4017, 491.5, 4127 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 32, 21, 10293, 16, 27, 10329, 5, 38, 10363, 0, 51, 10396, 2, 73, 10463, 33, 104, 10546, 51, 110, 10579, 73, 110, 10613, 88, 103, 10646, 100, 93, 10679, 115, 68, 10754, 115, 41, 10821, 112, 17, 10888, 101, 8, 10946, 81, 1, 11021, 55, 0, 11122, 35, 11, 11187, 25, 17, 11254, 22, 21, 11280 ]
+            ],
+            "curvesBox": [ 0, 0, 115, 110 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 376.5, 4017 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qqvgfu13x8vm4",
+            "box": [ 95.5, 4001, 229.5, 4126 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 53, 4, 11280, 49, 4, 11359, 40, 5, 11376, 20, 16, 11410, 6, 27, 11443, 1, 39, 11477, 0, 73, 11544, 5, 89, 11577, 17, 106, 11617, 40, 120, 11650, 67, 125, 11685, 87, 124, 11718, 102, 118, 11751, 124, 102, 11818, 131, 83, 11885, 134, 53, 11952, 134, 41, 11985, 131, 31, 12018, 112, 12, 12093, 101, 4, 12143, 81, 0, 12218, 55, 1, 12285, 34, 2, 12368, 29, 5, 12393 ]
+            ],
+            "curvesBox": [ 0, 0, 134, 125 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 95.5, 4001 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4js45613x61vq",
+            "box": [ 404.5, 3844, 554.5, 3974 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 67, 0, 12393, 70, 0, 12493, 92, 0, 12533, 134, 12, 12601, 141, 20, 12651, 150, 64, 12718, 150, 90, 12750, 145, 101, 12767, 130, 115, 12801, 108, 123, 12834, 60, 130, 12900, 50, 130, 12917, 32, 122, 12951, 17, 111, 12984, 6, 94, 13018, 1, 74, 13050, 0, 45, 13117, 9, 22, 13192, 17, 13, 13242, 25, 8, 13284, 70, 3, 13417 ]
+            ],
+            "curvesBox": [ 0, 0, 150, 130 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 404.5, 3844 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "9kyyi13xk2de",
+            "box": [ 627.5, 3828, 794.5, 3964 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 57, 8, 13417, 59, 9, 13510, 77, 3, 13544, 105, 0, 13577, 126, 2, 13611, 141, 13, 13644, 154, 32, 13678, 163, 50, 13711, 167, 71, 13777, 163, 85, 13810, 141, 110, 13848, 117, 122, 13885, 93, 127, 13919, 58, 135, 13985, 41, 136, 14019, 34, 130, 14036, 4, 72, 14102, 0, 61, 14135, 2, 48, 14198, 15, 32, 14257, 30, 17, 14300, 43, 9, 14346, 81, 5, 14476 ]
+            ],
+            "curvesBox": [ 0, 0, 167, 136 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 627.5, 3828 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v8ktmi13xa8lr",
+            "box": [ 890.5, 3840, 999.5, 3957 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 68, 1, 14476, 46, 0, 14546, 28, 3, 14579, 11, 18, 14613, 4, 29, 14630, 0, 52, 14663, 0, 70, 14697, 6, 86, 14730, 19, 103, 14764, 37, 115, 14806, 54, 117, 14839, 69, 113, 14872, 83, 105, 14906, 99, 84, 14973, 109, 66, 15047, 109, 51, 15089, 95, 27, 15155, 74, 4, 15222, 65, 0, 15263, 51, 1, 15322 ]
+            ],
+            "curvesBox": [ 0, 0, 109, 117 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 890.5, 3840 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hx4eey13xinm1",
+            "box": [ 920.5, 3979, 1056.5, 4105 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 49, 10, 15322, 41, 9, 15401, 33, 10, 15435, 27, 14, 15450, 10, 40, 15484, 0, 75, 15517, 1, 97, 15550, 16, 112, 15583, 42, 122, 15617, 71, 126, 15651, 98, 124, 15684, 119, 110, 15717, 130, 97, 15750, 136, 73, 15817, 135, 53, 15884, 127, 41, 15917, 83, 5, 16050, 64, 0, 16151, 46, 1, 16292, 45, 3, 16334 ]
+            ],
+            "curvesBox": [ 0, 0, 136, 126 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 920.5, 3979 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mcwuffzrhr7t",
+            "box": [ 148.5, 4400, 452.5, 4446 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 28, 16334, 2, 27, 16540, 19, 16, 16613, 33, 9, 16646, 65, 7, 16721, 117, 17, 16857, 133, 20, 16892, 166, 20, 16975, 176, 18, 17028, 187, 6, 17083, 189, 0, 17165, 189, 2, 17315, 189, 10, 17388, 201, 17, 17462, 282, 16, 17596, 301, 16, 17696, 304, 19, 17788, 304, 46, 17913 ]
+            ],
+            "curvesBox": [ 0, 0, 304, 46 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 148.5, 4400 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "2p4p7zrq4nf",
+            "box": [ 583.5, 4383, 819.5, 4465 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 2, 74, 17913, 1, 71, 18042, 0, 34, 18108, 1, 24, 18142, 12, 20, 18174, 47, 23, 18242, 70, 29, 18275, 95, 31, 18308, 116, 29, 18341, 142, 19, 18408, 161, 6, 18475, 164, 0, 18549, 162, 3, 18692, 157, 25, 18767, 158, 29, 18792, 162, 31, 18817, 231, 32, 18917, 235, 33, 18950, 236, 37, 19059, 236, 73, 19433, 236, 82, 19492 ]
+            ],
+            "curvesBox": [ 0, 0, 236, 82 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 583.5, 4383 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dcwydnzrki6m",
+            "box": [ 132.5, 4459, 425.5, 4526 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 293, 67, 19492, 293, 64, 19604, 292, 37, 19695, 288, 26, 19762, 280, 22, 19804, 235, 28, 19937, 193, 30, 20070, 174, 25, 20145, 154, 8, 20253, 149, 0, 20321, 150, 4, 20520, 152, 12, 20620, 146, 20, 20704, 130, 26, 20795, 91, 28, 20945, 67, 26, 21012, 29, 27, 21145, 19, 28, 21195, 3, 39, 21321, 0, 53, 21512 ]
+            ],
+            "curvesBox": [ 0, 0, 293, 67 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 132.5, 4459 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8yz4zvzrhq15",
+            "box": [ 492.5, 4482, 688.5, 4531 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 196, 46, 21512, 196, 43, 21787, 195, 28, 21879, 177, 26, 22020, 157, 25, 22103, 138, 28, 22204, 118, 23, 22303, 99, 10, 22428, 90, 0, 22587, 89, 2, 22796, 88, 10, 22903, 78, 15, 22978, 61, 15, 23061, 25, 22, 23244, 6, 33, 23353, 2, 37, 23404, 0, 49, 23553 ]
+            ],
+            "curvesBox": [ 0, 0, 196, 49 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 492.5, 4482 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1haojd7zrgavg",
+            "box": [ 122.5, 4550, 391.5, 4617 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 23553, 1, 27, 23724, 13, 33, 23757, 89, 41, 23890, 109, 42, 23925, 120, 45, 23965, 141, 63, 24038, 145, 66, 24083, 147, 67, 24174, 164, 56, 24265, 174, 52, 24316, 221, 52, 24456, 242, 46, 24532, 259, 36, 24615, 267, 29, 24666, 269, 21, 24790 ]
+            ],
+            "curvesBox": [ 0, 0, 269, 67 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 122.5, 4550 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v7c1l7zrgc1y",
+            "box": [ 562.5, 4562, 866.5, 4603 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 24790, 0, 2, 24896, 1, 24, 24962, 9, 35, 25003, 18, 38, 25037, 35, 39, 25070, 99, 29, 25136, 144, 28, 25204, 175, 35, 25271, 184, 38, 25311, 187, 40, 25370, 189, 41, 25528, 199, 24, 25604, 207, 20, 25653, 299, 20, 25987, 304, 14, 26120, 304, 8, 26179 ]
+            ],
+            "curvesBox": [ 0, 0, 304, 41 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 562.5, 4562 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "i0vi8bzrj4lc",
+            "box": [ 923.5, 4392, 973.5, 4594 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 26179, 2, 0, 26300, 33, 0, 26374, 37, 1, 26401, 41, 9, 26458, 47, 33, 26525, 50, 42, 26592, 49, 52, 26634, 28, 89, 26834, 27, 98, 26917, 27, 102, 27084, 30, 105, 27159, 30, 109, 27233, 21, 113, 27275, 15, 120, 27359, 15, 125, 27400, 40, 159, 27508, 42, 168, 27575, 35, 179, 27642, 14, 198, 27736, 8, 202, 27784, 2, 202, 27842 ]
+            ],
+            "curvesBox": [ 0, 0, 50, 202 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 923.5, 4392 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4kdyx7101vd3j",
+            "box": [ 855.5, 4387, 928.5, 4644 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 39, 0, 27842, 37, 0, 27935, 30, 1, 27968, 18, 16, 28000, 13, 33, 28033, 12, 75, 28100, 15, 95, 28185, 6, 105, 28242, 0, 109, 28309, 2, 110, 28551, 11, 113, 28609, 20, 121, 28642, 27, 134, 28676, 33, 182, 28743, 33, 201, 28776, 30, 218, 28876, 32, 227, 28909, 44, 238, 28949, 73, 257, 29037 ]
+            ],
+            "curvesBox": [ 0, 0, 73, 257 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 855.5, 4387 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dkek97101ir66",
+            "box": [ 484.5, 4360, 528.5, 4577 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 0, 29037, 2, 0, 29150, 14, 0, 29184, 29, 6, 29217, 38, 15, 29268, 36, 43, 29350, 27, 72, 29475, 28, 100, 29550, 36, 105, 29609, 44, 103, 29692, 42, 103, 29878, 21, 104, 29950, 10, 108, 29991, 9, 118, 30058, 25, 175, 30191, 31, 194, 30283, 31, 213, 30383, 30, 217, 30417, 22, 217, 30492, 12, 214, 30718 ]
+            ],
+            "curvesBox": [ 0, 0, 44, 217 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 484.5, 4360 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d13caz101sljj",
+            "box": [ 80.5, 4357, 120.5, 4599 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 40, 0, 30718, 36, 0, 30830, 28, 2, 30897, 14, 50, 31029, 13, 88, 31196, 1, 100, 31312, 3, 102, 31592, 6, 113, 31646, 1, 170, 31780, 0, 192, 31855, 7, 210, 31938, 12, 229, 32005, 18, 238, 32047, 23, 242, 32097 ]
+            ],
+            "curvesBox": [ 0, 0, 40, 242 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 80.5, 4357 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "874b101k55a",
+            "box": [ 168.5, 4875, 629.5, 4990 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 13, 32097, 3, 13, 32228, 57, 16, 32261, 122, 32, 32328, 106, 16, 32369, 83, 0, 32419, 77, 0, 32436, 68, 23, 32469, 63, 66, 32502, 63, 86, 32519, 66, 97, 32527, 74, 106, 32536, 86, 112, 32544, 120, 115, 32560, 151, 109, 32577, 190, 91, 32594, 220, 68, 32628, 230, 56, 32661, 233, 56, 32736, 271, 62, 32769, 313, 62, 32802, 325, 60, 32819, 331, 56, 32836, 332, 52, 32843, 326, 46, 32861, 302, 33, 32877, 272, 24, 32894, 220, 20, 32927, 201, 26, 32961, 200, 31, 32986, 242, 58, 33051, 270, 68, 33068, 332, 80, 33085, 384, 82, 33119, 412, 80, 33136, 447, 72, 33202, 461, 72, 33293 ]
+            ],
+            "curvesBox": [ 0, 0, 461, 115 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 168.5, 4875 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dj6kuj101oc95",
+            "box": [ 630.5, 4849, 942.5, 5149 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 256, 25, 33293, 253, 25, 33440, 205, 25, 33506, 188, 23, 33523, 178, 17, 33564, 176, 13, 33582, 178, 7, 33598, 187, 2, 33614, 216, 1, 33640, 240, 13, 33656, 269, 44, 33715, 267, 35, 33764, 260, 23, 33780, 233, 2, 33814, 217, 0, 33831, 198, 2, 33847, 180, 16, 33864, 165, 33, 33880, 154, 63, 33914, 153, 70, 33922, 159, 80, 33939, 188, 87, 33972, 206, 88, 34006, 179, 88, 34030, 134, 92, 34047, 40, 110, 34083, 0, 113, 34122, 0, 107, 34139, 12, 92, 34172, 26, 87, 34189, 47, 89, 34214, 73, 113, 34234, 102, 146, 34272, 120, 159, 34306, 126, 157, 34323, 128, 137, 34339, 129, 131, 34399, 133, 128, 34405, 141, 128, 34413, 157, 136, 34423, 181, 158, 34430, 250, 250, 34463, 289, 294, 34491, 301, 300, 34514, 308, 299, 34531, 311, 288, 34547, 312, 250, 34581, 308, 232, 34623 ]
+            ],
+            "curvesBox": [ 0, 0, 312, 300 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 630.5, 4849 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1g3d710bs4xv",
+            "box": [ 176.5, 5070, 511.5, 5196 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 30, 1, 34623, 30, 7, 34783, 22, 112, 34852, 20, 126, 34900, 20, 119, 34919, 26, 78, 34940, 40, 26, 34985, 45, 17, 35017, 50, 13, 35032, 61, 13, 35057, 73, 20, 35074, 89, 38, 35091, 104, 65, 35125, 108, 78, 35158, 108, 82, 35183, 104, 86, 35208, 84, 92, 35233, 31, 95, 35266, 6, 89, 35299, 0, 80, 35324, 7, 71, 35341, 28, 57, 35357, 55, 45, 35374, 83, 38, 35391, 118, 36, 35424, 127, 37, 35441, 132, 41, 35458, 133, 57, 35509, 131, 64, 35566, 131, 46, 35650, 137, 36, 35666, 151, 23, 35683, 170, 11, 35700, 202, 4, 35732, 211, 5, 35749, 219, 11, 35766, 221, 35, 35840, 224, 40, 35857, 237, 43, 35874, 254, 41, 35890, 298, 21, 35957, 329, 4, 36025, 335, 0, 36058 ]
+            ],
+            "curvesBox": [ 0, 0, 335, 126 ],
+            "itemAiData": {},
+            "topLeft": [ 176.5, 5070 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hefaq310bqryk",
+            "box": [ 484.5, 5022, 822.5, 5220 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 102, 24, 0, 104, 24, 79, 242, 24, 153, 272, 24, 205, 268, 24, 375, 320, 97, 449, 338, 124, 508, 338, 126, 675, 327, 136, 725, 295, 167, 758, 270, 192, 825, 264, 197, 866, 262, 198, 1019, 167, 188, 1099, 119, 184, 1170, 117, 183, 1180, 116, 181, 1360, 91, 166, 1416, 13, 125, 1482, 0, 118, 1541, 2, 116, 1700, 74, 44, 1765, 96, 19, 1801, 114, 2, 1904, 115, 0, 1925, 117, 4, 2049 ]
+            ],
+            "curvesBox": [ 0, 0, 338, 198 ],
+            "itemAiData": {},
+            "topLeft": [ 484.5, 5022 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8z0nf10bco3m",
+            "box": [ 153.5, 5240, 474.5, 5372 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 321, 132, 2049, 321, 126, 2147, 321, 7, 2224, 321, 1, 2244, 319, 0, 2278, 301, 64, 2397, 299, 66, 2405, 285, 52, 2511, 283, 53, 2528, 283, 76, 2602, 268, 75, 2652, 228, 66, 2686, 182, 65, 2753, 178, 63, 2795, 139, 31, 2869, 118, 28, 2903, 65, 40, 2969, 27, 40, 3036, 12, 43, 3078, 0, 46, 3186 ]
+            ],
+            "curvesBox": [ 0, 0, 321, 132 ],
+            "itemAiData": {},
+            "topLeft": [ 153.5, 5240 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18hiq6j10lgh6t",
+            "box": [ 691.5, 5258, 943.5, 5475 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 83, 0, 3186, 85, 0, 3322, 144, 3, 3395, 164, 8, 3453, 168, 11, 3712, 198, 45, 3747, 227, 86, 3766, 246, 118, 3803, 252, 130, 3853, 250, 131, 4172, 231, 152, 4211, 187, 203, 4278, 174, 213, 4311, 165, 217, 4378, 161, 217, 4703, 59, 201, 4778, 3, 196, 4852, 1, 196, 4879, 0, 194, 5120, 41, 72, 5254, 53, 47, 5328, 68, 28, 5395, 75, 13, 5620, 77, 4, 5703 ]
+            ],
+            "curvesBox": [ 0, 0, 252, 217 ],
+            "itemAiData": {},
+            "topLeft": [ 691.5, 5258 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "m7b6rv10lnjey",
+            "box": [ 146.5, 5436, 561.5, 5585 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 415, 0, 5703, 414, 4, 5834, 410, 11, 5857, 377, 29, 5898, 327, 41, 5931, 286, 40, 5961, 272, 30, 5982, 265, 16, 6015, 265, 11, 6032, 274, 6, 6065, 289, 7, 6099, 294, 14, 6115, 295, 34, 6140, 282, 48, 6157, 256, 64, 6174, 229, 74, 6190, 200, 78, 6207, 163, 76, 6241, 149, 67, 6274, 145, 56, 6315, 145, 45, 6340, 157, 27, 6373, 175, 19, 6407, 186, 20, 6440, 190, 28, 6456, 190, 88, 6507, 186, 107, 6523, 176, 129, 6539, 159, 142, 6557, 136, 148, 6573, 107, 149, 6590, 76, 145, 6606, 11, 123, 6672, 2, 120, 6715, 0, 116, 6782 ]
+            ],
+            "curvesBox": [ 0, 0, 415, 149 ],
+            "itemAiData": {},
+            "topLeft": [ 146.5, 5436 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zqw1l710lm5ts",
+            "box": [ 437.5, 5574, 848.5, 5690 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 44, 6782, 2, 44, 7001, 68, 45, 7108, 74, 46, 7143, 76, 44, 7285, 96, 8, 7351, 99, 0, 7384, 101, 2, 7442, 107, 42, 7517, 117, 72, 7584, 119, 73, 7626, 128, 60, 7667, 147, 20, 7733, 149, 16, 7759, 151, 18, 7828, 169, 67, 7910, 171, 73, 7943, 174, 70, 7984, 190, 32, 8051, 195, 22, 8084, 198, 19, 8125, 202, 36, 8270, 207, 46, 8326, 214, 54, 8426, 222, 55, 8502, 232, 35, 8534, 243, 3, 8609, 247, 14, 8693, 269, 102, 8759, 274, 116, 8809, 278, 98, 8901, 299, 59, 8967, 307, 29, 9118, 310, 29, 9218, 315, 34, 9242, 318, 36, 9815, 397, 36, 9951, 411, 34, 10059 ]
+            ],
+            "curvesBox": [ 0, 0, 411, 116 ],
+            "itemAiData": {},
+            "topLeft": [ 437.5, 5574 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v4tfyj10vbvur",
+            "box": [ 173.5, 5326, 298.5, 5478 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 48, 3, 10059, 50, 2, 10182, 85, 0, 10271, 103, 1, 10305, 109, 4, 10339, 97, 11, 10388, 14, 47, 10495, 12, 47, 10514, 14, 47, 10615, 117, 44, 10721, 123, 46, 10764, 120, 47, 10899, 89, 49, 10938, 41, 59, 10972, 5, 73, 11039, 8, 73, 11107, 43, 73, 11147, 81, 76, 11163, 122, 86, 11230, 124, 87, 11248, 119, 88, 11322, 45, 96, 11388, 15, 104, 11429, 10, 106, 11454, 14, 106, 11532, 102, 107, 11605, 125, 104, 11647, 91, 125, 11755, 73, 134, 11788, 15, 148, 11854, 0, 152, 11906 ]
+            ],
+            "curvesBox": [ 0, 0, 125, 152 ],
+            "itemAiData": {},
+            "topLeft": [ 173.5, 5326 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1usdj4b10vojka",
+            "box": [ 542.5, 5250, 674.5, 5392 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 35, 1, 11906, 40, 0, 11994, 123, 1, 12075, 132, 1, 12108, 129, 3, 12150, 88, 10, 12208, 49, 22, 12242, 29, 31, 12291, 31, 32, 12367, 83, 31, 12433, 113, 39, 12500, 119, 40, 12541, 116, 41, 12602, 33, 70, 12674, 6, 79, 12724, 15, 80, 12783, 46, 81, 12816, 77, 86, 12849, 102, 94, 12924, 98, 96, 13043, 19, 127, 13116, 2, 138, 13150, 0, 140, 13166, 2, 141, 13218, 69, 141, 13290, 85, 141, 13324, 93, 142, 13433 ]
+            ],
+            "curvesBox": [ 0, 0, 132, 142 ],
+            "itemAiData": {},
+            "topLeft": [ 542.5, 5250 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1usctu31158p3f",
+            "box": [ 146.5, 5146, 424.5, 5239 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 259, 59, 13433, 255, 59, 13484, 249, 51, 13534, 249, 41, 13551, 260, 18, 13583, 273, 3, 13617, 277, 0, 13642, 278, 6, 13676, 276, 15, 13692, 262, 32, 13709, 249, 42, 13726, 225, 52, 13742, 182, 60, 13775, 162, 59, 13809, 158, 56, 13826, 158, 48, 13859, 174, 39, 13892, 191, 37, 13925, 201, 38, 13967, 200, 74, 14034, 193, 81, 14051, 174, 84, 14084, 158, 80, 14117, 132, 71, 14150, 79, 69, 14217, 58, 63, 14284, 54, 60, 14325, 43, 60, 14392, 3, 71, 14467, 0, 74, 14509, 0, 79, 14534, 13, 90, 14567, 27, 93, 14601, 31, 93, 14617, 34, 85, 14658, 31, 73, 14692, 26, 64, 14751, 30, 63, 14826, 98, 51, 14892, 112, 50, 14934, 115, 72, 15041, 119, 78, 15059, 133, 82, 15091, 146, 78, 15117, 158, 65, 15150, 172, 28, 15217, 188, 6, 15292, 199, 2, 15376 ]
+            ],
+            "curvesBox": [ 0, 0, 278, 93 ],
+            "itemAiData": {},
+            "topLeft": [ 146.5, 5146 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dhxjij115tr7z",
+            "box": [ 184.5, 5609, 334.5, 5756 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 96, 49, 15376, 93, 52, 15462, 91, 72, 15544, 100, 79, 15578, 108, 79, 15611, 116, 73, 15645, 120, 60, 15678, 119, 39, 15728, 113, 35, 15745, 92, 34, 15777, 71, 41, 15811, 62, 48, 15844, 59, 57, 15902, 62, 70, 15936, 83, 85, 15970, 105, 92, 16002, 119, 94, 16035, 123, 90, 16062, 128, 68, 16127, 130, 64, 16153, 129, 58, 16177, 118, 45, 16220, 104, 23, 16286, 95, 18, 16319, 67, 16, 16386, 33, 29, 16453, 27, 38, 16495, 25, 73, 16561, 34, 95, 16594, 49, 111, 16628, 58, 116, 16644, 88, 119, 16677, 114, 117, 16711, 128, 111, 16744, 134, 103, 16778, 147, 69, 16844, 149, 57, 16877, 149, 51, 16894, 130, 11, 16972, 118, 1, 17003, 41, 0, 17137, 21, 5, 17177, 13, 11, 17211, 6, 41, 17279, 1, 57, 17312, 0, 74, 17344, 2, 86, 17361, 15, 109, 17395, 30, 124, 17436, 76, 144, 17487, 92, 147, 17520, 100, 146, 17578, 133, 117, 17652, 150, 99, 17694 ]
+            ],
+            "curvesBox": [ 0, 0, 150, 147 ],
+            "itemAiData": {},
+            "topLeft": [ 184.5, 5609 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cvgmq311fqkg4",
+            "box": [ 418.5, 5695, 590.5, 5842 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 79, 75, 17694, 79, 88, 17837, 95, 89, 17955, 103, 83, 18004, 106, 75, 18063, 90, 59, 18146, 82, 54, 18213, 72, 59, 18254, 58, 76, 18346, 57, 89, 18446, 63, 97, 18479, 84, 103, 18546, 103, 103, 18621, 112, 98, 18671, 118, 89, 18730, 122, 58, 18813, 113, 37, 18879, 108, 33, 18905, 81, 34, 18980, 56, 39, 19046, 44, 44, 19088, 30, 57, 19172, 28, 68, 19213, 50, 111, 19346, 57, 120, 19379, 69, 126, 19413, 86, 128, 19446, 111, 127, 19488, 137, 115, 19538, 163, 91, 19604, 171, 68, 19638, 172, 38, 19711, 156, 24, 19746, 115, 5, 19812, 98, 0, 19846, 58, 0, 19921, 46, 5, 19954, 28, 19, 19988, 5, 54, 20054, 0, 75, 20120, 2, 82, 20146, 28, 120, 20234, 48, 137, 20304, 79, 146, 20371, 100, 147, 20437, 126, 142, 20504, 134, 141, 20597 ]
+            ],
+            "curvesBox": [ 0, 0, 172, 147 ],
+            "itemAiData": {},
+            "topLeft": [ 418.5, 5695 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1uqhxjf11fcgll",
+            "box": [ 757.5, 5751, 969.5, 5824 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 66, 20597, 0, 64, 20744, 0, 35, 20865, 2, 31, 20956, 22, 27, 21023, 52, 27, 21157, 56, 26, 21215, 61, 8, 21323, 61, 2, 21381, 61, 5, 21565, 61, 23, 21657, 63, 31, 21782, 80, 35, 21856, 118, 34, 22007, 137, 30, 22123, 143, 24, 22207, 143, 8, 22324, 145, 0, 22407, 145, 4, 22540, 145, 25, 22657, 155, 29, 22748, 187, 30, 22964, 195, 31, 23015, 201, 35, 23115, 209, 51, 23256, 212, 58, 23456, 212, 73, 23598 ]
+            ],
+            "curvesBox": [ 0, 0, 212, 73 ],
+            "itemAiData": {},
+            "topLeft": [ 757.5, 5751 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "djssgb11fnpc2",
+            "box": [ 199.5, 5782, 414.5, 6004 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 144, 80, 23598, 142, 80, 23691, 128, 80, 23762, 124, 76, 23796, 125, 64, 23830, 135, 47, 23863, 149, 39, 23896, 156, 40, 23912, 164, 61, 23946, 168, 89, 23996, 166, 96, 24013, 145, 112, 24046, 130, 121, 24063, 113, 127, 24079, 82, 130, 24123, 66, 120, 24146, 53, 98, 24179, 52, 77, 24213, 62, 57, 24246, 76, 40, 24280, 112, 14, 24354, 146, 12, 24421, 162, 19, 24454, 176, 35, 24488, 201, 82, 24554, 203, 98, 24587, 194, 115, 24621, 174, 140, 24654, 155, 161, 24680, 120, 188, 24730, 105, 195, 24755, 91, 197, 24788, 71, 195, 24829, 47, 179, 24862, 13, 147, 24930, 5, 132, 24962, 0, 111, 24996, 0, 90, 25071, 34, 48, 25213, 52, 30, 25280, 80, 13, 25347, 95, 7, 25382, 118, 2, 25421, 145, 0, 25477, 171, 13, 25547, 187, 27, 25579, 201, 46, 25612, 208, 65, 25646, 215, 120, 25713, 215, 150, 25779, 197, 180, 25846, 185, 193, 25879, 178, 199, 25896, 148, 211, 25930, 79, 222, 26016, 59, 222, 26130, 55, 220, 26171 ]
+            ],
+            "curvesBox": [ 0, 0, 215, 222 ],
+            "itemAiData": {},
+            "topLeft": [ 199.5, 5782 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lw3saz11psykv",
+            "box": [ 484.5, 5840, 785.5, 5927 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 148, 0, 26171, 151, 1, 26251, 216, 1, 26322, 230, 1, 26365, 232, 2, 26606, 289, 66, 26686, 300, 76, 26723, 301, 78, 26740, 299, 79, 27081, 174, 80, 27189, 133, 85, 27223, 23, 85, 27364, 4, 85, 27464, 0, 87, 27515, 2, 86, 27616, 84, 35, 27756, 112, 19, 27835, 132, 10, 27934, 140, 6, 28031, 144, 4, 28142, 146, 0, 28368 ]
+            ],
+            "curvesBox": [ 0, 0, 301, 87 ],
+            "itemAiData": {},
+            "topLeft": [ 484.5, 5840 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d13lsb11peuq7",
+            "box": [ 741.5, 5894, 1018.5, 6051 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 117, 6, 28368, 117, 8, 28649, 115, 42, 28721, 110, 64, 28754, 100, 82, 28788, 67, 120, 28855, 47, 138, 28888, 35, 146, 28905, 10, 155, 28939, 0, 157, 28972, 3, 157, 29272, 36, 151, 29305, 163, 139, 29375, 216, 131, 29413, 268, 132, 29480, 277, 136, 29538, 275, 136, 29713, 211, 119, 29855, 187, 108, 29922, 168, 82, 29988, 150, 35, 30122, 144, 25, 30155, 125, 12, 30230, 117, 9, 30280, 108, 0, 30388 ]
+            ],
+            "curvesBox": [ 0, 0, 277, 157 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 741.5, 5894 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hjf9qj11p7w26",
+            "box": [ 473.5, 5968, 654.5, 6107 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 110, 13, 30388, 110, 15, 30505, 40, 88, 30655, 22, 108, 30738, 20, 112, 30805, 23, 118, 30838, 33, 125, 30855, 87, 137, 30929, 94, 139, 30963, 93, 135, 31030, 78, 101, 31063, 64, 58, 31096, 51, 34, 31130, 37, 15, 31199, 32, 0, 31262, 30, 1, 31382, 4, 50, 31521, 0, 70, 31588, 0, 74, 31638, 11, 76, 31720, 49, 76, 31754, 107, 72, 31787, 150, 67, 31822, 181, 67, 31912, 178, 67, 32280, 110, 115, 32421, 99, 124, 32505, 99, 122, 32725, 105, 69, 32796, 106, 40, 32880, 106, 19, 32988, 106, 17, 33021 ]
+            ],
+            "curvesBox": [ 0, 0, 181, 139 ],
+            "itemAiData": {},
+            "topLeft": [ 473.5, 5968 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "145fw9711zljin",
+            "box": [ 231.5, 6013, 379.5, 6142 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 12, 46, 33021, 14, 46, 33191, 49, 42, 33229, 128, 40, 33296, 137, 40, 33363, 148, 35, 33454, 146, 35, 33730, 90, 71, 33869, 41, 99, 33939, 27, 108, 33971, 23, 111, 33996, 19, 114, 34096, 0, 125, 34199, 1, 123, 35174, 32, 87, 35347, 97, 22, 35546, 123, 0, 35646, 124, 2, 36933, 118, 40, 37095, 113, 83, 37237, 109, 111, 37304, 109, 129, 37379, 107, 129, 37579, 93, 103, 37679, 71, 54, 37820, 62, 35, 37912, 50, 10, 38154, 47, 7, 38205 ]
+            ],
+            "curvesBox": [ 0, 0, 148, 129 ],
+            "itemAiData": {},
+            "topLeft": [ 231.5, 6013 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyzn6311zd4hy",
+            "box": [ 686.5, 6086, 865.5, 6245 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 58, 38205, 4, 58, 38407, 122, 58, 38509, 162, 51, 38574, 179, 46, 38657, 177, 48, 38933, 156, 67, 38999, 96, 123, 39070, 58, 154, 39136, 52, 159, 39174, 51, 156, 39403, 81, 38, 39567, 95, 0, 39641, 95, 3, 40100, 101, 32, 40174, 114, 75, 40240, 133, 119, 40307, 138, 132, 40340, 145, 152, 40508, 143, 152, 40651, 107, 124, 40723, 81, 103, 40790, 31, 70, 40923, 15, 60, 41033, 7, 58, 41142 ]
+            ],
+            "curvesBox": [ 0, 0, 179, 159 ],
+            "itemAiData": {},
+            "topLeft": [ 686.5, 6086 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qs41sb1298hz8",
+            "box": [ 436.5, 6135, 538.5, 6281 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 1, 0, 41142, 0, 3, 41282, 0, 41, 41386, 2, 49, 41403, 11, 60, 41454, 20, 65, 41486, 55, 70, 41553, 78, 70, 41628, 89, 66, 41687, 98, 57, 41745, 102, 30, 41821, 98, 19, 41862, 79, 6, 41979, 70, 3, 42029, 60, 3, 42069, 51, 10, 42104, 41, 24, 42137, 38, 48, 42192, 37, 101, 42264, 31, 131, 42360, 29, 146, 42512 ]
+            ],
+            "curvesBox": [ 0, 0, 102, 146 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 436.5, 6135 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18i5dl7129co3q",
+            "box": [ 189.5, 6184, 351.5, 6275 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 128, 0, 42512, 128, 2, 42602, 102, 40, 42674, 79, 65, 42707, 58, 79, 42742, 43, 85, 42767, 20, 86, 42816, 4, 76, 42867, 0, 67, 42909, 0, 62, 42924, 13, 42, 42958, 35, 25, 42991, 51, 19, 43024, 65, 19, 43058, 76, 22, 43075, 111, 47, 43141, 152, 82, 43208, 162, 91, 43268 ]
+            ],
+            "curvesBox": [ 0, 0, 162, 91 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 189.5, 6184 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lxzh1n129jpqb",
+            "box": [ 588.5, 6188, 672.5, 6369 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 70, 181, 43268, 67, 178, 43364, 19, 105, 43445, 4, 77, 43494, 1, 69, 43514, 0, 41, 43557, 2, 29, 43568, 13, 11, 43603, 25, 2, 43636, 34, 0, 43669, 43, 2, 43711, 47, 15, 43754, 45, 28, 43786, 34, 45, 43819, 13, 62, 43903, 15, 61, 44030, 32, 55, 44070, 53, 53, 44102, 67, 55, 44136, 75, 59, 44169, 81, 67, 44219, 84, 95, 44289, 83, 101, 44320, 78, 106, 44336, 60, 113, 44374, 36, 117, 44412, 23, 117, 44444, 14, 110, 44494 ]
+            ],
+            "curvesBox": [ 0, 0, 84, 181 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 588.5, 6188 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v6pe6j129jp5a",
+            "box": [ 903.5, 6105, 1016.5, 6208 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 113, 5, 44494, 111, 5, 44579, 89, 14, 44612, 66, 26, 44628, 15, 66, 44697, 11, 75, 44730, 13, 91, 44771, 18, 98, 44788, 25, 102, 44804, 37, 103, 44821, 48, 98, 44838, 61, 82, 44871, 62, 65, 44905, 31, 36, 44971, 19, 20, 45004, 3, 6, 45099, 0, 0, 45154 ]
+            ],
+            "curvesBox": [ 0, 0, 113, 103 ],
+            "itemAiData": {},
+            "topLeft": [ 903.5, 6105 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1up9lhn129fg91",
+            "box": [ 308.5, 6247, 414.5, 6407 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 70, 92, 45154, 64, 92, 45231, 43, 97, 45265, 29, 107, 45283, 14, 127, 45315, 11, 142, 45349, 14, 153, 45382, 33, 160, 45415, 52, 160, 45440, 74, 146, 45473, 81, 122, 45507, 81, 107, 45524, 78, 94, 45540, 62, 73, 45574, 42, 58, 45607, 28, 52, 45640, 14, 51, 45674, 0, 54, 45740, 3, 53, 45807, 53, 24, 45873, 106, 0, 46015 ]
+            ],
+            "curvesBox": [ 0, 0, 106, 160 ],
+            "itemAiData": {},
+            "topLeft": [ 308.5, 6247 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4m9b0r12jdp8i",
+            "box": [ 418.5, 6351, 579.5, 6446 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 28, 0, 46015, 26, 2, 46155, 10, 26, 46203, 0, 56, 46236, 1, 76, 46269, 13, 90, 46302, 33, 95, 46337, 43, 95, 46353, 56, 91, 46369, 67, 81, 46403, 72, 73, 46421, 75, 49, 46463, 74, 35, 46528, 70, 35, 46604, 68, 43, 46678, 68, 58, 46712, 70, 67, 46728, 77, 76, 46745, 102, 87, 46778, 142, 88, 46828, 152, 78, 46845, 158, 67, 46854, 161, 50, 46887, 161, 31, 46920, 151, 23, 46953, 130, 14, 47020, 126, 13, 47078 ]
+            ],
+            "curvesBox": [ 0, 0, 161, 95 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 418.5, 6351 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qn4c9712j6oeg",
+            "box": [ 782.5, 6257, 894.5, 6413 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 0, 55, 47078, 2, 55, 47174, 12, 58, 47213, 27, 70, 47246, 39, 92, 47279, 43, 117, 47313, 42, 129, 47329, 27, 147, 47363, 13, 155, 47396, 6, 156, 47429, 9, 154, 47582, 58, 137, 47671, 86, 115, 47705, 107, 84, 47738, 112, 61, 47755, 112, 28, 47789, 107, 14, 47796, 98, 5, 47838, 82, 0, 47921 ]
+            ],
+            "curvesBox": [ 0, 0, 112, 156 ],
+            "itemAiData": {},
+            "topLeft": [ 782.5, 6257 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18n5frf12jauq2",
+            "box": [ 661.5, 6408, 746.5, 6523 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 32, 0, 47921, 35, 0, 48056, 64, 0, 48138, 72, 24, 48246, 72, 36, 48279, 60, 46, 48312, 41, 56, 48345, 24, 61, 48378, 19, 62, 48421, 21, 58, 48479, 37, 51, 48512, 62, 48, 48562, 76, 57, 48596, 84, 69, 48637, 85, 77, 48671, 78, 87, 48704, 57, 101, 48737, 28, 112, 48770, 2, 115, 48837, 0, 113, 48856 ]
+            ],
+            "curvesBox": [ 0, 0, 85, 115 ],
+            "itemAiData": {},
+            "topLeft": [ 661.5, 6408 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18isah712j6o05",
+            "box": [ 178.5, 6404, 377.5, 6550 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 110, 54, 48856, 102, 54, 48950, 98, 53, 48966, 93, 40, 49000, 93, 26, 49016, 97, 13, 49033, 114, 0, 49066, 132, 0, 49133, 134, 29, 49199, 131, 52, 49232, 128, 61, 49248, 118, 74, 49276, 74, 111, 49331, 47, 125, 49366, 25, 130, 49399, 3, 130, 49449, 0, 127, 49491, 3, 121, 49515, 29, 104, 49549, 48, 96, 49565, 79, 94, 49599, 91, 95, 49616, 140, 130, 49703, 165, 143, 49741, 182, 146, 49774, 187, 145, 49791, 199, 125, 49875 ]
+            ],
+            "curvesBox": [ 0, 0, 199, 146 ],
+            "itemAiData": {},
+            "topLeft": [ 178.5, 6404 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dhaw3v12jawp6",
+            "box": [ 873.5, 6403, 1003.5, 6524 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 110, 0, 49875, 108, 0, 49972, 25, 1, 50080, 18, 2, 50114, 18, 6, 50180, 34, 57, 50250, 36, 67, 50292, 38, 66, 50397, 47, 55, 50431, 66, 42, 50463, 92, 40, 50497, 105, 46, 50514, 118, 58, 50530, 127, 69, 50564, 130, 79, 50605, 111, 94, 50638, 72, 114, 50671, 48, 120, 50688, 15, 121, 50721, 2, 117, 50755, 0, 115, 50772 ]
+            ],
+            "curvesBox": [ 0, 0, 130, 121 ],
+            "itemAiData": {},
+            "topLeft": [ 873.5, 6403 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18ee39n12teozr",
+            "box": [ 517.5, 6444, 600.5, 6597 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 51, 79, 50772, 47, 79, 50852, 41, 78, 50867, 22, 66, 50901, 5, 48, 50934, 0, 34, 50968, 0, 21, 51001, 5, 14, 51018, 17, 6, 51034, 44, 0, 51068, 69, 1, 51101, 80, 12, 51134, 80, 29, 51168, 74, 50, 51201, 66, 64, 51235, 35, 91, 51301, 24, 104, 51334, 20, 118, 51367, 20, 139, 51409, 23, 148, 51434, 28, 152, 51451, 45, 153, 51484, 67, 148, 51518, 78, 141, 51551, 82, 133, 51584, 83, 110, 51651, 81, 96, 51692, 62, 83, 51758, 46, 70, 51825, 38, 67, 51858, 24, 67, 51959 ]
+            ],
+            "curvesBox": [ 0, 0, 83, 153 ],
+            "itemAiData": {},
+            "topLeft": [ 517.5, 6444 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "146p0qz12tbw1z",
+            "box": [ 732.5, 6464, 825.5, 6591 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 65, 0, 51959, 50, 9, 52029, 38, 22, 52062, 30, 37, 52095, 30, 61, 52153, 40, 67, 52170, 63, 72, 52213, 72, 72, 52229, 77, 67, 52253, 82, 22, 52321, 82, 7, 52378, 77, 3, 52454, 76, 5, 52572, 89, 59, 52645, 93, 79, 52678, 92, 98, 52719, 88, 109, 52752, 81, 119, 52795, 69, 124, 52820, 23, 127, 52895, 10, 122, 52929, 0, 112, 52987 ]
+            ],
+            "curvesBox": [ 0, 0, 93, 127 ],
+            "itemAiData": {},
+            "topLeft": [ 732.5, 6464 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "i0ut1t14how76",
+            "box": [ 898, 101, 901, 104 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwsrSkAo",
+            "curves": [
+              [ 901, 101, 646, 898, 104, 750, 893, 112, 783, 892, 119, 809, 895, 128, 842, 905, 136, 869, 918, 140, 900, 936, 140, 929, 943, 137, 959, 945, 134, 991 ]
+            ],
+            "curvesBox": [ 892, 101, 945, 140 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-10b86b21--blockHook",
+            "box": [ 234, 60, 954, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Arnaud-Training Data"
+          },
+          {
+            "type": "text",
+            "id": "hook-10b86b21--blockHook/text/0",
+            "box": [ 234, 85.5, 563.1484375, 130 ],
+            "isLeaf": true,
+            "parent": "hook-10b86b21--blockHook",
+            "text": "Arnaud-Training Data"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-60efdc45--blockHook",
+            "box": [ 234, 156, 954, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "bulletList",
+            "id": "hook-29efbfbe--blockHook",
+            "box": [ 282, 180, 954, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "children": [
+              "hook-69912c5e--blockHook",
+              "hook-052beb60--blockHook",
+              "hook-daab8448--blockHook"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7c5d1e2--blockHook",
+            "box": [ 282, 180, 954, 204 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-69912c5e--blockHook",
+            "box": [ 282, 180, 954, 204 ],
+            "isLeaf": false,
+            "parent": "hook-a7c5d1e2--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "text",
+            "id": "hook-69912c5e--blockHook/text/0",
+            "box": [ 282, 181.5, 770.984375, 202.5 ],
+            "isLeaf": true,
+            "parent": "hook-69912c5e--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d48ed2bf--blockHook",
+            "box": [ 282, 204, 954, 228 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-052beb60--blockHook",
+            "box": [ 282, 204, 954, 228 ],
+            "isLeaf": false,
+            "parent": "hook-d48ed2bf--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "text",
+            "id": "hook-052beb60--blockHook/text/0",
+            "box": [ 282, 205.5, 609.9296875, 226.5 ],
+            "isLeaf": true,
+            "parent": "hook-052beb60--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-143b123a--blockHook",
+            "box": [ 282, 228, 954, 276 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-daab8448--blockHook",
+            "box": [ 282, 228, 954, 276 ],
+            "isLeaf": false,
+            "parent": "hook-143b123a--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "text",
+            "id": "hook-daab8448--blockHook/text/0",
+            "box": [ 282, 229.5, 936.4609375, 274.5 ],
+            "isLeaf": true,
+            "parent": "hook-daab8448--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4f0b806e--blockHook",
+            "box": [ 234, 276, 954, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2ae0b5f9--blockHook",
+            "box": [ 234, 300, 954, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-0ee1a3d5--blockHook",
+            "box": [ 234, 324, 954, 420 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Arrow Head",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-0ee1a3d5--blockHook/text/0",
+            "box": [ 234, 359, 395.5078125, 397 ],
+            "isLeaf": true,
+            "parent": "hook-0ee1a3d5--blockHook",
+            "text": "Arrow Head"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-051c6ab3--blockHook",
+            "box": [ 234, 420, 954, 444 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-23242fa7--blockHook",
+            "box": [ 234, 444, 954, 468 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cfbcce95--blockHook",
+            "box": [ 234, 468, 954, 492 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2002d361--blockHook",
+            "box": [ 234, 492, 954, 516 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f6475b6c--blockHook",
+            "box": [ 234, 516, 954, 540 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b8ef12d2--blockHook",
+            "box": [ 234, 540, 954, 564 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4b8e3c5a--blockHook",
+            "box": [ 234, 564, 954, 588 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-eb4aed13--blockHook",
+            "box": [ 234, 588, 954, 612 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9db63cca--blockHook",
+            "box": [ 234, 612, 954, 636 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3c75c90d--blockHook",
+            "box": [ 234, 636, 954, 660 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-14dee783--blockHook",
+            "box": [ 234, 660, 954, 684 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-f1c991d2--blockHook",
+            "box": [ 234, 684, 954, 780 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Triangle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-f1c991d2--blockHook/text/0",
+            "box": [ 234, 719, 340.1171875, 757 ],
+            "isLeaf": true,
+            "parent": "hook-f1c991d2--blockHook",
+            "text": "Triangle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5d9d883b--blockHook",
+            "box": [ 234, 780, 954, 804 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-332c7884--blockHook",
+            "box": [ 234, 804, 954, 828 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-59ce13c3--blockHook",
+            "box": [ 234, 828, 954, 852 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1d6ed197--blockHook",
+            "box": [ 234, 852, 954, 876 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ed10cd47--blockHook",
+            "box": [ 234, 876, 954, 900 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d70e6e30--blockHook",
+            "box": [ 234, 900, 954, 924 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-41ed0432--blockHook",
+            "box": [ 234, 924, 954, 948 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b93e0a3d--blockHook",
+            "box": [ 234, 948, 954, 972 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-481045fc--blockHook",
+            "box": [ 234, 972, 954, 996 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1d1e4346--blockHook",
+            "box": [ 234, 996, 954, 1020 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9b61b28f--blockHook",
+            "box": [ 234, 1020, 954, 1044 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ad7b619a--blockHook",
+            "box": [ 234, 1044, 954, 1068 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-84f2e590--blockHook",
+            "box": [ 234, 1068, 954, 1092 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4e100abd--blockHook",
+            "box": [ 234, 1092, 954, 1116 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-30b9c8aa--blockHook",
+            "box": [ 234, 1116, 954, 1212 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Rectangle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-30b9c8aa--blockHook/text/0",
+            "box": [ 234, 1151, 366.671875, 1189 ],
+            "isLeaf": true,
+            "parent": "hook-30b9c8aa--blockHook",
+            "text": "Rectangle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-17bcf3b9--blockHook",
+            "box": [ 234, 1212, 954, 1236 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-edf2a9eb--blockHook",
+            "box": [ 234, 1236, 954, 1260 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-253e29e7--blockHook",
+            "box": [ 234, 1260, 954, 1284 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-75cecb29--blockHook",
+            "box": [ 234, 1284, 954, 1308 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-bdae55b3--blockHook",
+            "box": [ 234, 1308, 954, 1332 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-149a3de5--blockHook",
+            "box": [ 234, 1332, 954, 1356 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7a8caeac--blockHook",
+            "box": [ 234, 1356, 954, 1380 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6dd472ae--blockHook",
+            "box": [ 234, 1380, 954, 1404 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-40ce8de0--blockHook",
+            "box": [ 234, 1404, 954, 1428 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-876df60a--blockHook",
+            "box": [ 234, 1428, 954, 1452 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cb72ff6e--blockHook",
+            "box": [ 234, 1452, 954, 1476 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9ed71a44--blockHook",
+            "box": [ 234, 1476, 954, 1500 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a4610e1a--blockHook",
+            "box": [ 234, 1500, 954, 1524 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-a539f365--blockHook",
+            "box": [ 234, 1524, 954, 1620 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Bracket",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-a539f365--blockHook/text/0",
+            "box": [ 234, 1559, 333.03125, 1597 ],
+            "isLeaf": true,
+            "parent": "hook-a539f365--blockHook",
+            "text": "Bracket"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2e043452--blockHook",
+            "box": [ 234, 1620, 954, 1644 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-27303c61--blockHook",
+            "box": [ 234, 1644, 954, 1668 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cbd9cdf4--blockHook",
+            "box": [ 234, 1668, 954, 1692 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3916e875--blockHook",
+            "box": [ 234, 1692, 954, 1716 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-538b3357--blockHook",
+            "box": [ 234, 1716, 954, 1740 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e4ed5ea0--blockHook",
+            "box": [ 234, 1740, 954, 1764 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-033f4deb--blockHook",
+            "box": [ 234, 1764, 954, 1788 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c9b8ac2a--blockHook",
+            "box": [ 234, 1788, 954, 1812 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0c0a438a--blockHook",
+            "box": [ 234, 1812, 954, 1836 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b58b1a78--blockHook",
+            "box": [ 234, 1836, 954, 1860 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2a768b76--blockHook",
+            "box": [ 234, 1860, 954, 1884 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0bc76546--blockHook",
+            "box": [ 234, 1884, 954, 1908 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7ce680f6--blockHook",
+            "box": [ 234, 1908, 954, 1932 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3a4f0c0d--blockHook",
+            "box": [ 234, 1932, 954, 1956 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6fd34162--blockHook",
+            "box": [ 234, 1956, 954, 1980 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c556ae37--blockHook",
+            "box": [ 234, 1980, 954, 2004 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c4bc7961--blockHook",
+            "box": [ 234, 2004, 954, 2028 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b2c4a5cc--blockHook",
+            "box": [ 234, 2028, 954, 2052 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0a0ebabe--blockHook",
+            "box": [ 234, 2052, 954, 2076 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f9bdd0f2--blockHook",
+            "box": [ 234, 2076, 954, 2100 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-e248504b--blockHook",
+            "box": [ 234, 2100, 954, 2196 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Small Cross",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-e248504b--blockHook/text/0",
+            "box": [ 234, 2135, 385.515625, 2173 ],
+            "isLeaf": true,
+            "parent": "hook-e248504b--blockHook",
+            "text": "Small Cross"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c0f0c0a8--blockHook",
+            "box": [ 234, 2196, 954, 2220 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0f9d0218--blockHook",
+            "box": [ 234, 2220, 954, 2244 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3546c3f2--blockHook",
+            "box": [ 234, 2244, 954, 2268 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-db28f40c--blockHook",
+            "box": [ 234, 2268, 954, 2292 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-29498092--blockHook",
+            "box": [ 234, 2292, 954, 2316 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f2afb04a--blockHook",
+            "box": [ 234, 2316, 954, 2340 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0d2791d8--blockHook",
+            "box": [ 234, 2340, 954, 2364 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5768c2f8--blockHook",
+            "box": [ 234, 2364, 954, 2388 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d7ab9ac3--blockHook",
+            "box": [ 234, 2388, 954, 2412 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b5938aae--blockHook",
+            "box": [ 234, 2412, 954, 2436 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-0e279e9c--blockHook",
+            "box": [ 234, 2436, 954, 2532 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Arrow",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-0e279e9c--blockHook/text/0",
+            "box": [ 234, 2471, 316.1796875, 2509 ],
+            "isLeaf": true,
+            "parent": "hook-0e279e9c--blockHook",
+            "text": "Arrow"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7581af7--blockHook",
+            "box": [ 234, 2532, 954, 2556 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fd8965dc--blockHook",
+            "box": [ 234, 2556, 954, 2580 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0f08c075--blockHook",
+            "box": [ 234, 2580, 954, 2604 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7d26716--blockHook",
+            "box": [ 234, 2604, 954, 2628 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c7cdb8d9--blockHook",
+            "box": [ 234, 2628, 954, 2652 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e229360f--blockHook",
+            "box": [ 234, 2652, 954, 2676 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fe546e17--blockHook",
+            "box": [ 234, 2676, 954, 2700 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-17abd92b--blockHook",
+            "box": [ 234, 2700, 954, 2724 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-08227a30--blockHook",
+            "box": [ 234, 2724, 954, 2748 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b655e5e8--blockHook",
+            "box": [ 234, 2748, 954, 2772 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dbe2b3c8--blockHook",
+            "box": [ 234, 2772, 954, 2796 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6cb00905--blockHook",
+            "box": [ 234, 2796, 954, 2820 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-247d74da--blockHook",
+            "box": [ 234, 2820, 954, 2844 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e9de6ec9--blockHook",
+            "box": [ 234, 2844, 954, 2868 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-59583133--blockHook",
+            "box": [ 234, 2868, 954, 2892 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-5e21f580--blockHook",
+            "box": [ 234, 2892, 954, 2988 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Ellipse",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-5e21f580--blockHook/text/0",
+            "box": [ 234, 2927, 317.8046875, 2965 ],
+            "isLeaf": true,
+            "parent": "hook-5e21f580--blockHook",
+            "text": "Ellipse"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-590b2976--blockHook",
+            "box": [ 234, 2988, 954, 3012 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-db320f6f--blockHook",
+            "box": [ 234, 3012, 954, 3036 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f9165312--blockHook",
+            "box": [ 234, 3036, 954, 3060 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ab13a782--blockHook",
+            "box": [ 234, 3060, 954, 3084 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-486dc767--blockHook",
+            "box": [ 234, 3084, 954, 3108 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b64357d3--blockHook",
+            "box": [ 234, 3108, 954, 3132 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6120dad8--blockHook",
+            "box": [ 234, 3132, 954, 3156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4345380c--blockHook",
+            "box": [ 234, 3156, 954, 3180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-14afae34--blockHook",
+            "box": [ 234, 3180, 954, 3204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5494c696--blockHook",
+            "box": [ 234, 3204, 954, 3228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a3882019--blockHook",
+            "box": [ 234, 3228, 954, 3252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6f0ec549--blockHook",
+            "box": [ 234, 3252, 954, 3276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-89946008--blockHook",
+            "box": [ 234, 3276, 954, 3300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-307459a0--blockHook",
+            "box": [ 234, 3300, 954, 3324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f9836e6b--blockHook",
+            "box": [ 234, 3324, 954, 3348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-169ac28a--blockHook",
+            "box": [ 234, 3348, 954, 3372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3f8de16e--blockHook",
+            "box": [ 234, 3372, 954, 3396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-4b084b7a--blockHook",
+            "box": [ 234, 3396, 954, 3492 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Dot",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-4b084b7a--blockHook/text/0",
+            "box": [ 234, 3431, 281.1171875, 3469 ],
+            "isLeaf": true,
+            "parent": "hook-4b084b7a--blockHook",
+            "text": "Dot"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-af085a0f--blockHook",
+            "box": [ 234, 3492, 954, 3516 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e6f89c9b--blockHook",
+            "box": [ 234, 3516, 954, 3540 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-45dfd6dc--blockHook",
+            "box": [ 234, 3540, 954, 3564 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-84d3dc11--blockHook",
+            "box": [ 234, 3564, 954, 3588 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-07e959a4--blockHook",
+            "box": [ 234, 3588, 954, 3612 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4d39cd72--blockHook",
+            "box": [ 234, 3612, 954, 3636 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-71b9bf56--blockHook",
+            "box": [ 234, 3636, 954, 3660 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d9141cec--blockHook",
+            "box": [ 234, 3660, 954, 3684 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-64e2b2b1--blockHook",
+            "box": [ 234, 3684, 954, 3708 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-4bdf36b3--blockHook",
+            "box": [ 234, 3708, 954, 3804 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Circle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-4bdf36b3--blockHook/text/0",
+            "box": [ 234, 3743, 309.65625, 3781 ],
+            "isLeaf": true,
+            "parent": "hook-4bdf36b3--blockHook",
+            "text": "Circle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-08a890fb--blockHook",
+            "box": [ 234, 3804, 954, 3828 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ea709066--blockHook",
+            "box": [ 234, 3828, 954, 3852 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2caa7750--blockHook",
+            "box": [ 234, 3852, 954, 3876 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6d708af3--blockHook",
+            "box": [ 234, 3876, 954, 3900 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d91b5911--blockHook",
+            "box": [ 234, 3900, 954, 3924 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-556140c4--blockHook",
+            "box": [ 234, 3924, 954, 3948 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-761f9dd5--blockHook",
+            "box": [ 234, 3948, 954, 3972 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b32eec6e--blockHook",
+            "box": [ 234, 3972, 954, 3996 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-62de0a91--blockHook",
+            "box": [ 234, 3996, 954, 4020 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-416278bc--blockHook",
+            "box": [ 234, 4020, 954, 4044 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7660506--blockHook",
+            "box": [ 234, 4044, 954, 4068 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f83628e9--blockHook",
+            "box": [ 234, 4068, 954, 4092 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1086c893--blockHook",
+            "box": [ 234, 4092, 954, 4116 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-eaaa7fbd--blockHook",
+            "box": [ 234, 4116, 954, 4140 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2c58b5d5--blockHook",
+            "box": [ 234, 4140, 954, 4164 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-44128f2c--blockHook",
+            "box": [ 234, 4164, 954, 4188 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-eaa54087--blockHook",
+            "box": [ 234, 4188, 954, 4284 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Curly Braces",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-eaa54087--blockHook/text/0",
+            "box": [ 234, 4223, 397.71875, 4261 ],
+            "isLeaf": true,
+            "parent": "hook-eaa54087--blockHook",
+            "text": "Curly Braces"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a95149f5--blockHook",
+            "box": [ 234, 4284, 954, 4308 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0ad07347--blockHook",
+            "box": [ 234, 4308, 954, 4332 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5c6b30d2--blockHook",
+            "box": [ 234, 4332, 954, 4356 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c04d70df--blockHook",
+            "box": [ 234, 4356, 954, 4380 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-85d9c795--blockHook",
+            "box": [ 234, 4380, 954, 4404 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-21298332--blockHook",
+            "box": [ 234, 4404, 954, 4428 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-378457a8--blockHook",
+            "box": [ 234, 4428, 954, 4452 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-8e984e81--blockHook",
+            "box": [ 234, 4452, 954, 4476 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-686941f2--blockHook",
+            "box": [ 234, 4476, 954, 4500 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d879f59a--blockHook",
+            "box": [ 234, 4500, 954, 4524 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a9acc617--blockHook",
+            "box": [ 234, 4524, 954, 4548 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-22352795--blockHook",
+            "box": [ 234, 4548, 954, 4572 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-8067fad1--blockHook",
+            "box": [ 234, 4572, 954, 4596 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-451f06fc--blockHook",
+            "box": [ 234, 4596, 954, 4620 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-38031f4b--blockHook",
+            "box": [ 234, 4620, 954, 4644 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-bd4c457f--blockHook",
+            "box": [ 234, 4644, 954, 4668 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a763033d--blockHook",
+            "box": [ 234, 4668, 954, 4692 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-03cad453--blockHook",
+            "box": [ 234, 4692, 954, 4788 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Garbage",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-03cad453--blockHook/text/0",
+            "box": [ 234, 4727, 350.875, 4765 ],
+            "isLeaf": true,
+            "parent": "hook-03cad453--blockHook",
+            "text": "Garbage"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ad240940--blockHook",
+            "box": [ 234, 4788, 954, 4812 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Any random stroke which doesn't qualify for any of the above class."
+          },
+          {
+            "type": "text",
+            "id": "hook-ad240940--blockHook/text/0",
+            "box": [ 234, 4789.5, 763.6328125, 4810.5 ],
+            "isLeaf": true,
+            "parent": "hook-ad240940--blockHook",
+            "text": "Any random stroke which doesn't qualify for any of the above class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-354fbb3c--blockHook",
+            "box": [ 234, 4812, 954, 4836 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f16a20bc--blockHook",
+            "box": [ 234, 4836, 954, 4860 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dbb13ded--blockHook",
+            "box": [ 234, 4860, 954, 4884 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ff43f6eb--blockHook",
+            "box": [ 234, 4884, 954, 4908 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f57bcbb7--blockHook",
+            "box": [ 234, 4908, 954, 4932 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5a19675b--blockHook",
+            "box": [ 234, 4932, 954, 4956 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c2b901e9--blockHook",
+            "box": [ 234, 4956, 954, 4980 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-36a8b85d--blockHook",
+            "box": [ 234, 4980, 954, 5004 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ab0ad9f8--blockHook",
+            "box": [ 234, 5004, 954, 5028 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4b74d5ce--blockHook",
+            "box": [ 234, 5028, 954, 5052 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dc06d63e--blockHook",
+            "box": [ 234, 5052, 954, 5076 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a284aab8--blockHook",
+            "box": [ 234, 5076, 954, 5100 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-14f88c97--blockHook",
+            "box": [ 234, 5100, 954, 5124 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-88491c8a--blockHook",
+            "box": [ 234, 5124, 954, 5148 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c361b3a5--blockHook",
+            "box": [ 234, 5148, 954, 5172 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6e434224--blockHook",
+            "box": [ 234, 5172, 954, 5196 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-35764423--blockHook",
+            "box": [ 234, 5196, 954, 5220 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7031a379--blockHook",
+            "box": [ 234, 5220, 954, 5244 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c9641753--blockHook",
+            "box": [ 234, 5244, 954, 5268 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-298e395b--blockHook",
+            "box": [ 234, 5268, 954, 5292 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4d4dff7f--blockHook",
+            "box": [ 234, 5292, 954, 5316 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4c66792d--blockHook",
+            "box": [ 234, 5316, 954, 5340 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-042af6d4--blockHook",
+            "box": [ 234, 5340, 954, 5364 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1e3b9ca5--blockHook",
+            "box": [ 234, 5364, 954, 5388 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9712136d--blockHook",
+            "box": [ 234, 5388, 954, 5412 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b1e55a48--blockHook",
+            "box": [ 234, 5412, 954, 5436 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ed504218--blockHook",
+            "box": [ 234, 5436, 954, 5460 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ea8c9b57--blockHook",
+            "box": [ 234, 5460, 954, 5484 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-12de2105--blockHook",
+            "box": [ 234, 5484, 954, 5508 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a61b849f--blockHook",
+            "box": [ 234, 5508, 954, 5532 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c2eac145--blockHook",
+            "box": [ 234, 5532, 954, 5556 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-97fcff71--blockHook",
+            "box": [ 234, 5556, 954, 5580 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-44693b6c--blockHook",
+            "box": [ 234, 5580, 954, 5604 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-79723f7a--blockHook",
+            "box": [ 234, 5604, 954, 5628 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ecf37ce0--blockHook",
+            "box": [ 234, 5628, 954, 5652 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1fdb0e1c--blockHook",
+            "box": [ 234, 5652, 954, 5676 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-11a2b141--blockHook",
+            "box": [ 234, 5676, 954, 5700 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-30408a82--blockHook",
+            "box": [ 234, 5700, 954, 5724 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-418fd5f4--blockHook",
+            "box": [ 234, 5724, 954, 5748 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5660fc4b--blockHook",
+            "box": [ 234, 5748, 954, 5772 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9f727c1b--blockHook",
+            "box": [ 234, 5772, 954, 5796 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1ca2fe90--blockHook",
+            "box": [ 234, 5796, 954, 5820 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-907d55b5--blockHook",
+            "box": [ 234, 5820, 954, 5844 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0e5f2d9f--blockHook",
+            "box": [ 234, 5844, 954, 5868 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6aeb5e54--blockHook",
+            "box": [ 234, 5868, 954, 5892 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cbb3b979--blockHook",
+            "box": [ 234, 5892, 954, 5916 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-16356ed6--blockHook",
+            "box": [ 234, 5916, 954, 5940 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2aad702e--blockHook",
+            "box": [ 234, 5940, 954, 5964 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e7a3cc94--blockHook",
+            "box": [ 234, 5964, 954, 5988 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7c7a05a4--blockHook",
+            "box": [ 234, 5988, 954, 6012 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-087b4e5f--blockHook",
+            "box": [ 234, 6012, 954, 6036 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f69b960b--blockHook",
+            "box": [ 234, 6036, 954, 6060 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c6febea9--blockHook",
+            "box": [ 234, 6060, 954, 6084 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-082d185a--blockHook",
+            "box": [ 234, 6084, 954, 6108 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-73e46902--blockHook",
+            "box": [ 234, 6108, 954, 6132 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2142139f--blockHook",
+            "box": [ 234, 6132, 954, 6156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-713e038d--blockHook",
+            "box": [ 234, 6156, 954, 6180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6cc7d691--blockHook",
+            "box": [ 234, 6180, 954, 6204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-87f30a62--blockHook",
+            "box": [ 234, 6204, 954, 6228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9cf9c766--blockHook",
+            "box": [ 234, 6228, 954, 6252 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-283aeb8e--blockHook",
+            "box": [ 234, 6252, 954, 6276 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2597c680--blockHook",
+            "box": [ 234, 6276, 954, 6300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6f258103--blockHook",
+            "box": [ 234, 6300, 954, 6324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-072fd6a1--blockHook",
+            "box": [ 234, 6324, 954, 6348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d6020929--blockHook",
+            "box": [ 234, 6348, 954, 6372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f89a7320--blockHook",
+            "box": [ 234, 6372, 954, 6396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-65509f33--blockHook",
+            "box": [ 234, 6396, 954, 6420 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0b44bedd--blockHook",
+            "box": [ 234, 6420, 954, 6444 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5e12d954--blockHook",
+            "box": [ 234, 6444, 954, 6468 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-329a8d34--blockHook",
+            "box": [ 234, 6468, 954, 6492 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9e0fd994--blockHook",
+            "box": [ 234, 6492, 954, 6516 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-de4c16ca--blockHook",
+            "box": [ 234, 6516, 954, 6540 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-623da7ca--blockHook",
+            "box": [ 234, 6540, 954, 6564 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1a60d92d--blockHook",
+            "box": [ 234, 6564, 954, 6588 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-64c87e3e--blockHook",
+            "box": [ 234, 6588, 954, 6612 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-50568e62--blockHook",
+            "box": [ 234, 6612, 954, 6636 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cd21099b--blockHook",
+            "box": [ 234, 6636, 954, 6660 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-eafce996--blockHook",
+            "box": [ 234, 6660, 954, 6684 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "move_contact",
+      "variant": "1"
+    }
+  },
+  "output": {
+    "version": "2022-08-19",
+    "response": {
+      "featureName": "move_contact",
+      "patches": {
+        "i0ut1t14how76": {
+          "curves": [
+            [ 901, 101, 646, 902.0311889648438, 115.60798645019531, 689.125, 902.276611328125, 125.6739501953125, 732.25, 902.7677001953125, 131.97134399414062, 775.375, 904.5355224609375, 135.2736053466797, 818.5, 908.6114501953125, 136.35415649414062, 861.625, 916.026611328125, 135.9864501953125, 904.75, 927.8124389648438, 134.94393920898438, 947.875, 945, 134, 991 ]
+          ],
+          "id": "i0ut1t14how76",
+          "aiDataPatch": {
+            "source": "sketch_control_decompose",
+            "HermiteCurve": {
+              "startPoint": [ 901, 101 ],
+              "startDir": [ 14.14208984375, 137.09442138671875 ],
+              "endPoint": [ 945, 134 ],
+              "endDir": [ 161.85791015625, -5.09442138671875 ]
+            },
+            "CurveType": "HermiteCurve",
+            "SketchControls": [],
+            "connections": [
+              {
+                "id": "4j5mz514hdngg",
+                "toNodeId": "",
+                "end": false,
+                "contact": [ 901, 101 ],
+                "dir": [ -0.6117393970489502, 0.7910593748092651 ],
+                "probability": 1
+              },
+              {
+                "id": "4j5mz514hdngh",
+                "toNodeId": "",
+                "end": true,
+                "contact": [ 945, 134 ],
+                "dir": [ -0.8001305460929871, 0.599825918674469 ],
+                "probability": 1
+              }
+            ]
+          },
+          "selfDelete": false
+        }
+      },
+      "controlLocations": []
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}}

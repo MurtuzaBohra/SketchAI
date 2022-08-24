@@ -1,0 +1,3545 @@
+{"body":{
+  "input": {
+    "meta": {},
+    "request": {
+      "featureName": "move_contact",
+      "interestingSession": true,
+      "type": "AiRequestDecomposeSketch",
+      "itemId": "4pek2p179dtzi",
+      "hoverAtStartId": "",
+      "hoverAtEndId": ""
+    },
+    "context": {
+      "graph": {
+        "nodes": [
+          {
+            "type": "drawing_curve",
+            "id": "1lr463n11fmayw",
+            "box": [ 316, 793, 452, 919 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 65, 4, 14384, 61, 8, 14500, 41, 34, 14544, 14, 76, 14577, 0, 105, 14644, 4, 105, 14726, 27, 103, 14762, 63, 104, 14794, 105, 115, 14827, 135, 126, 14893, 136, 124, 14961, 119, 76, 15027, 106, 46, 15094, 97, 27, 15293, 90, 17, 15428, 86, 6, 15495, 83, 0, 15611 ]
+            ],
+            "curvesBox": [ 0, 0, 136, 126 ],
+            "itemAiData": {},
+            "topLeft": [ 316, 793 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zl9v4z11ftdsf",
+            "box": [ 485, 804, 617, 937 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 12, 31, 17868, 14, 31, 17967, 37, 29, 18010, 81, 18, 18043, 127, 1, 18111, 132, 0, 18161, 130, 7, 18278, 79, 119, 18386, 75, 131, 18428, 74, 133, 18461, 72, 133, 18594, 62, 125, 18627, 32, 89, 18693, 22, 70, 18761, 10, 53, 18944, 4, 44, 19027, 0, 39, 19328 ]
+            ],
+            "curvesBox": [ 0, 0, 132, 133 ],
+            "itemAiData": {},
+            "topLeft": [ 485, 804 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hhjxsz11fmbka",
+            "box": [ 631, 789, 806, 950 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 131, 20717, 2, 129, 20777, 64, 78, 20844, 151, 16, 20909, 175, 0, 20977, 175, 6, 21061, 148, 79, 21127, 132, 141, 21193, 130, 157, 21260, 128, 161, 21328, 118, 158, 21394, 44, 129, 21526, 6, 126, 21794, 0, 124, 21894 ]
+            ],
+            "curvesBox": [ 0, 0, 175, 161 ],
+            "itemAiData": {},
+            "topLeft": [ 631, 789 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1luuehv11pdgqz",
+            "box": [ 353, 1009, 513, 1097 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 62, 26, 23452, 66, 24, 23577, 107, 4, 23643, 121, 0, 23711, 123, 3, 23794, 155, 79, 23926, 160, 88, 23994, 155, 88, 24117, 89, 88, 24193, 37, 74, 24260, 0, 54, 24495, 3, 53, 24627, 43, 42, 24760, 62, 33, 24994, 63, 25, 25427 ]
+            ],
+            "curvesBox": [ 0, 0, 160, 88 ],
+            "itemAiData": {},
+            "topLeft": [ 353, 1009 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "13ykxyb11p7vuo",
+            "box": [ 552, 965, 710, 1079 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 74, 27353, 7, 72, 27482, 80, 36, 27594, 143, 5, 27627, 154, 0, 27693, 154, 2, 27827, 158, 102, 27960, 158, 113, 28010, 156, 114, 28177, 57, 87, 28311, 8, 78, 28561, 2, 77, 28827, 0, 76, 29115 ]
+            ],
+            "curvesBox": [ 0, 0, 158, 114 ],
+            "itemAiData": {},
+            "topLeft": [ 552, 965 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v3ko9v11paoe9",
+            "box": [ 744, 923, 879, 1051 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 16, 121, 30633, 22, 115, 30777, 95, 44, 30844, 127, 9, 30886, 133, 1, 30928, 135, 0, 30994, 133, 0, 31144, 66, 1, 31277, 56, 1, 31326, 55, 4, 31528, 37, 54, 31594, 16, 96, 31659, 12, 104, 31694, 3, 122, 31960, 0, 128, 32028, 2, 126, 32700, 13, 120, 32777, 21, 116, 32959 ]
+            ],
+            "curvesBox": [ 0, 0, 135, 128 ],
+            "itemAiData": {},
+            "topLeft": [ 744, 923 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lu98tf11poow4",
+            "box": [ 927, 813, 1018, 986 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 11, 5, 39700, 11, 8, 39911, 14, 135, 40043, 17, 169, 40110, 17, 173, 40159, 20, 172, 40360, 67, 151, 40438, 83, 146, 40510, 91, 144, 40627, 89, 141, 40744, 77, 129, 40777, 49, 95, 40809, 25, 57, 40844, 9, 20, 40909, 5, 8, 41010, 0, 0, 41127 ]
+            ],
+            "curvesBox": [ 0, 0, 91, 173 ],
+            "itemAiData": {},
+            "topLeft": [ 927, 813 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1czu4tf11zsirz",
+            "box": [ 649, 1042, 874, 1124 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 74, 44100, 7, 73, 44216, 194, 5, 44364, 206, 1, 44385, 213, 0, 44494, 213, 3, 44710, 224, 60, 44910, 224, 68, 45127, 224, 74, 45194, 225, 82, 45494, 222, 82, 45911, 119, 79, 46110, 43, 63, 46244, 22, 58, 46310, 11, 56, 46394, 9, 55, 46444 ]
+            ],
+            "curvesBox": [ 0, 0, 225, 82 ],
+            "itemAiData": {},
+            "topLeft": [ 649, 1042 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4l33711zd4hs",
+            "box": [ 923, 1012, 1086, 1107 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 17, 8, 48616, 17, 11, 48849, 17, 70, 48993, 19, 91, 49076, 20, 95, 49126, 24, 94, 49344, 75, 83, 49409, 131, 81, 49478, 152, 84, 49545, 163, 85, 49627, 161, 85, 49811, 146, 77, 49844, 84, 36, 49910, 36, 15, 49977, 8, 3, 50110, 0, 0, 50260 ]
+            ],
+            "curvesBox": [ 0, 0, 163, 95 ],
+            "itemAiData": {},
+            "topLeft": [ 923, 1012 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v6pntv11zbmz2",
+            "box": [ 280, 1180, 470, 1285 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 11, 8, 54834, 11, 12, 55050, 10, 86, 55193, 10, 102, 55259, 10, 104, 55310, 15, 105, 55594, 36, 105, 55626, 154, 91, 55732, 182, 85, 55876, 190, 83, 55976, 189, 79, 56160, 177, 8, 56293, 176, 4, 56327, 174, 4, 56509, 168, 4, 56560, 67, 0, 56693, 18, 6, 56826, 8, 6, 56893, 0, 7, 57010 ]
+            ],
+            "curvesBox": [ 0, 0, 190, 105 ],
+            "itemAiData": {},
+            "topLeft": [ 280, 1180 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1412nz7129jpxc",
+            "box": [ 520, 1200, 684, 1296 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 22, 0, 59416, 22, 3, 59577, 15, 91, 59711, 15, 95, 59732, 18, 96, 59894, 38, 92, 59927, 146, 90, 60033, 164, 88, 60143, 163, 83, 60344, 157, 33, 60410, 156, 3, 60478, 156, 1, 60493, 154, 1, 60710, 145, 1, 60761, 24, 1, 60892, 8, 1, 60961, 0, 1, 61143 ]
+            ],
+            "curvesBox": [ 0, 0, 164, 96 ],
+            "itemAiData": {},
+            "topLeft": [ 520, 1200 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mdjun7129migx",
+            "box": [ 770, 1194, 887, 1297 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 6, 7, 63766, 6, 13, 63926, 5, 48, 63993, 3, 66, 64060, 0, 86, 64210, 0, 88, 64443, 0, 94, 64510, 2, 97, 65393, 1, 103, 65561, 4, 102, 65743, 58, 96, 65823, 113, 94, 65917, 117, 94, 65977, 117, 89, 66110, 114, 5, 66242, 113, 0, 66294, 109, 0, 66494, 75, 4, 66560, 23, 15, 66626, 3, 17, 66693 ]
+            ],
+            "curvesBox": [ 0, 0, 117, 103 ],
+            "itemAiData": {},
+            "topLeft": [ 770, 1194 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lxce0312javwr",
+            "box": [ 954, 1204, 1030, 1290 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 6, 0, 74784, 6, 2, 74965, 1, 74, 75109, 0, 86, 75193, 2, 86, 75410, 65, 79, 75542, 71, 79, 75577, 75, 79, 75710, 75, 76, 75777, 75, 7, 75910, 76, 5, 75927, 74, 4, 76127, 30, 1, 76346, 10, 1, 76644, 8, 1, 76776 ]
+            ],
+            "curvesBox": [ 0, 0, 76, 86 ],
+            "itemAiData": {},
+            "topLeft": [ 954, 1204 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q7jyzn12jhwqz",
+            "box": [ 248, 1328, 528, 1442 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 22, 16, 79270, 22, 19, 79477, 21, 31, 79510, 5, 84, 79575, 0, 109, 79642, 0, 113, 79693, 2, 114, 79893, 74, 114, 79959, 158, 110, 79996, 232, 101, 80018, 278, 91, 80092, 280, 91, 80109, 280, 89, 80259, 264, 47, 80359, 262, 42, 80410, 259, 38, 80526, 256, 38, 80642, 212, 33, 80709, 125, 11, 80776, 85, 6, 80842, 42, 4, 81127, 30, 0, 81475, 29, 2, 81776, 29, 14, 82111 ]
+            ],
+            "curvesBox": [ 0, 0, 280, 114 ],
+            "itemAiData": {},
+            "topLeft": [ 248, 1328 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q9fu1v12j83cw",
+            "box": [ 576, 1347, 834, 1477 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 34, 0, 84066, 34, 3, 84192, 22, 104, 84325, 21, 115, 84376, 23, 115, 84510, 119, 123, 84577, 206, 124, 84626, 245, 129, 84692, 258, 130, 84793, 258, 126, 84927, 249, 43, 85060, 247, 15, 85261, 247, 11, 85343, 245, 10, 85461, 235, 9, 85528, 165, 13, 85593, 23, 13, 85704, 8, 12, 85792, 0, 12, 85959 ]
+            ],
+            "curvesBox": [ 0, 0, 258, 130 ],
+            "itemAiData": {},
+            "topLeft": [ 576, 1347 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8cder12j9fyh",
+            "box": [ 916, 1363, 1034, 1485 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 6, 0, 87303, 6, 5, 87426, 0, 119, 87559, 0, 122, 87576, 5, 120, 87742, 43, 105, 87782, 75, 99, 87826, 106, 99, 87893, 114, 100, 87992, 116, 98, 88193, 118, 35, 88343, 118, 31, 88376, 118, 16, 88709, 116, 16, 89093, 110, 16, 89192, 98, 16, 89226, 60, 25, 89293, 25, 27, 89426, 5, 26, 89560, 3, 26, 89609 ]
+            ],
+            "curvesBox": [ 0, 0, 118, 122 ],
+            "itemAiData": {},
+            "topLeft": [ 916, 1363 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "91gc83133ig3p",
+            "box": [ 882, 1584, 928, 1709 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 1, 107667, 8, 1, 107783, 40, 1, 107859, 46, 0, 107893, 46, 3, 107949, 42, 92, 108092, 41, 120, 108259, 39, 121, 108360, 14, 121, 108459, 9, 121, 108576, 0, 125, 108660 ]
+            ],
+            "curvesBox": [ 0, 0, 46, 125 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 882, 1584 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zpmhgj133a2vj",
+            "box": [ 967, 1582, 1018, 1703 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 41, 0, 109382, 38, 0, 109459, 1, 4, 109576, 0, 6, 109726, 2, 101, 109858, 2, 107, 109909, 3, 111, 110026, 6, 121, 110143, 9, 121, 110265, 42, 118, 110342, 51, 116, 110409 ]
+            ],
+            "curvesBox": [ 0, 0, 51, 121 ],
+            "itemAiData": {},
+            "topLeft": [ 967, 1582 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zk0e03133la8f",
+            "box": [ 392, 1744, 446, 1814 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 54, 0, 111965, 51, 0, 112025, 15, 0, 112092, 5, 0, 112143, 4, 5, 112225, 0, 44, 112376, 0, 68, 112550, 0, 70, 112676, 23, 66, 112760, 30, 63, 112793 ]
+            ],
+            "curvesBox": [ 0, 0, 54, 70 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 392, 1744 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hgadib133fncy",
+            "box": [ 516, 1785, 562, 1880 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 0, 113832, 7, 0, 113926, 45, 0, 114025, 46, 2, 114099, 36, 41, 114176, 30, 87, 114308, 27, 89, 114448, 5, 95, 114526, 0, 95, 114576 ]
+            ],
+            "curvesBox": [ 0, 0, 46, 95 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 516, 1785 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hyzqhv133lc05",
+            "box": [ 222, 1587, 306, 1830 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 61, 0, 119348, 58, 0, 119443, 35, 0, 119509, 6, 8, 119575, 1, 10, 119610, 0, 13, 119709, 2, 61, 119775, 11, 180, 119874, 11, 201, 119943, 12, 211, 120043, 9, 223, 120109, 9, 243, 120209, 13, 243, 120359, 60, 230, 120425, 84, 223, 120509 ]
+            ],
+            "curvesBox": [ 0, 0, 84, 243 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 222, 1587 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "vafa3n13d9nnw",
+            "box": [ 660, 1778, 754, 1878 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 7, 124065, 3, 7, 124225, 22, 7, 124259, 81, 0, 124325, 94, 0, 124376, 93, 7, 124475, 86, 33, 124542, 83, 71, 124675, 81, 76, 124842, 78, 84, 124893, 73, 85, 125159, 52, 88, 125192, 6, 99, 125258, 1, 100, 125293 ]
+            ],
+            "curvesBox": [ 0, 0, 94, 100 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 660, 1778 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "me6bqb13db1mp",
+            "box": [ 911, 1737, 953, 1911 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 28, 0, 130417, 24, 1, 130665, 11, 10, 130742, 4, 21, 130841, 5, 114, 131041, 1, 130, 131108, 0, 132, 131143, 2, 129, 131342, 14, 164, 131514, 27, 174, 131643, 42, 170, 131776 ]
+            ],
+            "curvesBox": [ 0, 0, 42, 174 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 911, 1737 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcah9",
+            "box": [ 478, 2636, 571, 2722 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 12276, 3, 3, 12426, 47, 37, 12503, 76, 66, 12569, 91, 84, 12771, 93, 86, 12820, 91, 86, 13237, 80, 86, 13353, 83, 85, 14420, 91, 85, 14554, 91, 83, 15304, 91, 64, 15504, 92, 60, 15570 ]
+            ],
+            "curvesBox": [ 0, 0, 93, 86 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 478, 2636 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcahb",
+            "box": [ 649, 2617, 755, 2718 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 8, 0, 8858, 7, 2, 9031, 3, 12, 9065, 0, 35, 9097, 0, 61, 9131, 2, 71, 9149, 16, 85, 9181, 41, 96, 9216, 66, 101, 9249, 87, 98, 9283, 99, 91, 9315, 104, 85, 9349, 106, 77, 9381, 103, 67, 9416, 89, 59, 9450, 70, 53, 9482, 48, 52, 9548, 50, 51, 9665, 89, 42, 9732, 102, 37, 9781, 100, 37, 10966, 64, 53, 11098, 53, 56, 11165, 51, 56, 11449, 49, 55, 11498, 51, 54, 11665, 70, 75, 11882 ]
+            ],
+            "curvesBox": [ 0, 0, 106, 101 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 649, 2617 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qtdm2s10lcb9l",
+            "box": [ 833, 2630, 930, 2711 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 81, 7309, 4, 78, 7452, 69, 25, 7519, 97, 0, 7586 ]
+            ],
+            "curvesBox": [ 0, 0, 97, 81 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 833, 2630 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qtdm2s10lcb9n",
+            "box": [ 914, 2619, 954, 2646 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 8181, 3, 0, 8325, 38, 0, 8441, 40, 0, 8575, 28, 23, 8742, 26, 27, 8858 ]
+            ],
+            "curvesBox": [ 0, 0, 40, 27 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 914, 2619 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qtdm2s10lcb9p",
+            "box": [ 228, 2664, 387, 2727 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 63, 0, 3, 62, 128, 11, 57, 144, 76, 28, 197, 155, 1, 278, 159, 0, 295, 155, 0, 393, 121, 6, 461, 111, 7, 510, 113, 7, 794, 115, 7, 827 ]
+            ],
+            "curvesBox": [ 0, 0, 159, 63 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 228, 2664 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qtdm2s10lcb9r",
+            "box": [ 360, 2668, 385, 2690 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 25, 0, 6421, 21, 2, 6548, 5, 15, 6614, 0, 22, 6681 ]
+            ],
+            "curvesBox": [ 0, 0, 25, 22 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 360, 2668 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9d",
+            "box": [ 478, 2677, 642, 2817 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 45, 0, 827, 41, 0, 937, 36, 1, 971, 15, 17, 1038, 5, 29, 1071, 1, 45, 1105, 0, 67, 1136, 6, 93, 1172, 19, 118, 1204, 34, 133, 1238, 42, 138, 1254, 62, 140, 1288, 84, 138, 1321, 106, 127, 1354, 144, 97, 1421, 160, 81, 1487, 163, 77, 1521, 164, 75, 1605, 161, 76, 1938, 146, 78, 2004, 144, 78, 2038, 146, 78, 2160, 160, 78, 2238, 162, 77, 2254, 162, 79, 2377, 152, 94, 2455, 150, 96, 2488 ]
+            ],
+            "curvesBox": [ 0, 0, 164, 140 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 478, 2677 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9f",
+            "box": [ 688, 2764, 816, 2848 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 84, 2488, 3, 82, 2665, 52, 52, 2715, 104, 16, 2765, 128, 0, 2948 ]
+            ],
+            "curvesBox": [ 0, 0, 128, 84 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 688, 2764 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9h",
+            "box": [ 799, 2763, 829, 2777 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 5843, 2, 0, 5971, 30, 0, 6113, 29, 3, 6287, 22, 14, 6421 ]
+            ],
+            "curvesBox": [ 0, 0, 30, 14 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 799, 2763 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9j",
+            "box": [ 852, 2771, 942, 2846 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 75, 11882, 3, 71, 12098, 84, 5, 12242, 90, 0, 12276 ]
+            ],
+            "curvesBox": [ 0, 0, 90, 75 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 852, 2771 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9l",
+            "box": [ 920, 2772, 941, 2794 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 2, 15570, 2, 2, 15731, 15, 1, 15797, 21, 0, 15881, 21, 3, 16165, 18, 14, 16231, 16, 22, 16364 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 22 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 920, 2772 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9n",
+            "box": [ 261, 2790.057373046875, 359, 2845 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 54.942626953125, 7586, 5.000000476837158, 52.942626953125, 7705, 42, 30.942625045776367, 7824, 73, 14.942626953125, 7943, 91, 6.942630767822266, 8062, 98, 1.942626953125, 8181 ],
+              [ 93.3261947631836, 13.865527153015137, 12545, 98, 1.942626953125, 12545, 98, 1.942626953125, 12545, 85.34194946289062, 0.000037362900911830366, 12545 ]
+            ],
+            "curvesBox": [ 0, 0.000037362900911830366, 98, 54.942626953125 ],
+            "itemAiData": {
+              "source": "_runConnectionAddArrowHead",
+              "connections": [
+                {
+                  "id": "v9747810lcb9o",
+                  "toNodeId": "",
+                  "end": false,
+                  "contact": [ 0, 54.942626953125 ],
+                  "dir": [ 0.8856014609336853, -0.46444597840309143 ],
+                  "probability": 1,
+                  "shaftIndices": [ 0 ]
+                },
+                {
+                  "id": "v9747810lcb9p",
+                  "toNodeId": "",
+                  "end": true,
+                  "contact": [ 98, 1.942626953125 ],
+                  "dir": [ -0.866593062877655, 0.4990155100822449 ],
+                  "probability": 1,
+                  "shaftIndices": [ 0 ],
+                  "headIndices": [ 1 ],
+                  "headCurves": {
+                    "curves": [
+                      [ 10.000000953674316, -8, 12545, 0, -0.0, 12545, 0, -0.0, 12545, 9.99999713897705, 7.999998569488525, 12545 ]
+                    ]
+                  }
+                }
+              ],
+              "decorators": [],
+              "followers": [],
+              "CurveType": "Unknown",
+              "HermiteCurve": null
+            },
+            "topLeft": [ 261, 2790.057373046875 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9747810lcb9r",
+            "box": [ 347, 2790, 368, 2803 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 16892, 3, 0, 17052, 14, 0, 17118, 20, 1, 17234, 21, 3, 17452, 11, 13, 17552 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 13 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 347, 2790 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zp0mbo10lcb9d",
+            "box": [ 630, 2830, 650, 2850 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 20, 6681, 0, 18, 6792, 0, 6, 6874, 0, 0, 7009, 3, 1, 7142, 14, 4, 7209, 20, 7, 7309 ]
+            ],
+            "curvesBox": [ 0, 0, 20, 20 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 630, 2830 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zp0mbo10lcb9f",
+            "box": [ 632, 2837, 695, 2915 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 63, 78, 16364, 60, 75, 16469.599609375, 38.00044631958008, 52.999755859375, 16575.19921875, 7, 9.000007629394531, 16680.80078125, 1.9998931884765625, 1.000244140625, 16786.400390625, 0, 0, 16892 ],
+              [ 12.534805297851562, 2.622727870941162, 3708, 0, 0, 3708, 0, 0, 3708, 0.19278346002101898, 12.80479907989502, 3708 ]
+            ],
+            "curvesBox": [ 0, 0, 63, 78 ],
+            "itemAiData": {
+              "source": "_runConnectionAddArrowHead",
+              "connections": [
+                {
+                  "id": "zp0mbo10lcb9g",
+                  "toNodeId": "",
+                  "end": false,
+                  "contact": [ 63, 78 ],
+                  "dir": [ -0.6906189322471619, -0.7232187986373901 ],
+                  "probability": 1,
+                  "shaftIndices": [ 0 ]
+                },
+                {
+                  "id": "zp0mbo10lcb9h",
+                  "toNodeId": "",
+                  "end": true,
+                  "contact": [ 0, 0 ],
+                  "dir": [ 0.6363793611526489, 0.7713762521743774 ],
+                  "probability": 1,
+                  "shaftIndices": [ 0 ],
+                  "headIndices": [ 1 ],
+                  "headCurves": {
+                    "curves": [
+                      [ 10.000000953674316, -8.000000953674316, 3708, 0, 0, 3708, 0, 0, 3708, 10.000000953674316, 8.000000953674316, 3708 ]
+                    ]
+                  }
+                }
+              ],
+              "decorators": [],
+              "followers": [],
+              "CurveType": "Unknown",
+              "HermiteCurve": null
+            },
+            "topLeft": [ 632, 2837 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zp0mbo10lcb9j",
+            "box": [ 456, 2867, 489, 2917 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 1, 50, 2948, 3, 46, 3331, 32, 2, 3460, 33, 0, 3559, 30, 1, 4477, 0, 14, 4610, 3, 13, 4809, 25, 3, 4943, 27, 2, 5160, 28, 5, 5693, 28, 20, 5760, 28, 27, 5843 ]
+            ],
+            "curvesBox": [ 0, 0, 33, 50 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 456, 2867 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4lp1w11fi3np",
+            "box": [ 357, 457.5, 411, 519.5 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 664, 4, 5, 924, 18, 17, 957, 50, 33, 1023, 54, 36, 1091, 31, 60, 1240, 31, 62, 1274 ]
+            ],
+            "curvesBox": [ 0, 0, 54, 62 ],
+            "itemAiData": {},
+            "topLeft": [ 357, 457.5 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4lmtxw11pq58s",
+            "box": [ 458, 463.5, 485, 487.5 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 15, 0, 2114, 14, 3, 2324, 2, 20, 2390, 0, 24, 2474, 2, 24, 2591, 20, 22, 2657, 27, 21, 2740 ]
+            ],
+            "curvesBox": [ 0, 0, 27, 24 ],
+            "itemAiData": {},
+            "topLeft": [ 458, 463.5 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18g9ij813noqh0",
+            "box": [ 222, 3006, 416, 3089 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 120, 0, 1000, 116, 0, 1109, 76, 0, 1181, 49, 5, 1199, 26, 16, 1242, 10, 28, 1275, 2, 37, 1313, 0, 49, 1342, 2, 58, 1374, 9, 66, 1409, 25, 73, 1442, 63, 80, 1476, 108, 83, 1508, 142, 81, 1542, 174, 72, 1594, 185, 65, 1626, 194, 48, 1691, 192, 26, 1759, 180, 16, 1825, 147, 10, 1959, 138, 7, 2026, 124, 2, 2293, 122, 2, 2483 ]
+            ],
+            "curvesBox": [ 0, 0, 194, 83 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 222, 3006 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "znr57813nc35w",
+            "box": [ 453, 3017, 670, 3112 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 48, 7, 3578, 56, 7, 3625, 81, 2, 3659, 145, 0, 3724, 173, 2, 3758, 196, 8, 3794, 204, 13, 3813, 213, 27, 3834, 217, 51, 3908, 217, 64, 3941, 214, 73, 3975, 208, 80, 4008, 193, 86, 4043, 164, 92, 4075, 124, 95, 4108, 85, 91, 4141, 30, 76, 4208, 17, 70, 4243, 4, 56, 4309, 0, 44, 4375, 2, 38, 4409, 18, 25, 4475, 29, 20, 4559, 49, 14, 4860, 53, 13, 4909 ]
+            ],
+            "curvesBox": [ 0, 0, 217, 95 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 453, 3017 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "90uas413nhn2a",
+            "box": [ 749, 2986, 858, 3197 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 64, 17, 5933, 62, 16, 6042, 33, 11, 6175, 18, 12, 6241, 7, 24, 6308, 2, 41, 6342, 0, 104, 6408, 2, 141, 6441, 8, 172, 6476, 22, 203, 6542, 30, 209, 6574, 41, 211, 6608, 53, 209, 6642, 75, 190, 6709, 88, 170, 6742, 103, 120, 6808, 109, 90, 6849, 109, 65, 6926, 103, 44, 6991, 72, 11, 7125, 62, 1, 7192, 54, 0, 7343 ]
+            ],
+            "curvesBox": [ 0, 0, 109, 211 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 749, 2986 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zp0g0k13noop0",
+            "box": [ 937, 3006, 1059, 3210 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 92, 12, 8368, 88, 12, 8475, 23, 10, 8608, 15, 12, 8641, 8, 19, 8675, 0, 63, 8741, 1, 100, 8774, 7, 134, 8808, 17, 163, 8842, 29, 182, 8876, 50, 201, 8941, 80, 204, 9041, 90, 200, 9076, 100, 190, 9109, 109, 176, 9142, 119, 125, 9208, 122, 38, 9342, 116, 11, 9409, 112, 4, 9442, 105, 0, 9492, 103, 1, 9709, 96, 9, 9793, 93, 18, 9892 ]
+            ],
+            "curvesBox": [ 0, 0, 122, 204 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 937, 3006 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q9ftw413nlvd8",
+            "box": [ 412, 3125, 626, 3217 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 53, 10, 11365, 50, 10, 11776, 21, 19, 11875, 11, 24, 11908, 3, 32, 11942, 0, 35, 12058, 96, 92, 12258, 130, 91, 12291, 159, 87, 12325, 185, 80, 12377, 203, 68, 12442, 212, 53, 12512, 214, 28, 12642, 210, 20, 12676, 189, 5, 12742, 174, 1, 12774, 110, 0, 12910, 71, 6, 13058, 63, 8, 13126, 54, 9, 13293 ]
+            ],
+            "curvesBox": [ 0, 0, 214, 92 ],
+            "itemAiData": {
+              "followers": [],
+              "decorators": []
+            },
+            "topLeft": [ 412, 3125 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dg213o13nkg01",
+            "box": [ 224, 3084, 306, 3229 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 12, 49, 14449, 11, 54, 14609, 2, 86, 14741, 0, 108, 14875, 0, 117, 14941, 4, 127, 15008, 14, 136, 15075, 37, 145, 15208, 47, 140, 15276, 62, 115, 15342, 79, 63, 15408, 82, 35, 15476, 80, 24, 15508, 73, 11, 15559, 65, 3, 15614, 53, 0, 15676, 39, 3, 15742, 26, 10, 15808, 17, 20, 15893, 14, 38, 16059, 14, 46, 16209, 15, 50, 16375 ]
+            ],
+            "curvesBox": [ 0, 0, 82, 145 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 224, 3084 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4j53x013xlgqp",
+            "box": [ 371, 3114, 497, 3182 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 66, 3, 19749, 64, 3, 19842, 27, 6, 19975, 11, 14, 20041, 2, 22, 20108, 0, 34, 20174, 3, 43, 20209, 18, 61, 20275, 28, 66, 20309, 42, 68, 20341, 60, 67, 20375, 100, 55, 20441, 120, 41, 20507, 126, 25, 20575, 124, 16, 20609, 119, 9, 20642, 104, 1, 20708, 88, 0, 20791, 73, 4, 20902, 67, 4, 21132 ]
+            ],
+            "curvesBox": [ 0, 0, 126, 68 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 371, 3114 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d3l2c413xpnv1",
+            "box": [ 635, 3152, 725, 3203 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 46, 0, 22083, 44, 0, 22209, 36, 0, 22242, 15, 9, 22308, 2, 18, 22374, 0, 29, 22475, 8, 38, 22509, 24, 47, 22541, 44, 51, 22575, 72, 49, 22641, 85, 42, 22708, 90, 34, 22824, 82, 16, 22891, 73, 6, 22959, 64, 1, 23058, 48, 3, 23192 ]
+            ],
+            "curvesBox": [ 0, 0, 90, 51 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 635, 3152 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "djsftg13x8u82",
+            "box": [ 665, 3055, 845, 3128 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 57, 15, 25484, 52, 15, 25576, 38, 15, 25641, 20, 19, 25707, 8, 27, 25774, 2, 36, 25841, 0, 57, 25941, 4, 63, 25976, 13, 69, 26008, 53, 73, 26075, 113, 69, 26141, 157, 60, 26209, 175, 53, 26276, 179, 50, 26309, 180, 39, 26375, 174, 30, 26409, 161, 21, 26442, 124, 7, 26508, 92, 0, 26575, 61, 1, 26709, 53, 2, 26793, 51, 7, 27325, 50, 13, 27426 ]
+            ],
+            "curvesBox": [ 0, 0, 180, 73 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 665, 3055 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zjeivo13x7fnu",
+            "box": [ 864, 3117, 930, 3225 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 17, 94, 28516, 15, 92, 28642, 6, 71, 28708, 0, 32, 28776, 0, 11, 28841, 1, 6, 28874, 6, 2, 28925, 14, 0, 28979, 23, 1, 29012, 45, 25, 29077, 61, 48, 29142, 66, 63, 29208, 64, 82, 29274, 58, 92, 29342, 41, 107, 29525, 26, 108, 29759, 21, 100, 29975 ]
+            ],
+            "curvesBox": [ 0, 0, 66, 108 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 864, 3117 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8yda1g13xd0qp",
+            "box": [ 365, 3355, 374, 3364 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 1, 32982, 0, 3, 33248, 4, 8, 33309, 8, 9, 33376, 9, 1, 33476, 0, 0, 33580 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 9 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 365, 3355 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18f0kdgzrnbph",
+            "box": [ 412, 3362, 425, 3378 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 4, 3, 34216, 0, 4, 34425, 0, 10, 34492, 7, 16, 34558, 11, 15, 34608, 13, 7, 34676, 11, 2, 34742, 5, 0, 34825, 5, 2, 34942 ]
+            ],
+            "curvesBox": [ 0, 0, 13, 16 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 412, 3362 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4mvvaczrsxl2",
+            "box": [ 373, 3384, 385, 3395 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 6, 35566, 0, 8, 35742, 0, 10, 35774, 5, 11, 35858, 10, 9, 35909, 12, 5, 35959, 8, 1, 36041, 3, 0, 36125, 3, 2, 36309 ]
+            ],
+            "curvesBox": [ 0, 0, 12, 11 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 373, 3384 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lxz19gzrhpmx",
+            "box": [ 434, 3407, 442, 3413 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 2, 37149, 0, 4, 37325, 0, 6, 37358, 5, 6, 37426, 8, 3, 37491, 6, 0, 37575, 2, 0, 37674 ]
+            ],
+            "curvesBox": [ 0, 0, 8, 6 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 434, 3407 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "mgo1lwzrnbba",
+            "box": [ 358, 3404, 367, 3414 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 6, 38466, 0, 8, 38676, 2, 10, 38775, 8, 4, 38908, 9, 0, 39008, 5, 0, 39141, 4, 6, 39483 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 10 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 358, 3404 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1czue5gzrexvr",
+            "box": [ 388, 3415, 401, 3424 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 9, 40148, 0, 7, 40508, 2, 3, 40541, 12, 0, 40643, 13, 5, 40707, 9, 9, 40774, 3, 9, 40857, 3, 7, 40991 ]
+            ],
+            "curvesBox": [ 0, 0, 13, 9 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 388, 3415 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4ij2n8zrrl6y",
+            "box": [ 323, 3445, 328, 3447 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 5, 2, 41766, 2, 1, 42076, 0, 1, 42108, 2, 2, 42242, 4, 0, 42275 ]
+            ],
+            "curvesBox": [ 0, 0, 5, 2 ],
+            "itemAiData": {},
+            "topLeft": [ 323, 3445 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qvvig4zrc3y9",
+            "box": [ 364, 3447, 370, 3455 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 5, 4, 43183, 5, 6, 43341, 5, 8, 43358, 5, 6, 43524, 4, 0, 43575, 3, 2, 43741, 6, 5, 43825, 4, 4, 43942, 0, 4, 43992 ]
+            ],
+            "curvesBox": [ 0, 0, 6, 8 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 364, 3447 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "5u7fozrnbig",
+            "box": [ 421, 3458, 428, 3464 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 6, 0, 44733, 3, 1, 44924, 0, 4, 45009, 6, 6, 45125, 4, 3, 45242, 2, 3, 45275, 4, 3, 45391, 7, 3, 45424 ]
+            ],
+            "curvesBox": [ 0, 0, 7, 6 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 421, 3458 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18n5p9gzrvtom",
+            "box": [ 370, 3489, 376, 3497 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 6, 46199, 0, 8, 46375, 2, 8, 46441, 3, 0, 46575, 2, 2, 46742, 6, 3, 46842 ]
+            ],
+            "curvesBox": [ 0, 0, 6, 8 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 370, 3489 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "huml2czrhptt",
+            "box": [ 308, 3509, 312, 3516 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 4, 47601, 2, 7, 47808, 4, 7, 47892, 4, 3, 47941, 0, 0, 48007, 0, 4, 48159 ]
+            ],
+            "curvesBox": [ 0, 0, 4, 7 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 308, 3509 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lr4s2szrrlzg",
+            "box": [ 533, 3453, 540, 3458 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 1, 49100, 2, 0, 49358, 6, 0, 49408, 7, 5, 49509, 5, 5, 49557, 3, 5, 49799, 2, 3, 49875 ]
+            ],
+            "curvesBox": [ 0, 0, 7, 5 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 533, 3453 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1q6akv8101fy87",
+            "box": [ 467, 3505, 473, 3509 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 2, 50667, 2, 4, 50841, 6, 3, 50975, 4, 0, 51074, 0, 1, 51158, 0, 3, 51192 ]
+            ],
+            "curvesBox": [ 0, 0, 6, 4 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 467, 3505 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1heeias101mxoq",
+            "box": [ 584, 3384, 593, 3391 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 5, 52066, 0, 5, 52141, 1, 7, 52275, 7, 7, 52325, 9, 3, 52374, 7, 0, 52425, 2, 1, 52492, 3, 6, 52575 ]
+            ],
+            "curvesBox": [ 0, 0, 9, 7 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 584, 3384 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "143kk6c101r6rl",
+            "box": [ 603, 3459, 605, 3461 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 2, 53318, 2, 2, 53591, 2, 0, 53641, 0, 1, 54266 ]
+            ],
+            "curvesBox": [ 0, 0, 2, 2 ],
+            "itemAiData": {},
+            "topLeft": [ 603, 3459 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "142y9es101hb0n",
+            "box": [ 597, 3503, 605, 3510 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 2, 54950, 4, 0, 55157, 8, 1, 55241, 1, 7, 55341, 0, 3, 55424, 2, 2, 55458 ]
+            ],
+            "curvesBox": [ 0, 0, 8, 7 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 597, 3503 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cu817o101k45n",
+            "box": [ 691, 3443, 695, 3447 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 1, 3, 56100, 3, 4, 56342, 4, 2, 56408, 0, 0, 56508 ]
+            ],
+            "curvesBox": [ 0, 0, 4, 4 ],
+            "itemAiData": {},
+            "topLeft": [ 691, 3443 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lqhlpg101mwp6",
+            "box": [ 744, 3410, 756, 3420 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 0, 57284, 1, 1, 57375, 0, 10, 57475, 9, 8, 57558, 12, 3, 57608, 5, 0, 57691 ]
+            ],
+            "curvesBox": [ 0, 0, 12, 10 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 744, 3410 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zlw2lg101ps7b",
+            "box": [ 782, 3452, 792, 3476 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 2, 58483, 4, 2, 58591, 10, 0, 58658, 10, 3, 58757, 3, 24, 58875, 0, 5, 59090 ]
+            ],
+            "curvesBox": [ 0, 0, 10, 24 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 782, 3452 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "57wo4101r4st",
+            "box": [ 382, 3648, 506, 3775 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 36, 0, 63800, 29, 0, 63907, 11, 9, 63975, 2, 29, 64041, 0, 57, 64107, 9, 79, 64141, 27, 102, 64174, 45, 117, 64208, 60, 125, 64242, 77, 127, 64273, 93, 123, 64307, 106, 109, 64341, 116, 93, 64374, 122, 74, 64407, 124, 56, 64441, 118, 35, 64508, 102, 16, 64574, 79, 5, 64641, 45, 0, 64774, 35, 0, 64908 ]
+            ],
+            "curvesBox": [ 0, 0, 124, 127 ],
+            "itemAiData": {},
+            "topLeft": [ 382, 3648 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hbxr1g101oe86",
+            "box": [ 634, 3664, 773, 3786 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 96, 5, 65749, 91, 3, 65841, 64, 4, 65907, 43, 12, 65940, 25, 25, 65974, 12, 40, 66007, 4, 57, 66040, 0, 91, 66107, 6, 105, 66141, 12, 112, 66157, 31, 120, 66191, 53, 122, 66224, 76, 119, 66257, 95, 113, 66290, 123, 97, 66357, 132, 90, 66390, 137, 79, 66424, 139, 55, 66490, 127, 32, 66556, 106, 4, 66690, 92, 0, 66857 ]
+            ],
+            "curvesBox": [ 0, 0, 139, 122 ],
+            "itemAiData": {},
+            "topLeft": [ 634, 3664 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cztv6s10bv092",
+            "box": [ 493, 3799, 609, 3929 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 56, 68198, 3, 51, 68290, 3, 42, 68324, 9, 27, 68358, 22, 13, 68391, 42, 3, 68424, 77, 0, 68474, 93, 8, 68507, 106, 22, 68540, 114, 43, 68573, 116, 65, 68607, 109, 83, 68641, 103, 92, 68657, 81, 111, 68691, 59, 125, 68724, 41, 130, 68758, 28, 128, 68791, 16, 122, 68824, 3, 106, 68891, 0, 83, 69024, 2, 77, 69091, 2, 69, 69241, 5, 57, 69391 ]
+            ],
+            "curvesBox": [ 0, 0, 116, 130 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 493, 3799 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zmi71g10buz9l",
+            "box": [ 937, 3695, 1002, 3750 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 13, 2, 71331, 8, 2, 71424, 3, 8, 71490, 0, 30, 71575, 2, 38, 71607, 10, 46, 71640, 23, 52, 71674, 38, 55, 71707, 52, 52, 71741, 61, 43, 71773, 65, 32, 71824, 64, 23, 71859, 53, 8, 71924, 45, 2, 71991, 33, 0, 72076, 14, 3, 72324, 12, 3, 72390 ]
+            ],
+            "curvesBox": [ 0, 0, 65, 55 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 937, 3695 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dfeuqs10btlvv",
+            "box": [ 814, 3652, 948, 3838 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 86, 0, 73364, 84, 0, 73474, 60, 0, 73574, 33, 15, 73640, 14, 43, 73707, 5, 64, 73740, 0, 89, 73773, 0, 145, 73864, 4, 157, 73885, 24, 176, 73957, 36, 183, 73990, 59, 186, 74057, 72, 182, 74090, 102, 163, 74157, 128, 121, 74291, 132, 112, 74324, 134, 110, 74358, 134, 108, 74474, 131, 98, 74574, 111, 34, 74724, 103, 20, 74791, 95, 11, 74875, 84, 4, 75074 ]
+            ],
+            "curvesBox": [ 0, 0, 134, 186 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 814, 3652 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qodtes10bjrwr",
+            "box": [ 694, 3845, 894, 3962 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 79, 0, 77082, 77, 0, 77191, 62, 2, 77257, 33, 26, 77324, 8, 56, 77390, 2, 69, 77425, 0, 81, 77464, 4, 87, 77507, 33, 107, 77574, 48, 114, 77608, 65, 117, 77641, 127, 114, 77714, 162, 102, 77791, 192, 87, 77858, 198, 80, 77892, 200, 70, 77925, 187, 47, 77991, 164, 28, 78057, 114, 10, 78221, 93, 9, 78408, 79, 3, 78675 ]
+            ],
+            "curvesBox": [ 0, 0, 200, 117 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 694, 3845 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "143lfs410bmj9k",
+            "box": [ 266, 3798, 341, 3881 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 12, 17, 80382, 10, 20, 80575, 4, 37, 80641, 0, 66, 80707, 1, 74, 80741, 5, 79, 80774, 16, 83, 80807, 46, 83, 80873, 68, 69, 80941, 74, 61, 80974, 75, 37, 81042, 72, 26, 81076, 59, 11, 81142, 43, 1, 81208, 26, 0, 81276, 18, 4, 81357, 9, 13, 81508 ]
+            ],
+            "curvesBox": [ 0, 0, 75, 83 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 266, 3798 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1um5b8k10bnx1g",
+            "box": [ 228, 3651, 351, 3759 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 17, 93, 82515, 14, 92, 82624, 3, 77, 82691, 0, 56, 82758, 4, 43, 82791, 18, 27, 82825, 38, 11, 82857, 60, 1, 82892, 89, 0, 82941, 104, 8, 82975, 116, 23, 83008, 123, 40, 83040, 123, 62, 83108, 111, 86, 83174, 100, 97, 83240, 83, 105, 83308, 38, 108, 83440, 19, 104, 83607, 18, 102, 83891, 17, 96, 84058 ]
+            ],
+            "curvesBox": [ 0, 0, 123, 108 ],
+            "itemAiData": {},
+            "topLeft": [ 228, 3651 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "5toh010l9gcr",
+            "box": [ 383, 4032, 454, 4240 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 35, 0, 88182, 32, 0, 88332, 19, 1, 88407, 6, 9, 88475, 0, 17, 88541, 0, 24, 88575, 32, 85, 88674, 38, 112, 88724, 33, 120, 88757, 26, 123, 88791, 11, 123, 88858, 10, 118, 88907, 13, 112, 88945, 20, 110, 88992, 24, 116, 89026, 25, 157, 89092, 22, 200, 89191, 28, 206, 89224, 42, 208, 89258, 56, 203, 89292, 71, 189, 89359 ]
+            ],
+            "curvesBox": [ 0, 0, 71, 208 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 383, 4032 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "ziriuc10lrsaz",
+            "box": [ 503, 4049, 562, 4252 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 39, 1, 90050, 37, 0, 90157, 28, 0, 90191, 6, 10, 90257, 0, 19, 90291, 0, 29, 90325, 5, 43, 90357, 32, 74, 90425, 37, 89, 90457, 36, 102, 90492, 27, 111, 90525, 17, 115, 90557, 9, 115, 90607, 11, 108, 90674, 19, 101, 90708, 28, 99, 90748, 30, 109, 90791, 25, 169, 90857, 25, 196, 90899, 30, 202, 90940, 39, 203, 90974, 51, 200, 91007, 59, 195, 91075 ]
+            ],
+            "curvesBox": [ 0, 0, 59, 203 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 503, 4049 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zl9lic10lm51p",
+            "box": [ 294, 4113, 377, 4279 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 25, 0, 91900, 20, 0, 91975, 2, 14, 92041, 0, 26, 92107, 24, 58, 92190, 27, 73, 92224, 26, 82, 92257, 14, 89, 92324, 18, 90, 92458, 35, 123, 92524, 52, 148, 92557, 75, 166, 92624, 83, 165, 92740 ]
+            ],
+            "curvesBox": [ 0, 0, 83, 166 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 294, 4113 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "9kysk10ldo96",
+            "box": [ 208, 4048, 258, 4211 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 31, 0, 93648, 33, 0, 93774, 46, 0, 93841, 50, 4, 93874, 47, 23, 93941, 36, 46, 93974, 25, 84, 94040, 25, 89, 94075, 28, 93, 94108, 41, 95, 94173, 44, 91, 94224, 42, 90, 94291, 33, 130, 94441, 29, 142, 94473, 21, 152, 94507, 4, 163, 94574, 0, 163, 94625 ]
+            ],
+            "curvesBox": [ 0, 0, 50, 163 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 208, 4048 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "2px5w10lca2y",
+            "box": [ 335, 4033, 362, 4178 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 95633, 5, 0, 95757, 8, 2, 95791, 8, 33, 95857, 5, 65, 95925, 7, 77, 95957, 14, 88, 95990, 25, 94, 96058, 27, 94, 96092, 25, 97, 96190, 18, 111, 96258, 11, 141, 96391, 6, 145, 96458, 2, 145, 96574, 1, 143, 96658 ]
+            ],
+            "curvesBox": [ 0, 0, 27, 145 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 335, 4033 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "htdjqc10lulfv",
+            "box": [ 455, 4044, 492, 4219 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 34, 0, 97532, 20, 0, 97625, 11, 1, 97658, 6, 4, 97690, 5, 23, 97773, 6, 97, 97906, 6, 102, 97940, 2, 103, 98023, 0, 100, 98091, 2, 97, 98158, 8, 155, 98306, 17, 167, 98374, 26, 173, 98440, 30, 175, 98474, 37, 173, 98608 ]
+            ],
+            "curvesBox": [ 0, 0, 37, 175 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 455, 4044 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "m7bw2s10l9hxm",
+            "box": [ 592, 4067, 618, 4277 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 3, 0, 99681, 18, 0, 99807, 23, 5, 99841, 26, 31, 99907, 24, 47, 99940, 7, 83, 100006, 0, 104, 100073, 2, 115, 100106, 11, 122, 100139, 24, 124, 100207, 19, 130, 100357, 16, 153, 100424, 23, 201, 100557, 23, 209, 100624, 4, 210, 100758, 0, 208, 100857 ]
+            ],
+            "curvesBox": [ 0, 0, 26, 210 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 592, 4067 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18fn4mc10vg45q",
+            "box": [ 659, 4058, 711, 4271 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 10, 7, 102115, 12, 6, 102189, 30, 0, 102257, 39, 0, 102291, 46, 5, 102324, 48, 30, 102390, 34, 73, 102457, 29, 93, 102490, 30, 128, 102556, 35, 142, 102590, 41, 151, 102623, 51, 150, 102691, 52, 146, 102724, 42, 143, 102807, 37, 155, 102874, 39, 197, 103007, 38, 207, 103074, 34, 210, 103124, 16, 213, 103190, 6, 212, 103257, 0, 209, 103324 ]
+            ],
+            "curvesBox": [ 0, 0, 52, 213 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 659, 4058 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "140g9wk10veoem",
+            "box": [ 760, 4060, 818, 4273 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 54, 0, 104148, 50, 0, 104241, 24, 0, 104308, 3, 10, 104374, 0, 22, 104441, 5, 41, 104474, 25, 96, 104540, 28, 126, 104608, 21, 128, 104674, 20, 117, 104758, 21, 115, 104773, 24, 115, 104807, 26, 125, 104841, 25, 150, 104874, 18, 196, 104939, 17, 206, 104973, 21, 211, 105006, 47, 213, 105074, 58, 211, 105124 ]
+            ],
+            "curvesBox": [ 0, 0, 58, 213 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 760, 4060 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1his3dw10vu5tw",
+            "box": [ 858, 4067, 1065, 4139 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 1, 72, 105964, 1, 68, 106057, 0, 48, 106124, 10, 22, 106191, 21, 10, 106256, 50, 23, 106356, 80, 28, 106423, 92, 26, 106457, 98, 19, 106490, 99, 6, 106556, 92, 5, 106623, 92, 10, 106674, 104, 13, 106707, 133, 13, 106740, 177, 2, 106807, 195, 0, 106873, 203, 3, 106957, 207, 16, 107025, 207, 30, 107158 ]
+            ],
+            "curvesBox": [ 0, 0, 207, 72 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 858, 4067 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lrqjvo10vu5tt",
+            "box": [ 843, 4139, 1061, 4192 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 34, 108016, 1, 36, 108141, 13, 46, 108207, 32, 50, 108274, 98, 30, 108406, 107, 34, 108440, 112, 48, 108507, 107, 53, 108590, 108, 49, 108657, 124, 38, 108690, 149, 26, 108724, 176, 20, 108757, 208, 19, 108823, 215, 16, 108856, 218, 11, 108922, 212, 0, 109007 ]
+            ],
+            "curvesBox": [ 0, 0, 218, 53 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 843, 4139 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lr494410vlpu4",
+            "box": [ 926, 4172, 1072, 4240 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 22, 109715, 0, 24, 109874, 3, 40, 109941, 9, 46, 109973, 20, 48, 110008, 34, 47, 110040, 61, 37, 110108, 81, 36, 110174, 88, 40, 110207, 90, 44, 110240, 87, 64, 110307, 86, 68, 110340, 88, 67, 110391, 116, 46, 110456, 135, 38, 110524, 140, 36, 110609, 146, 27, 110707, 145, 17, 110774, 138, 9, 110841, 135, 0, 110925 ]
+            ],
+            "curvesBox": [ 0, 0, 146, 68 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 926, 4172 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "142ysdg10vn3m7",
+            "box": [ 818, 4211, 1011, 4249 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 22, 111898, 0, 24, 112041, 11, 36, 112107, 16, 38, 112141, 26, 35, 112190, 44, 20, 112224, 64, 9, 112257, 88, 6, 112323, 105, 20, 112390, 116, 26, 112423, 145, 29, 112492, 170, 26, 112567, 186, 11, 112642, 193, 0, 112707 ]
+            ],
+            "curvesBox": [ 0, 0, 193, 38 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 818, 4211 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qqw2ec10vbwg1",
+            "box": [ 454, 4257, 578, 4285 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 114517, 0, 2, 114648, 0, 12, 114724, 5, 19, 114757, 15, 26, 114790, 25, 28, 114823, 38, 27, 114857, 58, 17, 114923, 66, 16, 114974, 70, 23, 115041, 70, 27, 115091, 71, 25, 115142, 82, 15, 115173, 96, 9, 115207, 117, 9, 115274, 122, 8, 115308, 124, 4, 115374 ]
+            ],
+            "curvesBox": [ 0, 0, 124, 28 ],
+            "itemAiData": {
+              "followers": [],
+              "decorators": []
+            },
+            "topLeft": [ 454, 4257 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v9ssv8115cxe3",
+            "box": [ 299, 4412, 714, 4738 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 136, 117749, 5, 136, 117808, 40, 124, 117840, 99, 98, 117873, 144, 75, 117907, 157, 66, 117925, 162, 59, 117940, 163, 53, 117958, 153, 48, 117975, 125, 45, 117990, 94, 46, 118008, 63, 54, 118025, 38, 65, 118041, 17, 88, 118075, 20, 98, 118089, 50, 109, 118107, 206, 131, 118140, 272, 146, 118158, 315, 163, 118173, 340, 180, 118189, 351, 198, 118208, 347, 217, 118224, 321, 239, 118242, 274, 268, 118257, 215, 296, 118273, 160, 316, 118290, 124, 324, 118307, 103, 326, 118324, 86, 324, 118340, 80, 310, 118357, 108, 269, 118374, 176, 197, 118391, 258, 120, 118406, 319, 67, 118423, 390, 15, 118457, 415, 0, 118490, 413, 0, 118507, 360, 11, 118541, 315, 29, 118557, 271, 56, 118574, 239, 84, 118589, 211, 118, 118624, 205, 128, 118657, 287, 76, 118723, 324, 61, 118757, 336, 59, 118774, 359, 69, 118840, 369, 72, 118974 ]
+            ],
+            "curvesBox": [ 0, 0, 415, 326 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 299, 4412 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qnqq78115lbsx",
+            "box": [ 720, 4388, 958, 4604 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 40, 194, 120198, 40, 196, 120274, 40, 216, 120340, 38, 214, 120391, 19, 174, 120424, 7, 135, 120439, 1, 94, 120456, 0, 54, 120473, 4, 25, 120490, 17, 3, 120524, 22, 0, 120540, 27, 4, 120557, 30, 17, 120574, 30, 91, 120607, 27, 131, 120623, 18, 172, 120656, 14, 184, 120689, 13, 181, 120706, 20, 157, 120740, 29, 143, 120757, 39, 133, 120774, 49, 127, 120790, 56, 127, 120807, 61, 132, 120825, 65, 143, 120840, 67, 167, 120874, 63, 184, 120940, 77, 172, 121006, 91, 165, 121040, 101, 163, 121075, 122, 133, 121190, 133, 135, 121258, 146, 133, 121292, 165, 114, 121325, 175, 100, 121359, 179, 96, 121408, 206, 97, 121507, 215, 96, 121541, 233, 86, 121607, 238, 83, 121658 ]
+            ],
+            "curvesBox": [ 0, 0, 238, 216 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 720, 4388 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "dbo3dw115scub",
+            "box": [ 547, 4667, 824, 4823 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 99, 124715, 4, 104, 124814, 44, 156, 124940, 40, 153, 124992, 20, 131, 125023, 11, 116, 125040, 2, 83, 125074, 3, 69, 125091, 12, 55, 125124, 17, 53, 125141, 22, 63, 125174, 23, 73, 125190, 20, 84, 125207, 10, 98, 125241, 4, 102, 125274, 6, 96, 125341, 23, 93, 125391, 64, 116, 125458, 77, 120, 125490, 89, 118, 125524, 100, 105, 125558, 103, 96, 125574, 101, 76, 125608, 88, 64, 125642, 73, 64, 125674, 65, 71, 125707, 65, 83, 125740, 72, 88, 125757, 105, 92, 125791, 124, 86, 125807, 138, 75, 125825, 149, 55, 125858, 150, 44, 125891, 147, 42, 125924, 145, 44, 125958, 148, 50, 125991, 158, 55, 126057, 162, 43, 126141, 182, 32, 126207, 205, 13, 126274, 209, 13, 126308, 212, 17, 126340, 220, 18, 126373, 243, 7, 126440, 268, 5, 126540, 277, 0, 126591 ]
+            ],
+            "curvesBox": [ 0, 0, 277, 156 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 547, 4667 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "desqas115scu9",
+            "box": [ 129, 4636, 383, 4812 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 47, 69, 127881, 59, 63, 127957, 79, 48, 127989, 91, 31, 128024, 91, 19, 128058, 83, 16, 128073, 52, 19, 128107, 33, 28, 128124, 9, 50, 128156, 2, 61, 128173, 0, 70, 128190, 8, 79, 128208, 30, 89, 128224, 85, 105, 128256, 115, 117, 128290, 122, 125, 128306, 123, 133, 128324, 117, 145, 128341, 104, 157, 128357, 72, 172, 128390, 47, 176, 128439, 47, 170, 128458, 59, 153, 128474, 153, 56, 128539, 172, 37, 128575, 174, 34, 128594, 171, 33, 128607, 152, 45, 128641, 136, 65, 128674, 134, 81, 128708, 141, 88, 128741, 147, 87, 128757, 157, 71, 128791, 163, 47, 128852, 168, 54, 128924, 173, 55, 128957, 180, 41, 129024, 183, 38, 129058, 195, 40, 129140, 207, 24, 129207, 210, 21, 129240, 222, 19, 129323, 234, 7, 129390, 248, 6, 129457, 254, 0, 129541 ]
+            ],
+            "curvesBox": [ 0, 0, 254, 176 ],
+            "itemAiData": {
+              "decorators": []
+            },
+            "topLeft": [ 129, 4636 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4mx0dg1158oax",
+            "box": [ 330, 4802, 600, 5026 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 114, 94, 132231, 120, 93, 133147, 168, 78, 133190, 231, 53, 133224, 252, 40, 133239, 263, 29, 133257, 269, 19, 133274, 270, 12, 133291, 264, 6, 133308, 250, 1, 133324, 210, 0, 133356, 189, 7, 133373, 172, 24, 133390, 158, 48, 133407, 128, 131, 133473, 119, 147, 133489, 106, 161, 133507, 91, 170, 133524, 73, 174, 133540, 55, 173, 133557, 37, 163, 133573, 21, 143, 133591, 8, 115, 133608, 2, 82, 133623, 0, 51, 133639, 3, 28, 133656, 10, 14, 133673, 17, 8, 133691, 27, 7, 133707, 43, 18, 133724, 89, 77, 133757, 136, 143, 133789, 177, 193, 133827, 210, 220, 133850, 234, 224, 133890, 242, 221, 133907, 248, 214, 133922, 254, 194, 133956, 254, 180, 133990, 251, 176, 134007, 242, 177, 134040, 233, 184, 134073, 221, 210, 134140, 212, 216, 134158, 199, 220, 134174, 138, 219, 134206, 69, 205, 134240, 29, 190, 134273, 19, 182, 134291, 15, 174, 134306, 20, 154, 134339, 42, 124, 134406, 44, 122, 134424, 44, 127, 134524, 47, 126, 134591, 66, 77, 134657, 69, 60, 134706, 71, 62, 134757, 74, 68, 134774, 108, 92, 134839, 126, 102, 134906, 128, 103, 134940, 126, 101, 135040, 122, 97, 135090, 121, 99, 135347 ]
+            ],
+            "curvesBox": [ 0, 0, 270, 224 ],
+            "itemAiData": {},
+            "topLeft": [ 330, 4802 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "des7c411zljb8",
+            "box": [ 397, 604, 446, 637 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 0, 2, 2, 142, 26, 30, 243, 31, 33, 293, 49, 3, 425 ]
+            ],
+            "curvesBox": [ 0, 0, 49, 33 ],
+            "itemAiData": {},
+            "topLeft": [ 397, 604 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1hfnpyc11ziq6b",
+            "box": [ 484, 535, 526, 570 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 20, 425, 3, 16, 533, 18, 2, 599, 20, 0, 632, 23, 1, 683, 42, 35, 832 ]
+            ],
+            "curvesBox": [ 0, 0, 42, 35 ],
+            "itemAiData": {},
+            "topLeft": [ 484, 535 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hzloh011zfx8l",
+            "box": [ 492, 619, 536, 674 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 832, 13, 0, 922, 42, 0, 990, 44, 0, 1005, 44, 2, 1056, 4, 55, 1174 ]
+            ],
+            "curvesBox": [ 0, 0, 44, 55 ],
+            "itemAiData": {},
+            "topLeft": [ 492, 619 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18fnkf811zljpk",
+            "box": [ 239, 510, 283, 586 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 33, 0, 1174, 32, 6, 1315, 10, 57, 1381, 0, 76, 1433, 4, 75, 1583, 37, 69, 1699, 44, 69, 1933 ]
+            ],
+            "curvesBox": [ 0, 0, 44, 76 ],
+            "itemAiData": {},
+            "topLeft": [ 239, 510 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qpml9g11zr4le",
+            "box": [ 322, 566, 350, 583 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 7, 0, 1933, 6, 2, 2106, 0, 13, 2172, 0, 15, 2190, 2, 15, 2273, 28, 17, 2374 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 17 ],
+            "itemAiData": {},
+            "topLeft": [ 322, 566 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1ha1stg11zpq8a",
+            "box": [ 381, 552, 393, 572 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 2374, 3, 0, 2499, 12, 1, 2581, 11, 5, 2631, 1, 18, 2697, 0, 20, 2731 ]
+            ],
+            "curvesBox": [ 0, 0, 12, 20 ],
+            "itemAiData": {},
+            "topLeft": [ 381, 552 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18hj95w11zr3ly",
+            "box": [ 321, 474, 349, 493 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 18, 2731, 0, 16, 2873, 0, 4, 2938, 1, 0, 3038, 20, 12, 3122, 26, 18, 3155, 28, 19, 3189 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 321, 474 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qdt5ic11zskjr",
+            "box": [ 317, 602, 330, 645 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 39, 3189, 2, 43, 3380, 4, 41, 3481, 12, 8, 3547, 13, 0, 3581 ]
+            ],
+            "curvesBox": [ 0, 0, 13, 43 ],
+            "itemAiData": {},
+            "topLeft": [ 317, 602 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "7pt0k11zhatn",
+            "box": [ 583, 483, 616, 509 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 9, 3581, 3, 9, 3739, 17, 19, 3804, 24, 26, 3872, 26, 25, 3940, 31, 9, 4022, 31, 7, 4172, 33, 0, 4256 ]
+            ],
+            "curvesBox": [ 0, 0, 33, 26 ],
+            "itemAiData": {},
+            "topLeft": [ 583, 483 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d0hhd011zr3t4",
+            "box": [ 574, 575, 595, 603 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 16, 4256, 3, 18, 4398, 9, 28, 4498, 10, 26, 4681, 19, 4, 4747, 21, 0, 4782 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 28 ],
+            "itemAiData": {},
+            "topLeft": [ 574, 575 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v2ywbo11zd2bo",
+            "box": [ 533, 502, 550, 522 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 4782, 3, 0, 4940, 17, 6, 5074, 17, 8, 5140, 3, 20, 5256 ]
+            ],
+            "curvesBox": [ 0, 0, 17, 20 ],
+            "itemAiData": {},
+            "topLeft": [ 533, 502 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4pdoh0129pbsw",
+            "box": [ 722, 529, 747, 549 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 5256, 2, 0, 5430, 16, 0, 5497, 22, 2, 5529, 25, 4, 5631, 7, 17, 5713, 2, 20, 5763 ]
+            ],
+            "curvesBox": [ 0, 0, 25, 20 ],
+            "itemAiData": {},
+            "topLeft": [ 722, 529 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "m7aqzo129711e",
+            "box": [ 663, 567, 686, 586 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 6, 5763, 3, 7, 5938, 14, 17, 6004, 18, 19, 6121, 22, 4, 6187, 23, 0, 6238 ]
+            ],
+            "curvesBox": [ 0, 0, 23, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 663, 567 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lylick129e2vg",
+            "box": [ 678, 474, 706, 492 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 10, 6238, 0, 8, 6362, 0, 0, 6445, 2, 0, 6562, 22, 13, 6627, 28, 18, 6679 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 18 ],
+            "itemAiData": {},
+            "topLeft": [ 678, 474 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "90u7ms129mhhn",
+            "box": [ 622, 647, 641, 669 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 6679, 2, 0, 6937, 16, 1, 7003, 18, 2, 7020, 19, 4, 7229, 3, 22, 7353 ]
+            ],
+            "curvesBox": [ 0, 0, 19, 22 ],
+            "itemAiData": {},
+            "topLeft": [ 622, 647 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18f13c41298gej",
+            "box": [ 704, 626, 734, 651 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 30, 0, 7353, 28, 1, 7512, 0, 18, 7612, 2, 19, 7763, 8, 23, 7829, 10, 24, 7995, 15, 25, 8062 ]
+            ],
+            "curvesBox": [ 0, 0, 30, 25 ],
+            "itemAiData": {},
+            "topLeft": [ 704, 626 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18jei3o129jojs",
+            "box": [ 839, 581, 860, 604 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 0, 8062, 4, 1, 8188, 20, 4, 8288, 21, 8, 8438, 0, 23, 8538 ]
+            ],
+            "curvesBox": [ 0, 0, 21, 23 ],
+            "itemAiData": {},
+            "topLeft": [ 839, 581 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1undtlw129b8qs",
+            "box": [ 847, 486, 867, 502 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 8538, 3, 0, 8663, 20, 0, 8747, 20, 3, 8870, 14, 16, 8947 ]
+            ],
+            "curvesBox": [ 0, 0, 20, 16 ],
+            "itemAiData": {},
+            "topLeft": [ 847, 486 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qs4r38129e2oa",
+            "box": [ 800, 552, 823, 567 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 4, 0, 8947, 4, 2, 9106, 0, 13, 9171, 0, 15, 9205, 2, 15, 9305, 23, 10, 9422 ]
+            ],
+            "curvesBox": [ 0, 0, 23, 15 ],
+            "itemAiData": {},
+            "topLeft": [ 800, 552 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "qq9ezo129l53e",
+            "box": [ 921, 623, 939, 644 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 10, 0, 9422, 12, 4, 9548, 18, 16, 9615, 18, 18, 9649, 15, 18, 9799, 0, 21, 9881 ]
+            ],
+            "curvesBox": [ 0, 0, 18, 21 ],
+            "itemAiData": {},
+            "topLeft": [ 921, 623 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4peqec129pb7v",
+            "box": [ 965, 515, 983, 546 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 9, 0, 9881, 9, 2, 10056, 18, 20, 10206, 14, 23, 10373, 0, 31, 10439 ]
+            ],
+            "curvesBox": [ 0, 0, 18, 31 ],
+            "itemAiData": {},
+            "topLeft": [ 965, 515 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "582zo1298gee",
+            "box": [ 916, 558, 935, 576 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 10439, 0, 2, 10631, 0, 17, 10799, 3, 18, 10999, 17, 17, 11065, 19, 16, 11099 ]
+            ],
+            "curvesBox": [ 0, 0, 19, 18 ],
+            "itemAiData": {},
+            "topLeft": [ 916, 558 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "hsrc4k129gvlv",
+            "box": [ 994, 578, 1017, 597 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 2, 11099, 2, 5, 11259, 10, 15, 11325, 13, 19, 11392, 15, 19, 11492, 23, 0, 11591 ]
+            ],
+            "curvesBox": [ 0, 0, 23, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 994, 578 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "m95zxg12jjabt",
+            "box": [ 1007, 635, 1025, 655 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 9, 11591, 2, 11, 11734, 11, 19, 11818, 13, 20, 11901, 18, 0, 12017 ]
+            ],
+            "curvesBox": [ 0, 0, 18, 20 ],
+            "itemAiData": {},
+            "topLeft": [ 1007, 635 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zir67812joxsb",
+            "box": [ 803, 648, 821, 665 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 12017, 2, 1, 12143, 10, 6, 12208, 17, 17, 12325, 17, 15, 12492, 18, 3, 12725 ]
+            ],
+            "curvesBox": [ 0, 0, 18, 17 ],
+            "itemAiData": {},
+            "topLeft": [ 803, 648 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cwq71g12jauj1",
+            "box": [ 925, 474, 949, 493 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 4, 1083, 2, 4, 1499, 24, 0, 1608, 23, 4, 1782, 17, 17, 1859, 16, 19, 1893 ]
+            ],
+            "curvesBox": [ 0, 0, 24, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 925, 474 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "htzuhw12j82z1",
+            "box": [ 1019, 491, 1048, 522 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 3050, 2, 0, 3159, 24, 0, 3225, 29, 0, 3275, 28, 2, 3343, 10, 31, 3441 ]
+            ],
+            "curvesBox": [ 0, 0, 29, 31 ],
+            "itemAiData": {},
+            "topLeft": [ 1019, 491 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v8ktgk12jdpu6",
+            "box": [ 764, 437, 792, 466 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 29, 4383, 0, 26, 4527, 9, 1, 4659, 11, 0, 4776, 28, 19, 4891 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 29 ],
+            "itemAiData": {},
+            "topLeft": [ 764, 437 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "5ugx012j6mf6",
+            "box": [ 542, 405, 568, 430 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 25, 6149, 0, 22, 6342, 7, 0, 6475, 10, 1, 6599, 24, 12, 6743, 26, 13, 6966 ]
+            ],
+            "curvesBox": [ 0, 0, 26, 25 ],
+            "itemAiData": {},
+            "topLeft": [ 542, 405 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1qd712c12jkq31",
+            "box": [ 420, 406, 443, 425 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 23, 0, 7867, 21, 1, 8010, 1, 9, 8159, 0, 11, 8293, 14, 17, 8375, 15, 19, 8516 ]
+            ],
+            "curvesBox": [ 0, 0, 23, 19 ],
+            "itemAiData": {},
+            "topLeft": [ 420, 406 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "9244kk12jqakg",
+            "box": [ 248, 424, 273, 451 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 6, 27, 9167, 5, 24, 9409, 1, 7, 9475, 0, 0, 9542, 23, 7, 9675, 25, 8, 9725 ]
+            ],
+            "curvesBox": [ 0, 0, 25, 27 ],
+            "itemAiData": {},
+            "topLeft": [ 248, 424 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1ur4htg101r4ln",
+            "box": [ 354, 2072, 382, 2096 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 0, 0, 1, 3, 515, 15, 20, 607, 22, 23, 674, 28, 14, 757, 27, 6, 823, 18, 5, 908, 5, 17, 973, 0, 24, 1040 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 24 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 354, 2072 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "8whbuc101tzwg",
+            "box": [ 416, 2038, 448, 2075 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 14, 1040, 4, 15, 1180, 23, 29, 1246, 30, 33, 1297, 32, 29, 1348, 31, 0, 1446, 26, 1, 1497, 9, 27, 1597, 9, 29, 1807, 4, 35, 1896, 4, 37, 1998 ]
+            ],
+            "curvesBox": [ 0, 0, 32, 37 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 416, 2038 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "djspbo101k4qx",
+            "box": [ 500, 2052, 544, 2089 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 10, 1998, 2, 11, 2120, 42, 36, 2252, 44, 37, 2286, 42, 37, 2353, 5, 37, 2470, 5, 34, 2636, 32, 9, 2701, 42, 0, 2769 ]
+            ],
+            "curvesBox": [ 0, 0, 44, 37 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 500, 2052 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "18nscok101bqq7",
+            "box": [ 603, 2033, 649, 2079 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 9, 15, 2769, 11, 16, 2893, 35, 35, 3009, 38, 32, 3093, 45, 10, 3159, 46, 1, 3209, 44, 0, 3343, 38, 1, 3375, 23, 13, 3408, 4, 38, 3475, 0, 46, 3543 ]
+            ],
+            "curvesBox": [ 0, 0, 46, 46 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 603, 2033 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1une9f8101pq8b",
+            "box": [ 350, 2144, 384, 2173 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 1, 10, 3543, 4, 11, 3699, 25, 25, 3764, 32, 29, 3815, 33, 25, 3934, 34, 0, 4032, 32, 0, 4116, 14, 14, 4182, 0, 29, 4349 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 29 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 350, 2144 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "v8jupg10bcopa",
+            "box": [ 454, 2196, 493, 2225 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 13, 8, 4349, 14, 11, 4489, 26, 29, 4572, 28, 26, 4824, 39, 0, 4922, 36, 0, 5074, 13, 13, 5139, 8, 18, 5173, 0, 27, 5407 ]
+            ],
+            "curvesBox": [ 0, 0, 39, 29 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 454, 2196 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "90ty5w10bs4r1",
+            "box": [ 429, 2132, 457, 2163 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 2, 6, 5407, 6, 9, 5582, 18, 21, 5647, 22, 31, 5732, 22, 28, 5898, 28, 0, 5997, 26, 1, 6100, 1, 22, 6197, 0, 24, 6232 ]
+            ],
+            "curvesBox": [ 0, 0, 28, 31 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 429, 2132 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1cxc8c410btjpi",
+            "box": [ 253, 2117, 294, 2173 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 25, 6232, 5, 25, 6373, 34, 29, 6439, 41, 31, 6485, 41, 29, 6573, 38, 9, 6639, 35, 2, 6672, 32, 0, 6755, 31, 2, 6839, 19, 56, 6955 ]
+            ],
+            "curvesBox": [ 0, 0, 41, 56 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 253, 2117 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "zs4n5g10bibd9",
+            "box": [ 318, 2198, 352, 2232 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 0, 12, 6955, 2, 12, 7064, 21, 24, 7130, 28, 30, 7197, 25, 31, 7364, 3, 34, 7448, 4, 30, 7607, 29, 4, 7681, 34, 0, 7714 ]
+            ],
+            "curvesBox": [ 0, 0, 34, 34 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 318, 2198 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1lu8jec10bco3p",
+            "box": [ 603, 2127, 649, 2194 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 1, 17, 7714, 3, 17, 7823, 20, 25, 7888, 37, 28, 7955, 42, 24, 7988, 46, 7, 8056, 44, 2, 8089, 36, 0, 8155, 25, 9, 8188, 12, 31, 8222, 3, 54, 8254, 0, 67, 8305 ]
+            ],
+            "curvesBox": [ 0, 0, 46, 67 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 603, 2127 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "1d2cgtw10bjp4w",
+            "box": [ 722, 2108, 779, 2149 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 30, 18, 8305, 44, 31, 8379, 46, 32, 8446, 53, 18, 8530, 57, 0, 8613, 51, 1, 8746, 9, 33, 8812, 0, 41, 8845 ]
+            ],
+            "curvesBox": [ 0, 0, 57, 41 ],
+            "itemAiData": {
+              "decorators": [],
+              "followers": []
+            },
+            "topLeft": [ 722, 2108 ]
+          },
+          {
+            "type": "drawing_curve",
+            "id": "4pek2p179dtzi",
+            "box": [ 849, 306, 850, 308 ],
+            "layerId": "static_layer_CgoiCHByb2Qtb25lEg8KBFBhZ2UQgICAwp66jgo",
+            "curves": [
+              [ 850, 306, 4536, 849, 308, 4663, 846, 319, 4739, 849, 326, 4769, 861, 337, 4799, 878, 345, 4828, 898, 347, 4859, 908, 345, 4889, 926, 329, 4950, 929, 323, 4981, 925, 313, 5053, 914, 305, 5083, 900, 309, 5173 ]
+            ],
+            "curvesBox": [ 846, 305, 929, 347 ],
+            "itemAiData": {},
+            "topLeft": [ 0, 0 ]
+          },
+          {
+            "type": "title",
+            "id": "hook-10b86b21--blockHook",
+            "box": [ 234, 60, 954, 156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Pramod-Training Data"
+          },
+          {
+            "type": "text",
+            "id": "hook-10b86b21--blockHook/text/0",
+            "box": [ 234, 85.5, 571.5078125, 130 ],
+            "isLeaf": true,
+            "parent": "hook-10b86b21--blockHook",
+            "text": "Pramod-Training Data"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-60efdc45--blockHook",
+            "box": [ 234, 156, 954, 180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "bulletList",
+            "id": "hook-29efbfbe--blockHook",
+            "box": [ 282, 180, 954, 276 ],
+            "isLeaf": false,
+            "parent": "",
+            "children": [
+              "hook-69912c5e--blockHook",
+              "hook-052beb60--blockHook",
+              "hook-daab8448--blockHook"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7c5d1e2--blockHook",
+            "box": [ 282, 180, 954, 204 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-69912c5e--blockHook",
+            "box": [ 282, 180, 954, 204 ],
+            "isLeaf": false,
+            "parent": "hook-a7c5d1e2--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "text",
+            "id": "hook-69912c5e--blockHook/text/0",
+            "box": [ 282, 181.5, 770.984375, 202.5 ],
+            "isLeaf": true,
+            "parent": "hook-69912c5e--blockHook",
+            "text": "Each example in all the classes should contain only one stroke."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d48ed2bf--blockHook",
+            "box": [ 282, 204, 954, 228 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-052beb60--blockHook",
+            "box": [ 282, 204, 954, 228 ],
+            "isLeaf": false,
+            "parent": "hook-d48ed2bf--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "text",
+            "id": "hook-052beb60--blockHook/text/0",
+            "box": [ 282, 205.5, 609.9296875, 226.5 ],
+            "isLeaf": true,
+            "parent": "hook-052beb60--blockHook",
+            "text": "Create at least 10 examples for each class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-143b123a--blockHook",
+            "box": [ 282, 228, 954, 276 ],
+            "isLeaf": false,
+            "parent": "hook-29efbfbe--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-daab8448--blockHook",
+            "box": [ 282, 228, 954, 276 ],
+            "isLeaf": false,
+            "parent": "hook-143b123a--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "text",
+            "id": "hook-daab8448--blockHook/text/0",
+            "box": [ 282, 229.5, 936.4609375, 274.5 ],
+            "isLeaf": true,
+            "parent": "hook-daab8448--blockHook",
+            "text": "Please adjust the headings such that all the examples are below the corresponding heading and above the next heading."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4f0b806e--blockHook",
+            "box": [ 234, 276, 954, 300 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2ae0b5f9--blockHook",
+            "box": [ 234, 300, 954, 324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-0ee1a3d5--blockHook",
+            "box": [ 234, 324, 954, 420 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Arrow Head",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-0ee1a3d5--blockHook/text/0",
+            "box": [ 234, 359, 395.5078125, 397 ],
+            "isLeaf": true,
+            "parent": "hook-0ee1a3d5--blockHook",
+            "text": "Arrow Head"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-051c6ab3--blockHook",
+            "box": [ 234, 420, 954, 444 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-23242fa7--blockHook",
+            "box": [ 234, 444, 954, 468 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cfbcce95--blockHook",
+            "box": [ 234, 468, 954, 492 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2002d361--blockHook",
+            "box": [ 234, 492, 954, 516 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f6475b6c--blockHook",
+            "box": [ 234, 516, 954, 540 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b8ef12d2--blockHook",
+            "box": [ 234, 540, 954, 564 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4b8e3c5a--blockHook",
+            "box": [ 234, 564, 954, 588 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-eb4aed13--blockHook",
+            "box": [ 234, 588, 954, 612 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9db63cca--blockHook",
+            "box": [ 234, 612, 954, 636 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3c75c90d--blockHook",
+            "box": [ 234, 636, 954, 660 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-14dee783--blockHook",
+            "box": [ 234, 660, 954, 684 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-f1c991d2--blockHook",
+            "box": [ 234, 684, 954, 780 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Triangle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-f1c991d2--blockHook/text/0",
+            "box": [ 234, 719, 340.1171875, 757 ],
+            "isLeaf": true,
+            "parent": "hook-f1c991d2--blockHook",
+            "text": "Triangle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5d9d883b--blockHook",
+            "box": [ 234, 780, 954, 804 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-332c7884--blockHook",
+            "box": [ 234, 804, 954, 828 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-59ce13c3--blockHook",
+            "box": [ 234, 828, 954, 852 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1d6ed197--blockHook",
+            "box": [ 234, 852, 954, 876 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ed10cd47--blockHook",
+            "box": [ 234, 876, 954, 900 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d70e6e30--blockHook",
+            "box": [ 234, 900, 954, 924 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-41ed0432--blockHook",
+            "box": [ 234, 924, 954, 948 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b93e0a3d--blockHook",
+            "box": [ 234, 948, 954, 972 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-481045fc--blockHook",
+            "box": [ 234, 972, 954, 996 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-1d1e4346--blockHook",
+            "box": [ 234, 996, 954, 1020 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9b61b28f--blockHook",
+            "box": [ 234, 1020, 954, 1044 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ad7b619a--blockHook",
+            "box": [ 234, 1044, 954, 1068 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-84f2e590--blockHook",
+            "box": [ 234, 1068, 954, 1092 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-30b9c8aa--blockHook",
+            "box": [ 234, 1092, 954, 1188 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Rectangle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-30b9c8aa--blockHook/text/0",
+            "box": [ 234, 1127, 366.671875, 1165 ],
+            "isLeaf": true,
+            "parent": "hook-30b9c8aa--blockHook",
+            "text": "Rectangle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-253e29e7--blockHook",
+            "box": [ 234, 1188, 954, 1212 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-75cecb29--blockHook",
+            "box": [ 234, 1212, 954, 1236 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-bdae55b3--blockHook",
+            "box": [ 234, 1236, 954, 1260 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-149a3de5--blockHook",
+            "box": [ 234, 1260, 954, 1284 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7a8caeac--blockHook",
+            "box": [ 234, 1284, 954, 1308 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6dd472ae--blockHook",
+            "box": [ 234, 1308, 954, 1332 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-40ce8de0--blockHook",
+            "box": [ 234, 1332, 954, 1356 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-876df60a--blockHook",
+            "box": [ 234, 1356, 954, 1380 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cb72ff6e--blockHook",
+            "box": [ 234, 1380, 954, 1404 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9ed71a44--blockHook",
+            "box": [ 234, 1404, 954, 1428 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a4610e1a--blockHook",
+            "box": [ 234, 1428, 954, 1452 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-a539f365--blockHook",
+            "box": [ 234, 1452, 954, 1548 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Bracket",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-a539f365--blockHook/text/0",
+            "box": [ 234, 1487, 333.03125, 1525 ],
+            "isLeaf": true,
+            "parent": "hook-a539f365--blockHook",
+            "text": "Bracket"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0c0a438a--blockHook",
+            "box": [ 234, 1548, 954, 1572 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b58b1a78--blockHook",
+            "box": [ 234, 1572, 954, 1596 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2a768b76--blockHook",
+            "box": [ 234, 1596, 954, 1620 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0bc76546--blockHook",
+            "box": [ 234, 1620, 954, 1644 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7ce680f6--blockHook",
+            "box": [ 234, 1644, 954, 1668 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3a4f0c0d--blockHook",
+            "box": [ 234, 1668, 954, 1692 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6fd34162--blockHook",
+            "box": [ 234, 1692, 954, 1716 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c556ae37--blockHook",
+            "box": [ 234, 1716, 954, 1740 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c4bc7961--blockHook",
+            "box": [ 234, 1740, 954, 1764 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b2c4a5cc--blockHook",
+            "box": [ 234, 1764, 954, 1788 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0a0ebabe--blockHook",
+            "box": [ 234, 1788, 954, 1812 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f9bdd0f2--blockHook",
+            "box": [ 234, 1812, 954, 1836 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-03187557--blockHook",
+            "box": [ 234, 1836, 954, 1860 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2f213611--blockHook",
+            "box": [ 234, 1860, 954, 1884 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-964ff8cb--blockHook",
+            "box": [ 234, 1884, 954, 1908 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-1eb9ce94--blockHook",
+            "box": [ 234, 1908, 954, 2004 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Small Cross",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-1eb9ce94--blockHook/text/0",
+            "box": [ 234, 1943, 385.515625, 1981 ],
+            "isLeaf": true,
+            "parent": "hook-1eb9ce94--blockHook",
+            "text": "Small Cross"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dd5fa11c--blockHook",
+            "box": [ 234, 2004, 954, 2028 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fc5c8291--blockHook",
+            "box": [ 234, 2028, 954, 2052 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e8822ed4--blockHook",
+            "box": [ 234, 2052, 954, 2076 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dda90559--blockHook",
+            "box": [ 234, 2076, 954, 2100 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4fbd9d5a--blockHook",
+            "box": [ 234, 2100, 954, 2124 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-58a09d21--blockHook",
+            "box": [ 234, 2124, 954, 2148 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-82365a23--blockHook",
+            "box": [ 234, 2148, 954, 2172 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5e859647--blockHook",
+            "box": [ 234, 2172, 954, 2196 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fababf5e--blockHook",
+            "box": [ 234, 2196, 954, 2220 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4f4b6ca9--blockHook",
+            "box": [ 234, 2220, 954, 2244 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-9f122e74--blockHook",
+            "box": [ 234, 2244, 954, 2268 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-3546c3f2--blockHook",
+            "box": [ 234, 2268, 954, 2292 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-db28f40c--blockHook",
+            "box": [ 234, 2292, 954, 2316 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-29498092--blockHook",
+            "box": [ 234, 2316, 954, 2340 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f2afb04a--blockHook",
+            "box": [ 234, 2340, 954, 2364 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0d2791d8--blockHook",
+            "box": [ 234, 2364, 954, 2388 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5768c2f8--blockHook",
+            "box": [ 234, 2388, 954, 2412 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d7ab9ac3--blockHook",
+            "box": [ 234, 2412, 954, 2436 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-977546e8--blockHook",
+            "box": [ 234, 2436, 954, 2460 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c7984089--blockHook",
+            "box": [ 234, 2460, 954, 2484 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f0f4005f--blockHook",
+            "box": [ 234, 2484, 954, 2508 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b5938aae--blockHook",
+            "box": [ 234, 2508, 954, 2532 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-0e279e9c--blockHook",
+            "box": [ 234, 2532, 954, 2628 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Arrow",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-0e279e9c--blockHook/text/0",
+            "box": [ 234, 2567, 316.1796875, 2605 ],
+            "isLeaf": true,
+            "parent": "hook-0e279e9c--blockHook",
+            "text": "Arrow"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7581af7--blockHook",
+            "box": [ 234, 2628, 954, 2652 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fd8965dc--blockHook",
+            "box": [ 234, 2652, 954, 2676 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0f08c075--blockHook",
+            "box": [ 234, 2676, 954, 2700 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a7d26716--blockHook",
+            "box": [ 234, 2700, 954, 2724 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c7cdb8d9--blockHook",
+            "box": [ 234, 2724, 954, 2748 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e229360f--blockHook",
+            "box": [ 234, 2748, 954, 2772 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-fe546e17--blockHook",
+            "box": [ 234, 2772, 954, 2796 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-17abd92b--blockHook",
+            "box": [ 234, 2796, 954, 2820 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-08227a30--blockHook",
+            "box": [ 234, 2820, 954, 2844 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b655e5e8--blockHook",
+            "box": [ 234, 2844, 954, 2868 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dbe2b3c8--blockHook",
+            "box": [ 234, 2868, 954, 2892 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-5e21f580--blockHook",
+            "box": [ 234, 2892, 954, 2988 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Ellipse",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-5e21f580--blockHook/text/0",
+            "box": [ 234, 2927, 317.8046875, 2965 ],
+            "isLeaf": true,
+            "parent": "hook-5e21f580--blockHook",
+            "text": "Ellipse"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-590b2976--blockHook",
+            "box": [ 234, 2988, 954, 3012 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-db320f6f--blockHook",
+            "box": [ 234, 3012, 954, 3036 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f9165312--blockHook",
+            "box": [ 234, 3036, 954, 3060 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ab13a782--blockHook",
+            "box": [ 234, 3060, 954, 3084 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-486dc767--blockHook",
+            "box": [ 234, 3084, 954, 3108 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b64357d3--blockHook",
+            "box": [ 234, 3108, 954, 3132 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6120dad8--blockHook",
+            "box": [ 234, 3132, 954, 3156 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4345380c--blockHook",
+            "box": [ 234, 3156, 954, 3180 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-14afae34--blockHook",
+            "box": [ 234, 3180, 954, 3204 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5494c696--blockHook",
+            "box": [ 234, 3204, 954, 3228 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-4b084b7a--blockHook",
+            "box": [ 234, 3228, 954, 3324 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Dot",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-4b084b7a--blockHook/text/0",
+            "box": [ 234, 3263, 281.1171875, 3301 ],
+            "isLeaf": true,
+            "parent": "hook-4b084b7a--blockHook",
+            "text": "Dot"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-af085a0f--blockHook",
+            "box": [ 234, 3324, 954, 3348 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e6f89c9b--blockHook",
+            "box": [ 234, 3348, 954, 3372 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-45dfd6dc--blockHook",
+            "box": [ 234, 3372, 954, 3396 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-84d3dc11--blockHook",
+            "box": [ 234, 3396, 954, 3420 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-07e959a4--blockHook",
+            "box": [ 234, 3420, 954, 3444 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-4d39cd72--blockHook",
+            "box": [ 234, 3444, 954, 3468 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-71b9bf56--blockHook",
+            "box": [ 234, 3468, 954, 3492 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d9141cec--blockHook",
+            "box": [ 234, 3492, 954, 3516 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-64e2b2b1--blockHook",
+            "box": [ 234, 3516, 954, 3540 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-4bdf36b3--blockHook",
+            "box": [ 234, 3540, 954, 3636 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Circle",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-4bdf36b3--blockHook/text/0",
+            "box": [ 234, 3575, 309.65625, 3613 ],
+            "isLeaf": true,
+            "parent": "hook-4bdf36b3--blockHook",
+            "text": "Circle"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-506d5203--blockHook",
+            "box": [ 234, 3636, 954, 3660 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2b9205c9--blockHook",
+            "box": [ 234, 3660, 954, 3684 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-98c10e38--blockHook",
+            "box": [ 234, 3684, 954, 3708 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-08a890fb--blockHook",
+            "box": [ 234, 3708, 954, 3732 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ea709066--blockHook",
+            "box": [ 234, 3732, 954, 3756 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2caa7750--blockHook",
+            "box": [ 234, 3756, 954, 3780 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6d708af3--blockHook",
+            "box": [ 234, 3780, 954, 3804 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d91b5911--blockHook",
+            "box": [ 234, 3804, 954, 3828 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-556140c4--blockHook",
+            "box": [ 234, 3828, 954, 3852 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-761f9dd5--blockHook",
+            "box": [ 234, 3852, 954, 3876 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-b32eec6e--blockHook",
+            "box": [ 234, 3876, 954, 3900 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-62de0a91--blockHook",
+            "box": [ 234, 3900, 954, 3924 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-eaa54087--blockHook",
+            "box": [ 234, 3924, 954, 4020 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Curly Braces",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-eaa54087--blockHook/text/0",
+            "box": [ 234, 3959, 397.71875, 3997 ],
+            "isLeaf": true,
+            "parent": "hook-eaa54087--blockHook",
+            "text": "Curly Braces"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a95149f5--blockHook",
+            "box": [ 234, 4020, 954, 4044 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0ad07347--blockHook",
+            "box": [ 234, 4044, 954, 4068 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-5c6b30d2--blockHook",
+            "box": [ 234, 4068, 954, 4092 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-c04d70df--blockHook",
+            "box": [ 234, 4092, 954, 4116 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-85d9c795--blockHook",
+            "box": [ 234, 4116, 954, 4140 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-21298332--blockHook",
+            "box": [ 234, 4140, 954, 4164 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-378457a8--blockHook",
+            "box": [ 234, 4164, 954, 4188 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-8e984e81--blockHook",
+            "box": [ 234, 4188, 954, 4212 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-686941f2--blockHook",
+            "box": [ 234, 4212, 954, 4236 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-d879f59a--blockHook",
+            "box": [ 234, 4236, 954, 4260 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "heading",
+            "id": "hook-03cad453--blockHook",
+            "box": [ 234, 4260, 954, 4356 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Garbage",
+            "level": 1
+          },
+          {
+            "type": "text",
+            "id": "hook-03cad453--blockHook/text/0",
+            "box": [ 234, 4295, 350.875, 4333 ],
+            "isLeaf": true,
+            "parent": "hook-03cad453--blockHook",
+            "text": "Garbage"
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ad240940--blockHook",
+            "box": [ 234, 4356, 954, 4380 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": "Any random stroke which doesn't qualify for any of the above class."
+          },
+          {
+            "type": "text",
+            "id": "hook-ad240940--blockHook/text/0",
+            "box": [ 234, 4357.5, 763.6328125, 4378.5 ],
+            "isLeaf": true,
+            "parent": "hook-ad240940--blockHook",
+            "text": "Any random stroke which doesn't qualify for any of the above class."
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f630a39a--blockHook",
+            "box": [ 234, 4380, 954, 4404 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dd44a8df--blockHook",
+            "box": [ 234, 4404, 954, 4428 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-48b93d8a--blockHook",
+            "box": [ 234, 4428, 954, 4452 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-501f4197--blockHook",
+            "box": [ 234, 4452, 954, 4476 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-165dc912--blockHook",
+            "box": [ 234, 4476, 954, 4500 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2055799c--blockHook",
+            "box": [ 234, 4500, 954, 4524 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e3237ef2--blockHook",
+            "box": [ 234, 4524, 954, 4548 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7480109b--blockHook",
+            "box": [ 234, 4548, 954, 4572 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-480e7fc4--blockHook",
+            "box": [ 234, 4572, 954, 4596 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-427cda42--blockHook",
+            "box": [ 234, 4596, 954, 4620 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-befe5fe5--blockHook",
+            "box": [ 234, 4620, 954, 4644 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-ef432a72--blockHook",
+            "box": [ 234, 4644, 954, 4668 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-212be998--blockHook",
+            "box": [ 234, 4668, 954, 4692 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-bc13f12b--blockHook",
+            "box": [ 234, 4692, 954, 4716 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-cd79bc20--blockHook",
+            "box": [ 234, 4716, 954, 4740 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f0c9079e--blockHook",
+            "box": [ 234, 4740, 954, 4764 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-dd6e0e23--blockHook",
+            "box": [ 234, 4764, 954, 4788 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2b10d7e4--blockHook",
+            "box": [ 234, 4788, 954, 4812 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-32c18ee3--blockHook",
+            "box": [ 234, 4812, 954, 4836 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-7742ad52--blockHook",
+            "box": [ 234, 4836, 954, 4860 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f63f700f--blockHook",
+            "box": [ 234, 4860, 954, 4884 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-2c8dedcd--blockHook",
+            "box": [ 234, 4884, 954, 4908 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-0f7782c3--blockHook",
+            "box": [ 234, 4908, 954, 4932 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-104a5d11--blockHook",
+            "box": [ 234, 4932, 954, 4956 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-6914b47a--blockHook",
+            "box": [ 234, 4956, 954, 4980 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-a907f82f--blockHook",
+            "box": [ 234, 4980, 954, 5004 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-f46a0532--blockHook",
+            "box": [ 234, 5004, 954, 5028 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e913ec9d--blockHook",
+            "box": [ 234, 5028, 954, 5052 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-e4ac4a30--blockHook",
+            "box": [ 234, 5052, 954, 5076 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          },
+          {
+            "type": "paragraph",
+            "id": "hook-78dea3ee--blockHook",
+            "box": [ 234, 5076, 954, 5100 ],
+            "isLeaf": false,
+            "parent": "",
+            "text": ""
+          }
+        ]
+      }
+    },
+    "feature": {
+      "name": "move_contact",
+      "variant": "1"
+    }
+  },
+  "output": {
+    "version": "2022-08-19",
+    "response": {
+      "featureName": "move_contact",
+      "patches": {
+        "4pek2p179dtzi": {
+          "curves": [
+            [ 850, 306, 4536, 847.6083374023438, 307.54937744140625, 4547.322265625, 846.081298828125, 309.8877258300781, 4558.41845703125, 845.3678588867188, 312.4028015136719, 4568.80517578125, 845.2276000976562, 314.7836608886719, 4578.28125, 845.4696655273438, 316.9691162109375, 4587.017578125, 846, 319, 4595.35693359375, 849.3452758789062, 325.99835205078125, 4626.17578125, 854.0453491210938, 331.9558410644531, 4656.3251953125, 859.5931396484375, 336.7562255859375, 4685.47314453125, 865.5872802734375, 340.4473876953125, 4713.44189453125, 871.7686767578125, 343.1515197753906, 4740.2490234375, 878, 345, 4766.0732421875, 886.6669921875, 346.36248779296875, 4800.93115234375, 895.8096313476562, 346.3670349121094, 4837.255859375, 905.4617919921875, 344.6239929199219, 4876.2255859375, 915.2145385742188, 340.4595947265625, 4918.359375, 923.7750854492188, 333.19903564453125, 4962.95751953125, 929, 323, 5008.48779296875, 929.2247314453125, 318.23773193359375, 5027.4296875, 927.6812133789062, 313.81134033203125, 5046.05517578125, 924.93310546875, 310.2449645996094, 5063.943359375, 921.5477905273438, 307.65045166015625, 5080.8896484375, 917.859375, 305.93609619140625, 5097.0498046875, 914, 305, 5112.828125, 911.847900390625, 304.7957458496094, 5121.41748046875, 909.5513916015625, 304.8160705566406, 5130.5419921875, 907.1129150390625, 305.1372375488281, 5140.31396484375, 904.5890502929688, 305.8669128417969, 5150.75244140625, 902.1295776367188, 307.1270751953125, 5161.73193359375, 900, 309, 5173 ]
+          ],
+          "id": "4pek2p179dtzi",
+          "aiDataPatch": {
+            "source": "sketch_control_decompose",
+            "SketchControls": [
+              [ 0, 6, 12, 18, 24, 30 ]
+            ],
+            "CurveType": "Unknown",
+            "connections": []
+          },
+          "selfDelete": false
+        }
+      },
+      "controlLocations": [ 850, 306, 846, 319, 878, 345, 929, 323, 914, 305, 900, 309 ]
+    }
+  },
+  "meta": {
+    "tags": []
+  }
+}}

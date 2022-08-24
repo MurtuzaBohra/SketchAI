@@ -13,7 +13,7 @@ def random_rotate_sample(sample, class_name):
 
     # small_rotation = random.uniform(0, 1) < 0.2
     small_rotation = True
-    if class_name in ["circle", 'dot', 'arrow', 'arrow_head', 'triangle', 'bracket', 'curly_braces']:
+    if class_name in ["circle", 'dot', 'arrow', 'arrow_head', 'triangle']:
         small_rotation = False
 
     if small_rotation:
@@ -25,8 +25,8 @@ def random_rotate_sample(sample, class_name):
 
 
 def random_symmetry_sample(sample, className):
-    # if className in ['curly_braces_e', 'bracket_w', 'bracket_n', 'curly_braces_w', 'bracket_s', 'curly_braces_n', 'curly_braces_s', 'bracket_e']:
-    #     return sample
+    if className in ['bracket', 'curly_braces']:
+        return sample
     transformation = random.randrange(0, 4)
     if transformation == 0:
         return sample * [-1.0, -1.0]
@@ -35,6 +35,12 @@ def random_symmetry_sample(sample, className):
     if transformation == 2:
         return sample * [1.0, -1.0]
     return sample
+
+
+def reverse_sample(sample, className):
+    if className == 'arrow':
+        return sample
+    return sample[::-1]
 
 
 # Elastic transform
@@ -88,9 +94,8 @@ class ElasticTransform:
         return points + np.array([[dx[y][x], dy[y][x]] for x, y in coordinates])
 
 
-def translate_to_topLeft(points):
-    min_xy = np.min(points, axis=0)
-    return np.array(points, dtype=float) - min_xy
+def translate_origin_to_first_point(points):
+    return points - points[0]
 
 
 class DataAugmentation:
@@ -101,15 +106,21 @@ class DataAugmentation:
     def apply_data_transform(self, sample, className=''):  # sample-> [#points on stroke, 2]
         samples = []
         for i in range(self.augmentFactor):
+            aug_sample = sample
+            # if random.uniform(0, 1) < 0.5:
+            #     aug_sample = self.elasticTransform.apply(aug_sample)
             if random.uniform(0, 1) < 0.5:
-                sample = self.elasticTransform.apply(sample)
+                aug_sample = random_rotate_sample(aug_sample, className)
             if random.uniform(0, 1) < 0.5:
-                sample = random_rotate_sample(sample, className)
+                aug_sample = random_symmetry_sample(aug_sample, className)
             if random.uniform(0, 1) < 0.5:
-                sample = random_symmetry_sample(sample, className)
-            # sample = translate_to_topLeft(sample)
-            samples.append(sample)
+                aug_sample = reverse_sample(aug_sample, className)
+            aug_sample = translate_origin_to_first_point(aug_sample)
+            samples.append(aug_sample)
+            if np.isnan(aug_sample).any():
+                print("Nan encountered in sample")
         return samples
+
 
 
 if __name__ == "__main__":

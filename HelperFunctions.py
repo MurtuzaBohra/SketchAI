@@ -5,16 +5,16 @@ import re
 import numpy as np
 
 
-def readNapkinStrokesToCSV(pathNapkinData):
+def readNapkinStrokesToCSV(pathNapkinData, outputPath):
     # pathNapkinData = '/Users/murtuza/Desktop/ShapeRecognition/deep-stroke/dataset/NapkinData'
-    file = open("{}/NapkinStrokes.json".format(pathNapkinData), 'r')
+    file = open(pathNapkinData, 'r')
     data = json.load(file)
     print(data.keys())
     for k, value in data.items():
         k = re.sub(r"-", " ", k)
         shapeName = '_'.join(k.split())
         for idx, exampleShape in enumerate(value):
-            f = open("{}/csv/{}-{}.csv".format(pathNapkinData, shapeName, idx), "w", newline="")
+            f = open("{}/TestCsv/{}-{}.csv".format(outputPath, shapeName, idx), "w", newline="")
             writer = csv.writer(f)
             writer.writerows([["stroke_id", "x", "y", "time", "is_writing"]])
             writer.writerows(exampleShape)
@@ -52,7 +52,7 @@ def readJsonContentTestData(filename):
         # if include_finger
         # inputStroke = np.array(jsonContent['input']['context']['graph']['nodes'][0]['curves'][0]).reshape((-1, 3))[:, :2]
         # inputStroke = np.concatenate((inputStroke, np.zeros((inputStroke.shape[0],1))), axis=1)
-    inputStroke -= np.min(inputStroke, axis=0)
+    inputStroke -= np.min(inputStroke, axis=0)#inputStroke[0]
     return inputStroke
 
 
@@ -193,16 +193,17 @@ def writeStringToFile(filename, strng):
 
 
 if __name__ == "__main__":
-    # filename = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test/circle/2022-02-28#1.json'
+    readNapkinStrokesToCSV('/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/NapkinTestStrokes.json', '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/')
 
-    userStrokePoints = readJsonContentTestData('/Users/murtuza/Desktop/brackets/w_curly_braces.json')
-    templateBracket = readJsonContentTestData('/Users/murtuza/Desktop/brackets/templateBracket.json')
-    # writeStringToFile('/Users/murtuza/Desktop/template.svg', convert_curve_points_to_svg(templateBracket))
-    # writeStringToFile('/Users/murtuza/Desktop/brackets/square_bracket.svg',
-    #                   convert_curve_points_to_svg(userStrokePoints))
+    # userStrokePoints = readJsonContentTestData('/Users/murtuza/Desktop/brackets/w_curly_braces.json')
+    # templateBracket = readJsonContentTestData('/Users/murtuza/Desktop/brackets/squareBracketTemplate.json')
+    # print([list(item) for item in templateBracket.round(2)])
+    # writeStringToFile('/Users/murtuza/Desktop/squareBracketTemplate.svg', convert_curve_points_to_svg(templateBracket))
+    # # writeStringToFile('/Users/murtuza/Desktop/brackets/square_bracket.svg',
+    # #                   convert_curve_points_to_svg(userStrokePoints))
+    #
+    # # userStrokePoints, templateBracket = shiftOrigin(userStrokePoints), shiftOrigin(templateBracket)
+    # autoSuggestionBracket = getAutoSuggestBracket(userStrokePoints, templateBracket)
+    # # autoSuggestionBracket = shiftOrigin(autoSuggestionBracket)
+    # writeStringToFile('/Users/murtuza/Desktop/test.svg', convert_curve_points_to_svg(autoSuggestionBracket))
 
-    userStrokePoints, templateBracket = shiftOrigin(userStrokePoints), shiftOrigin(templateBracket)
-
-    autoSuggestionBracket = getAutoSuggestBracket(userStrokePoints, templateBracket)
-    autoSuggestionBracket = shiftOrigin(autoSuggestionBracket)
-    writeStringToFile('/Users/murtuza/Desktop/test.svg', convert_curve_points_to_svg(autoSuggestionBracket))

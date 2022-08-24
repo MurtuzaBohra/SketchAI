@@ -1,7 +1,7 @@
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from GestuReNN import GestuReNN
+from GestuReNN_mts import GestuReNN, GestuReNN_mts_without_regression
 from sklearn.metrics import mean_squared_error
 from matplotlib.ticker import FormatStrFormatter
 
@@ -230,15 +230,13 @@ class GraphicManager:
         rankings = []
         # Predicting the values
         if type(model) is GestuReNN:
-            if model.topology == 'mts' or model.topology == 'mtm':
-                clf_pred, reg_pred = model.model(x)
-                rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
-                clf_pred = np.argmax(clf_pred, axis=2)
-            else:
-                clf_pred = model.classifier.predict(x)
-                reg_pred = model.regressor.predict(x)
-                rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
-                clf_pred = np.argmax(clf_pred, axis=2)
+            clf_pred, reg_pred = model.model(x)
+            rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
+            clf_pred = np.argmax(clf_pred, axis=2)
+        elif type(model) is GestuReNN_mts_without_regression:
+            clf_pred = model.model(x)
+            rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
+            clf_pred = np.argmax(clf_pred, axis=2)
         else:
             print('Classifier and regressor should be instances of GestuReNN.')
             exit(1)
@@ -270,16 +268,22 @@ class GraphicManager:
                 if j == self.n_bins - 1:
                     prediction_statistics[ground_truth[i, (index - 1)], rankings[i, (index - 1), 0]] += 1
                     print('classification gt, [pred]', ground_truth[i, (index - 1)], rankings[i, (index - 1)])
-                    print('Regression gt, pred', reg_pred[i, (index - 1)], (j / (self.n_bins - 1)))
+                    # print('Regression gt, pred', reg_pred[i, (index - 1)], (j / (self.n_bins - 1)))
                 if ground_truth[i, (index - 1)] in rankings[i, (index - 1)]:
                     hist_clf[j] += 1
-                if abs(reg_pred[i, (index - 1)] - (j / float(self.n_bins - 1))) < self.acceptance_window:
-                    hist_reg[j] += 1
+                try:
+                    if abs(reg_pred[i, (index - 1)] - (j / float(self.n_bins - 1))) < self.acceptance_window:
+                        hist_reg[j] += 1
+                except:
+                    pass
+
                 hist_tot[j] += 1
-
-                reg_y = reg_pred[i, (index - 1)]
-                regressor_mse[j] += abs(reg_y - (j / float(self.n_bins - 1)))  # * (reg_y - (j / float(self.n_bins-1)))
-
+                try:
+                    reg_y = reg_pred[i, (index - 1)]
+                    regressor_mse[j] += abs(
+                        reg_y - (j / float(self.n_bins - 1)))  # * (reg_y - (j / float(self.n_bins-1)))
+                except:
+                    pass
         regressor_mse /= n_predictions
         plt.plot(regressor_mse)
         plt.show()
