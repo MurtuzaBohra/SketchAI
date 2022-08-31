@@ -1,7 +1,7 @@
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from GestuReNN_mts import GestuReNN, GestuReNN_mts_without_regression
+from GestuReNN_mts import GestuReNN, GestuReNN_GRU, GestuReNN_mts_without_regression
 from sklearn.metrics import mean_squared_error
 from matplotlib.ticker import FormatStrFormatter
 
@@ -156,6 +156,7 @@ class GraphicManager:
         plt.xlabel('Gesture completion')
         plt.ylabel('Accuracy')
         plt.show()
+        print((hist_clf / hist_tot))
 
     def evaluate_times(self, model, samples, raws):
         if type(model) is GestuReNN:
@@ -229,7 +230,7 @@ class GraphicManager:
         reg_pred = []
         rankings = []
         # Predicting the values
-        if type(model) is GestuReNN:
+        if type(model) is GestuReNN_GRU or type(model) is GestuReNN:
             clf_pred, reg_pred = model.model(x)
             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
             clf_pred = np.argmax(clf_pred, axis=2)
@@ -255,7 +256,7 @@ class GraphicManager:
         prediction_statistics = np.zeros((len(indexToLabel), len(indexToLabel)))
 
         for i in range(n_predictions):
-            print("--------Sample - {}----------".format(i))
+            # print("--------Sample - {}----------".format(i))
 
             gesture_len = (clf_pred[i][big_mask[i]]).shape[0]
             ratio = self.n_bins / gesture_len
@@ -267,7 +268,7 @@ class GraphicManager:
                     index += 1
                 if j == self.n_bins - 1:
                     prediction_statistics[ground_truth[i, (index - 1)], rankings[i, (index - 1), 0]] += 1
-                    print('classification gt, [pred]', ground_truth[i, (index - 1)], rankings[i, (index - 1)])
+                    # print('classification gt, [pred]', ground_truth[i, (index - 1)], rankings[i, (index - 1)])
                     # print('Regression gt, pred', reg_pred[i, (index - 1)], (j / (self.n_bins - 1)))
                 if ground_truth[i, (index - 1)] in rankings[i, (index - 1)]:
                     hist_clf[j] += 1

@@ -9,20 +9,23 @@ import tensorflow as tf
 
 print('no. of gpus  ', tf.config.experimental.list_physical_devices("GPU"))
 
+
 # test on old recognition dataset
 # class Parameters:
 #     pad = True
 #     include_fingerup = False
+#     model_inputs = 'coord_and_tang'
 #     test_size = 0.2
-#     method = 'G3'
 #     dataset = 'Napkin'
 #     load_mode = 'test'
-#     augmentFactor = 3
-#     datasetFolder = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test'
-#     fileType = 'json'
-#     labelJsonPath = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test/labelDict_10_classes.json'
+#     augmentFactor = 0
+#     datasetFolder = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/TestCSV'
+#     fileType = 'csv'
+#     labelJsonPath = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/test/labelDict_11_classes.json'
 #     batchSize = 128
-#     modelPath = '/Users/murtuza/Desktop/SketchAI/checkpoints/models/Napkin_latest_10_classes'
+#     excludeClasses = ['line']
+#     modelPath = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/checkpoints/models/gru_input_dim4'
+
 
 # test on validation set of training data
 # class Parameters:
@@ -41,24 +44,28 @@ print('no. of gpus  ', tf.config.experimental.list_physical_devices("GPU"))
 
 
 # train on Napkin dataset.
+# train on Napkin dataset.
 class Parameters:
     pad = True
     include_fingerup = False
+    model_inputs = 'coord_and_tang'
     test_size = 0.2
-    method = 'G3'
     dataset = 'Napkin'
     load_mode = 'train'
     augmentFactor = 3
-    datasetFolder = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/csv'
+    datasetFolder = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/NewTrainSet/csv'
     fileType = 'csv'
-    labelJsonPath = '/Users/murtuza/Desktop/SketchAI/dataset/NapkinData/test/labelDict_10_classes.json'
+    labelJsonPath = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/test/labelDict_11_classes.json'
     batchSize = 64
-    modelPath = '/Users/murtuza/Desktop/SketchAI/checkpoints/models/Napkin_latest'
+    excludeClasses = ['line']
+    modelPath = '/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/checkpoints/models/gru_input_dim4'
+
 
 p = Parameters()
 # Data loading
 dl = DataLoader(dataset=p.dataset, load_mode=p.load_mode, labelJsonPath=p.labelJsonPath, datasetFolder=p.datasetFolder,
-                fileType=p.fileType, include_fingerup=p.include_fingerup, augmentFactor=p.augmentFactor)
+                fileType=p.fileType, include_fingerup=p.include_fingerup, model_inputs=p.model_inputs,
+                augmentFactor=p.augmentFactor, excludeClasses=p.excludeClasses)
 
 print(dl.validation_set_classifier[0].shape)
 print(dl.train_set_classifier[0].shape)
@@ -66,9 +73,9 @@ for k, v in dl.labels_dict.items():
     print('{} - {}'.format(v, k))
 
 # model initialization.
-model_mts = GestuReNN(plot=False, labelJsonPath=p.labelJsonPath,
+model_mts = GestuReNN_GRU(plot=False, labelJsonPath=p.labelJsonPath, model_inputs=p.model_inputs,
                       batch_size=p.batchSize, model_path=p.modelPath, include_fingerup=p.include_fingerup)
-graphic_manager = GraphicManager(dataset=p.dataset, n_bins=10)
+graphic_manager = GraphicManager(dataset=p.dataset, n_bins=len(dl.labels_dict))
 
 if p.load_mode == 'train':
     with open(p.labelJsonPath, 'w') as fp:

@@ -25,23 +25,22 @@ Napkin_HUMAN = "/Users/murtuza/Desktop/ShapeRecognition/deep-stroke/dataset/Napk
 class DataLoader:
 
     # Constructor of the class
-    def __init__(self, pad=True, include_fingerup=False, use_tangents=False, test_size=0.2,
-                 method='G3', dataset='1$', load_mode='full', augmentFactor=3,
-                 datasetFolder=Napkin_HUMAN, fileType='', labelJsonPath=None, excludeClasses=['line']):
+    def __init__(self, pad=True, include_fingerup=False, model_inputs='tangents_and_norm', test_size=0.2,
+                 dataset='1$', load_mode='full', augmentFactor=3, datasetFolder=Napkin_HUMAN,
+                 fileType='', labelJsonPath=None, excludeClasses=['line']):
 
         print('Starting the DataLoader construction ...')
 
         # Setting general data loader attributes
         self.use_padding = pad
         self.include_fingerup = include_fingerup
-        self.use_tangents = use_tangents
         self.test_size = test_size
-        self.method = method
         self.stroke_dataset = dataset
         self.load_mode = load_mode
         self.augmentFactor = augmentFactor
         self.labels_dict = {}
         self.fileType = fileType
+        self.model_inputs = model_inputs
         self.datasetFolder = datasetFolder
         self.excludeClasses = excludeClasses
         if labelJsonPath is not None:
@@ -97,12 +96,6 @@ class DataLoader:
         df['x'] -= df['x'].iloc[0]
         df['y'] -= df['y'].iloc[0]
 
-        # Adding fingerup serie
-        # if self.include_fingerup:
-        #     df['finger_up'] = 0
-        #     # df['finger_up'].iloc[-1] = 1
-        #     df.loc[len(df) - 1, 'finger_up'] = 1
-
         if (df.isnull().values.any()):
             print(file_name)
             print(df)
@@ -133,28 +126,29 @@ class DataLoader:
             file_path = folder_name + '/' + file
 
             current_label = ''
-            if self.method == 'G3':
-                if self.stroke_dataset == "Napkin":
-                    label = file.split('-')[0].lower()
-                    if label == 'square':
-                        current_label = 'rectangle'
-                    elif 'curly' in label:
-                        current_label = 'curly_braces'
-                    elif 'bracket' in label:
-                        current_label = 'bracket'
-                    else:
-                        current_label = label
-
+            if self.stroke_dataset == "Napkin":
+                label = file.split('-')[0].lower()
+                if label == 'square':
+                    current_label = 'rectangle'
+                elif 'curly' in label:
+                    current_label = 'curly_braces'
+                elif 'bracket' in label:
+                    current_label = 'bracket'
                 else:
-                    current_label = file.split('-')[1]
+                    current_label = label
+
+            else:
+                current_label = file.split('-')[1]
+
+            if self.stroke_dataset in ['1$', 'Napkin']:
+                x = self.__read_csv_1dollar(file_path)
+                if len(x) > 75:
+                    continue
+                tensor_x.append(x)
 
             if current_label not in labels_dict:
                 labels_dict[current_label] = index
                 index += 1
-
-            if self.method == 'G3':
-                if self.stroke_dataset in ['1$', 'Napkin']:
-                    tensor_x.append(self.__read_csv_1dollar(file_path))
 
             tensor_y.append(labels_dict[current_label])
 
@@ -230,8 +224,7 @@ class DataLoader:
             x = np.concatenate((x, np.array(x_augment)), axis=0)
             y = np.concatenate((y, np.array(y_augment)), axis=0)
 
-        if self.use_tangents:
-            x = [self.length_normalize_unit_vector(x[i], dims='coord_and_tang') for i in range(x.shape[0])]
+        x = [self.length_normalize_unit_vector(x[i], dims=self.model_inputs) for i in range(x.shape[0])]
 
         if self.include_fingerup:
             x_new = []
@@ -282,7 +275,7 @@ class DataLoader:
             pad_gap = padded_size - unpadded_size
 
             # Label transformation
-            ys[i] = np.pad(np.arange(1,len(xs[i])+1), (0, pad_gap), 'constant', constant_values=(0, 0))
+            ys[i] = np.pad(np.arange(1, len(xs[i]) + 1), (0, pad_gap), 'constant', constant_values=(0, 0))
             ys[i] = np.array(ys[i] / len(xs[i]), dtype='float32')
 
         return ys
@@ -293,24 +286,28 @@ class DataLoader:
             return points
 
         np_points = np.array(points, dtype=np.float32)
-        output = [[np_points[0][0], np_points[0][1], 0.0, 0.0]]
+        output = [[np_points[0][0], np_points[0][1], 0.0, 0.0, 0.0]]
         for index in range(1, np_points.shape[0]):
             pt1 = np_points[index]
             pt1_prev = np_points[index - 1]
             if np.linalg.norm(pt1 - pt1_prev) == 0:
                 print("two same consecutive points are found, skipping one in the output seq.")
                 continue
-            unit = (pt1 - pt1_prev) / np.linalg.norm(pt1 - pt1_prev)
-            output.append([pt1[0], pt1[1], unit[0], unit[1]])
+
+            norm = np.linalg.norm(pt1 - pt1_prev)
+            unit = (pt1 - pt1_prev) / norm
+            output.append([pt1[0], pt1[1], unit[0], unit[1], norm])
 
         np_output = np.array(output, dtype=np.float32)
 
         if dims == "coord_and_tang":
-            return np_output
+            return np_output[:, 0:4]
         if dims == "coordinates":
             return np_output[:, 0:2]
-        if dims == "tangents":
+        if dims == "tangents_and_norm":
             return np_output[:, 2:]
+        if dims == "coord_tang_and_norm":
+            return np_output
 
         raise RuntimeError(f"Unexpected dims value ${dims}")
 
