@@ -65,24 +65,6 @@ class DataLoader:
 
         print('.. Done with data loading. Setting up classifier attributes ...')
 
-        # Setting label repetition for the classifier
-        if self.use_padding:
-            self.labels_repeated = self.__get_labels_repeated()
-            self.train_set_classifier = self.train_set[0], self.labels_repeated[0]
-            self.validation_set_classifier = self.validation_set[0], self.labels_repeated[1]
-            self.test_set_classifier = self.test_set[0], self.labels_repeated[2]
-
-            print('.. Done with classifier attributes. Setting up regressor attributes ...')
-
-            self.labels_regressed = self.__get_regressive_labels()
-            self.train_set_regressor = self.train_set[0], self.labels_regressed[0]
-            self.validation_set_regressor = self.validation_set[0], self.labels_regressed[1]
-            self.test_set_regressor = self.test_set[0], self.labels_regressed[2]
-        else:
-            self.train_set_classifier, self.train_set_regressor = self.train_set, self.train_set
-            self.validation_set_classifier, self.validation_set_regressor = self.validation_set, self.validation_set
-            self.test_set_classifier, self.test_set_regressor = self.test_set, self.test_set
-
         self.tuple = self.train_set[0].shape[-1]
 
         print('Done with DataLoader construction!')
@@ -128,15 +110,10 @@ class DataLoader:
             current_label = ''
             if self.stroke_dataset == "Napkin":
                 label = file.split('-')[0].lower()
-                if label == 'square':
-                    current_label = 'rectangle'
-                elif 'curly' in label:
-                    current_label = 'curly_braces'
-                elif 'bracket' in label:
-                    current_label = 'bracket'
+                if label == 'arrow':
+                    current_label = 'arrow'
                 else:
-                    current_label = label
-
+                    current_label = "non-arrow"
             else:
                 current_label = file.split('-')[1]
 
@@ -241,45 +218,6 @@ class DataLoader:
 
         return x, y, x_raw
 
-    def __get_labels_repeated(self):
-        x_train, y_train = self.train_set
-        x_test, y_test = self.test_set
-        x_validation, y_validation = self.validation_set
-
-        # Converting to numpy the label lists
-        y_train = np.repeat(np.array(y_train), x_train.shape[1], axis=0).reshape((y_train.shape[0], x_train.shape[1]))
-        y_validation = np.repeat(np.array(y_validation), x_validation.shape[1], axis=0).reshape((y_validation.shape[0],
-                                                                                                 x_validation.shape[1]))
-        y_test = np.repeat(np.array(y_test), x_test.shape[1], axis=0).reshape((y_test.shape[0], x_test.shape[1]))
-
-        return y_train, y_validation, y_test
-
-    def __get_regressive_labels(self):
-        y_train, y_validation, y_test = self.__get_labels_repeated()
-
-        y_train = self.__transform_regression_labels(np.array(y_train, dtype='float32'), self.train_raw)
-        y_validation = self.__transform_regression_labels(np.array(y_validation, dtype='float32'), self.validation_raw)
-        y_test = self.__transform_regression_labels(np.array(y_test, dtype='float32'), self.test_raw)
-
-        # Only train and validation expand their dims because they need to be feed into the model
-        y_train = np.expand_dims(y_train, axis=2)
-        y_validation = np.expand_dims(y_validation, axis=2)
-
-        return y_train, y_validation, y_test
-
-    def __transform_regression_labels(self, ys, xs):
-
-        for i in range(ys.shape[0]):
-            # Computing padding
-            padded_size, unpadded_size = ys[i].shape[0], len(xs[i])
-            pad_gap = padded_size - unpadded_size
-
-            # Label transformation
-            ys[i] = np.pad(np.arange(1, len(xs[i]) + 1), (0, pad_gap), 'constant', constant_values=(0, 0))
-            ys[i] = np.array(ys[i] / len(xs[i]), dtype='float32')
-
-        return ys
-
     def length_normalize_unit_vector(self, points, dims='coord_and_tang'):
         # Always compute all the dims and trim at the end
         if len(points) <= 1:
@@ -313,26 +251,12 @@ class DataLoader:
 
 
 if __name__ == "__main__":
-    arr = np.array(
-        [[1.25836086e-03, -1.49348695e-03], [-7.04729025e-01, 1.87958431e+01], [-2.61200568e+00, 3.47530422e+01],
-         [-5.49237353e+00, 4.59087434e+01], [-8.99364300e+00, 5.08975409e+01], [-1.51748133e+01, 5.13679206e+01],
-         [-2.89841870e+01, 5.18351976e+01], [-2.96602450e+01, 5.18581375e+01], [-3.03141072e+01, 5.18955519e+01],
-         [-3.14238686e+01, 5.19760318e+01], [-3.27074356e+01, 5.20762529e+01], [-3.71374664e+01, 5.24270242e+01],
-         [-3.96655248e+01, 5.26104393e+01], [-4.44606242e+01, 5.28120252e+01], [-4.87777089e+01, 5.28175091e+01],
-         [-5.25098800e+01, 5.26233811e+01], [-5.55734810e+01, 5.22402757e+01], [-5.72252867e+01, 5.17052993e+01],
-         [-5.88387119e+01, 5.06984808e+01], [-6.03347840e+01, 4.92688479e+01], [-6.16407924e+01, 4.74842857e+01],
-         [-6.83684676e+01, 3.31268802e+01], [-7.15562068e+01, 1.83249026e+01], [-7.06364475e+01, 5.71426806e+00],
-         [-6.57641282e+01, -2.44940946e+00], [-5.78280846e+01, -4.71015396e+00], [-5.05661507e+01, -3.97581238e+00],
-         [-3.30276810e+01, -2.19499372e+00], [-3.30272556e+01, -2.19495047e+00], [-3.30268301e+01, -2.19490722e+00],
-         [-3.30268301e+01, -2.19490722e+00], [-3.30268301e+01, -2.19490722e+00], [-1.54861693e+01, -4.13064888e-01],
-         [-8.22462483e+00, 3.22006241e-01], [-8.39172765e+00, 7.33085226e+00], [-8.54978175e+00, 1.43456467e+01],
-         [-8.71538775e+00, 2.13614662e+01], [-8.87514694e+00, 2.83779021e+01], [-9.04106645e+00, 3.53878464e+01],
-         [-9.20199655e+00, 4.23978494e+01], [-9.36588722e+00, 4.94112974e+01], [-9.52887675e+00, 5.64200785e+01],
-         [-1.56929907e+01, 5.66691571e+01], [-2.18594034e+01, 5.69171653e+01], [-2.80244213e+01, 5.71612903e+01],
-         [-3.41833166e+01, 5.73990640e+01], [-4.03492500e+01, 5.76420692e+01], [-4.65238765e+01, 5.78946556e+01],
-         [-5.26883003e+01, 5.81353305e+01], [-5.88525219e+01, 5.83795118e+01]])
-    print(arr.shape)
-    out = length_normalize_unit_vector_debug(arr)
-    print(out)
-    print(out.shape)
-    print(np.isnan(out).any())
+    dl = DataLoader(dataset='Napkin', load_mode='train', labelJsonPath=None,
+                    datasetFolder='./dataset/NapkinData/TrainSet/csv',
+                    fileType='csv', include_fingerup=False, model_inputs='coord_and_tang',
+                    augmentFactor=3, excludeClasses=['line'])
+
+    print(dl.validation_set[0].shape)
+    print(dl.train_set[0].shape)
+    for k, v in dl.labels_dict.items():
+        print('{} - {}'.format(v, k))
