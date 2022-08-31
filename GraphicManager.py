@@ -50,81 +50,6 @@ class GraphicManager:
 
             plt.show()
 
-    def compare_models(self, models, data, best_of=1, mode='clf'):
-
-        # Basic data manipulation
-        x, y = data
-        mask = x.sum(-1) != 0
-
-        # Plotting anchor marks
-        if mode == 'clf':
-            plt.plot(np.ones(100) * 0.9, 'k--', alpha=0.2)
-            plt.plot(np.ones(100) * 0.95, 'g--', alpha=0.2)
-            plt.xlim((-4, 104))
-            plt.ylim((-0.04, 1.04))
-        if mode == 'reg':
-            plt.gca().yaxis.set_major_formatter(FormatStrFormatter('%1.1e'))
-
-        model_names = ['st-s', 'st-l', 'mt-s', 'mt-m']
-        for m in models:
-
-            # Predicting the values
-            clf_pred, reg_pred, rankings = self.__make_predictions(m, x, best_of)
-            hist_tot, hist_clf, hist_reg, regressor_mse = self.__compute_histogram(clf_pred, reg_pred, y, rankings,
-                                                                                   mask)
-
-            if mode == 'clf':
-                plt.plot((hist_clf / hist_tot))
-            if mode == 'reg':
-                plt.plot((hist_reg))
-
-        # Plotting accuracies and setting title
-        title = ''.format()
-        if mode == 'clf':
-            title += 'Accuracy on {} - Best of {}'.format(self.stroke_dataset, best_of)
-            plt.ylabel('Accuracy')
-        if mode == 'reg':
-            title = 'MSE regressor on {}'.format(self.stroke_dataset)
-            plt.ylabel('MSE')
-
-        # Plotting axes and title
-        plt.title(title)
-        plt.xlabel('Gesture completion')
-        if mode == 'clf':
-            plt.legend(['90%', '95%'] + model_names)
-        else:
-            plt.legend(model_names)
-        plt.show()
-
-    def generate_step_accuracy(self, model, data, best_of=1, steps=20, mode='clf'):
-        # Basic data manipulation
-        x, y = data
-        print("data shape - x,y ", x.shape, y.shape)
-        mask = x.sum(-1) != 0
-
-        # Predicting the values
-        clf_pred, reg_pred, rankings = self.__make_predictions(model, x, best_of)
-        print('clf_pred', clf_pred.shape)
-        print('reg_pred', reg_pred.shape)
-        print('ranking', rankings.shape)
-        hist_tot, hist_clf, hist_reg, regressor_mse = self.__compute_histogram(clf_pred, reg_pred, y, rankings, mask)
-
-        step_size = int(hist_tot.shape[0] / steps)
-        print("Generating accuracy for {} at best of {}".format(model.topology, best_of))
-        means = []
-        reg_errors = []
-        for i in range(steps):
-            mean_tot = np.mean(hist_tot[(i * step_size):((i + 1) * step_size)])
-            mean_clf = np.mean(hist_clf[(i * step_size):((i + 1) * step_size)])
-            mse_reg = np.mean(hist_reg[(i * step_size):((i + 1) * step_size)])
-            means.append(round((mean_clf / mean_tot) * 100, 2))
-            reg_errors.append("{:1.1e}".format(mse_reg))
-
-        if mode == 'clf':
-            print(str(means).replace(',', '&'))
-        else:
-            print((str(reg_errors).replace(',', '&')).replace('\'', ''))
-
     def generate_progressive_accuracy(self, model, data, plot_clf=True, plot_reg=True, best_of=1, indexToLabel=None):
 
         # Basic data manipulation
@@ -158,31 +83,6 @@ class GraphicManager:
         plt.show()
         print((hist_clf / hist_tot))
 
-    def evaluate_times(self, model, samples, raws):
-        if type(model) is GestuReNN:
-            model.model(samples[:1])
-        else:
-            exit(1)
-
-        times = []
-        densities = []
-        n = samples.shape[0] // 10
-        for i in range(n):
-            t0 = time.clock()
-            model.model(samples[i:(i + 1)])
-            t1 = time.clock()
-            times.append(t1 - t0)
-            densities.append(raws[i].shape[0])
-
-        mean_per_point = np.mean(np.array(times) / np.array(densities))
-        mean_total = np.mean(times)
-
-        print("Mean per point: {}".format(mean_per_point))
-        title = "Mean times: {}".format("{:.3f}".format(mean_total))
-        plt.title(title)
-        plt.plot(times)
-        plt.show()
-
     def make_predictions(self, model, x):
         curr_clf_pred = None
         curr_reg_pred = None
@@ -192,38 +92,6 @@ class GraphicManager:
                 # curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
         return curr_clf_pred, curr_reg_pred
 
-    # def __make_predictions(self, model, x, best_of=1):
-    #     # Predicting the values
-    #     clf_pred = []
-    #     reg_pred = []
-    #     rankings = []
-    #     if type(model) is GestuReNN:
-    #         if model.topology == 'mts' or model.topology == 'mtm':
-    #             len_preds = x.shape[0]
-    #             for i in range(self.iterations):
-    #                 start = i * (len_preds // self.iterations)
-    #                 end = (i + 1) * (len_preds // self.iterations)
-    #                 curr_clf_pred, curr_reg_pred = model.model(x[start:end])
-    #                 curr_rankings = np.argsort(curr_clf_pred, axis=2)[:, :, -best_of:]
-    #                 curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
-    #                 if i == 0:
-    #                     clf_pred = curr_clf_pred
-    #                     reg_pred = curr_reg_pred
-    #                     rankings = curr_rankings
-    #                 else:
-    #                     clf_pred = np.concatenate((clf_pred, curr_clf_pred), axis=0)
-    #                     reg_pred = np.concatenate((reg_pred, curr_reg_pred), axis=0)
-    #                     rankings = np.concatenate((rankings, curr_rankings), axis=0)
-    #         else:
-    #             clf_pred = model.classifier.predict(x)
-    #             reg_pred = model.regressor.predict(x)
-    #             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
-    #             clf_pred = np.argmax(clf_pred, axis=2)
-    #     else:
-    #         print('Classifier and regressor should be instances of GestuReNN.')
-    #         exit(1)
-    #
-    #     return clf_pred, reg_pred, rankings
 
     def __make_predictions(self, model, x, best_of=1):
         clf_pred = []
