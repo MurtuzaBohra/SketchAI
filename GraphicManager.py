@@ -1,7 +1,8 @@
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from GestuReNN_mts import GestuReNN, GestuReNN_GRU, GestuReNN_mts_without_regression
+from GestuReNN_mts import GestuReNN_GRU
+from HelperFunctions import convert_curve_points_to_svg
 from sklearn.metrics import mean_squared_error
 from matplotlib.ticker import FormatStrFormatter
 
@@ -58,7 +59,7 @@ class GraphicManager:
 
         # Predicting the values
         clf_pred, reg_pred, rankings = self.__make_predictions(model, x, best_of)
-        hist_tot, hist_clf, hist_reg, regressor_mse = self.__compute_histogram(clf_pred, reg_pred, y, rankings, mask,
+        hist_tot, hist_clf, hist_reg, regressor_mse = self.__compute_histogram(clf_pred, reg_pred, x, y, rankings, mask,
                                                                                indexToLabel)
 
         # Plotting anchor marks
@@ -92,7 +93,6 @@ class GraphicManager:
                 # curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
         return curr_clf_pred, curr_reg_pred
 
-
     def __make_predictions(self, model, x, best_of=1):
         clf_pred = []
         reg_pred = []
@@ -102,17 +102,13 @@ class GraphicManager:
             clf_pred, reg_pred = model.model(x)
             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
             clf_pred = np.argmax(clf_pred, axis=2)
-        elif type(model) is GestuReNN_mts_without_regression:
-            clf_pred = model.model(x)
-            rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
-            clf_pred = np.argmax(clf_pred, axis=2)
         else:
             print('Classifier and regressor should be instances of GestuReNN.')
             exit(1)
 
         return clf_pred, reg_pred, rankings
 
-    def __compute_histogram(self, clf_pred, reg_pred, ground_truth, rankings, big_mask, indexToLabel=None):
+    def __compute_histogram(self, clf_pred, reg_pred, x, ground_truth, rankings, big_mask, indexToLabel=None):
 
         n_predictions = clf_pred.shape[0]
 
@@ -140,6 +136,15 @@ class GraphicManager:
                     # print('Regression gt, pred', reg_pred[i, (index - 1)], (j / (self.n_bins - 1)))
                 if ground_truth[i, (index - 1)] in rankings[i, (index - 1)]:
                     hist_clf[j] += 1
+                else:
+                    if j == self.n_bins - 1 and ground_truth[i, index - 1] == 1:
+                        print("=========================")
+                        print("True Class: {}, Predicted Class: {}".format(ground_truth[i, index - 1],
+                                                                           rankings[i, index - 1]))
+                        points = x[i][big_mask[i]][:, :2] - np.min(x[i][big_mask[i]][:, :2], axis=0)
+                        svg = convert_curve_points_to_svg(points)
+                        print(svg)
+
                 try:
                     if abs(reg_pred[i, (index - 1)] - (j / float(self.n_bins - 1))) < self.acceptance_window:
                         hist_reg[j] += 1

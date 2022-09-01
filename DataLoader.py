@@ -26,8 +26,8 @@ class DataLoader:
 
     # Constructor of the class
     def __init__(self, pad=True, include_fingerup=False, model_inputs='tangents_and_norm', test_size=0.2,
-                 dataset='1$', load_mode='full', augmentFactor=3, datasetFolder=Napkin_HUMAN,
-                 fileType='', labelJsonPath=None, excludeClasses=['line']):
+                 dataset='1$', load_mode='full', isResample=False, augmentFactor=3, datasetFolder=Napkin_HUMAN,
+                 fileType='', labelJsonPath=None, useSaliency=False, excludeClasses=['line']):
 
         print('Starting the DataLoader construction ...')
 
@@ -37,11 +37,13 @@ class DataLoader:
         self.test_size = test_size
         self.stroke_dataset = dataset
         self.load_mode = load_mode
+        self.isResample = isResample
         self.augmentFactor = augmentFactor
         self.labels_dict = {}
         self.fileType = fileType
         self.model_inputs = model_inputs
         self.datasetFolder = datasetFolder
+        self.useSaliency = useSaliency
         self.excludeClasses = excludeClasses
         if labelJsonPath is not None:
             self.labels_dict = json.load(open(labelJsonPath, 'r'))
@@ -59,6 +61,9 @@ class DataLoader:
             self.test_set, self.test_raw = self.__load_dataset(stroke_type='HUMAN')
             self.train_set, self.validation_set = self.test_set, self.test_set
             self.train_raw, self.validation_raw = self.test_raw, self.test_raw
+        if self.useSaliency:
+            self.y_saliency_train = self.get_saliency_labels(self.train_set[0])
+            self.y_saliency_test = self.get_saliency_labels(self.test_set[0])
 
         self.raw_dataset = self.train_raw, self.validation_raw, self.test_raw
         self.raw_labels = self.train_set[1], self.validation_set[1], self.test_set[1]
@@ -86,6 +91,25 @@ class DataLoader:
         self.tuple = self.train_set[0].shape[-1]
 
         print('Done with DataLoader construction!')
+
+    def get_saliency_labels(self, x):
+        y = np.zeros((x.shape[0], x.shape[1]))
+        for i in range(x.shape[0]):
+            for j in range(1, x.shape[1] - 1):
+                if np.sum(x[i, j + 1]) == 0:  # padding
+                    break
+                u = x[i, j] - x[i, j - 1]
+                v = x[i,j+1] - x[i,j]
+                if self.is_salient_point(u,v):
+                    y[i, j] = 1
+        return y
+
+    def is_salient_point(self, u,v):
+        c = np.dot(u, v) / np.linalg.norm(u) / np.linalg.norm(v)  # -> cosine of the angle
+        angle = np.arccos(np.clip(c, -1, 1))
+        if angle > np.pi/2:
+            return True
+        return False
 
     # Function for reading a sample of the 1dollar class from csv
     def __read_csv_1dollar(self, file_name):
@@ -142,7 +166,7 @@ class DataLoader:
 
             if self.stroke_dataset in ['1$', 'Napkin']:
                 x = self.__read_csv_1dollar(file_path)
-                if len(x) > 75:
+                if len(x) > 75 or len(x) < 3:
                     continue
                 tensor_x.append(x)
 
@@ -224,7 +248,8 @@ class DataLoader:
             x = np.concatenate((x, np.array(x_augment)), axis=0)
             y = np.concatenate((y, np.array(y_augment)), axis=0)
 
-        x = [self.length_normalize_unit_vector(x[i], dims=self.model_inputs) for i in range(x.shape[0])]
+        x = [self.length_normalize_unit_vector(x[i], isResample=self.isResample, min_length=5.0, dims=self.model_inputs)
+             for i in range(x.shape[0])]
 
         if self.include_fingerup:
             x_new = []
@@ -280,10 +305,26 @@ class DataLoader:
 
         return ys
 
-    def length_normalize_unit_vector(self, points, dims='coord_and_tang'):
+    def resampleEquiDistantPoints(self, points, min_length=5.0):
+        points = np.array(points)
+        output = [points[0]]
+        for i in range(1, points.shape[0]):
+            pt_prev = points[i - 1]
+            pt = points[i]
+            norm = np.linalg.norm(pt - pt_prev)
+            while norm >= min_length:
+                alpha = math.sqrt(min_length / norm)
+                pt_prev = (1 - alpha) * pt_prev + alpha * pt
+                output.append(pt_prev)
+                norm = np.linalg.norm(pt - pt_prev)
+        return output
+
+    def length_normalize_unit_vector(self, points, min_length=5.0, isResample=False, dims='coord_and_tang'):
         # Always compute all the dims and trim at the end
         if len(points) <= 1:
             return points
+        if isResample:
+            points = self.resampleEquiDistantPoints(points, min_length=min_length)
 
         np_points = np.array(points, dtype=np.float32)
         output = [[np_points[0][0], np_points[0][1], 0.0, 0.0, 0.0]]
@@ -293,7 +334,6 @@ class DataLoader:
             if np.linalg.norm(pt1 - pt1_prev) == 0:
                 print("two same consecutive points are found, skipping one in the output seq.")
                 continue
-
             norm = np.linalg.norm(pt1 - pt1_prev)
             unit = (pt1 - pt1_prev) / norm
             output.append([pt1[0], pt1[1], unit[0], unit[1], norm])
@@ -313,26 +353,9 @@ class DataLoader:
 
 
 if __name__ == "__main__":
-    arr = np.array(
-        [[1.25836086e-03, -1.49348695e-03], [-7.04729025e-01, 1.87958431e+01], [-2.61200568e+00, 3.47530422e+01],
-         [-5.49237353e+00, 4.59087434e+01], [-8.99364300e+00, 5.08975409e+01], [-1.51748133e+01, 5.13679206e+01],
-         [-2.89841870e+01, 5.18351976e+01], [-2.96602450e+01, 5.18581375e+01], [-3.03141072e+01, 5.18955519e+01],
-         [-3.14238686e+01, 5.19760318e+01], [-3.27074356e+01, 5.20762529e+01], [-3.71374664e+01, 5.24270242e+01],
-         [-3.96655248e+01, 5.26104393e+01], [-4.44606242e+01, 5.28120252e+01], [-4.87777089e+01, 5.28175091e+01],
-         [-5.25098800e+01, 5.26233811e+01], [-5.55734810e+01, 5.22402757e+01], [-5.72252867e+01, 5.17052993e+01],
-         [-5.88387119e+01, 5.06984808e+01], [-6.03347840e+01, 4.92688479e+01], [-6.16407924e+01, 4.74842857e+01],
-         [-6.83684676e+01, 3.31268802e+01], [-7.15562068e+01, 1.83249026e+01], [-7.06364475e+01, 5.71426806e+00],
-         [-6.57641282e+01, -2.44940946e+00], [-5.78280846e+01, -4.71015396e+00], [-5.05661507e+01, -3.97581238e+00],
-         [-3.30276810e+01, -2.19499372e+00], [-3.30272556e+01, -2.19495047e+00], [-3.30268301e+01, -2.19490722e+00],
-         [-3.30268301e+01, -2.19490722e+00], [-3.30268301e+01, -2.19490722e+00], [-1.54861693e+01, -4.13064888e-01],
-         [-8.22462483e+00, 3.22006241e-01], [-8.39172765e+00, 7.33085226e+00], [-8.54978175e+00, 1.43456467e+01],
-         [-8.71538775e+00, 2.13614662e+01], [-8.87514694e+00, 2.83779021e+01], [-9.04106645e+00, 3.53878464e+01],
-         [-9.20199655e+00, 4.23978494e+01], [-9.36588722e+00, 4.94112974e+01], [-9.52887675e+00, 5.64200785e+01],
-         [-1.56929907e+01, 5.66691571e+01], [-2.18594034e+01, 5.69171653e+01], [-2.80244213e+01, 5.71612903e+01],
-         [-3.41833166e+01, 5.73990640e+01], [-4.03492500e+01, 5.76420692e+01], [-4.65238765e+01, 5.78946556e+01],
-         [-5.26883003e+01, 5.81353305e+01], [-5.88525219e+01, 5.83795118e+01]])
-    print(arr.shape)
-    out = length_normalize_unit_vector_debug(arr)
+    arr = np.array([[[0, 0], [10, 0], [20, 0]], [[0, 0], [0, 10], [0, 20], [0, 30]]])
+    print(arr)
+    out = length_normalize_unit_vector_debug(arr[0], isResample=True)
     print(out)
     print(out.shape)
     print(np.isnan(out).any())
