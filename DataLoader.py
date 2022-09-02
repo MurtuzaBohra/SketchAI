@@ -65,6 +65,9 @@ class DataLoader:
             self.y_saliency_train = self.get_saliency_labels(self.train_set[0])
             self.y_saliency_test = self.get_saliency_labels(self.test_set[0])
 
+        self.y_train_binary = self.get_binary_label(self.train_set[1])
+        self.y_test_binary = self.get_binary_label(self.test_set[1])
+
         self.raw_dataset = self.train_raw, self.validation_raw, self.test_raw
         self.raw_labels = self.train_set[1], self.validation_set[1], self.test_set[1]
 
@@ -92,6 +95,13 @@ class DataLoader:
 
         print('Done with DataLoader construction!')
 
+    def get_binary_label(self, y_clf):
+        y = np.zeros(y_clf.shape[0])
+        for i in range(y_clf.shape[0]):
+            if y_clf[i] == 5:
+                y[i] = 1
+        return y
+
     def get_saliency_labels(self, x):
         y = np.zeros((x.shape[0], x.shape[1]))
         for i in range(x.shape[0]):
@@ -99,15 +109,15 @@ class DataLoader:
                 if np.sum(x[i, j + 1]) == 0:  # padding
                     break
                 u = x[i, j] - x[i, j - 1]
-                v = x[i,j+1] - x[i,j]
-                if self.is_salient_point(u,v):
+                v = x[i, j + 1] - x[i, j]
+                if self.is_salient_point(u, v):
                     y[i, j] = 1
         return y
 
-    def is_salient_point(self, u,v):
+    def is_salient_point(self, u, v):
         c = np.dot(u, v) / np.linalg.norm(u) / np.linalg.norm(v)  # -> cosine of the angle
         angle = np.arccos(np.clip(c, -1, 1))
-        if angle > np.pi/2:
+        if angle > np.pi / 2:
             return True
         return False
 
@@ -353,9 +363,10 @@ class DataLoader:
 
 
 if __name__ == "__main__":
-    arr = np.array([[[0, 0], [10, 0], [20, 0]], [[0, 0], [0, 10], [0, 20], [0, 30]]])
-    print(arr)
-    out = length_normalize_unit_vector_debug(arr[0], isResample=True)
-    print(out)
-    print(out.shape)
-    print(np.isnan(out).any())
+    labelJsonPath = 'dataset/NapkinData/labelDict_11_classes.json'
+    datasetFolder = 'dataset/NapkinData/TestCSV'
+    dl = DataLoader(dataset="Napkin", load_mode='test', labelJsonPath=labelJsonPath, datasetFolder=datasetFolder,
+                    fileType='csv', include_fingerup=False, model_inputs='coord_and_tang', augmentFactor=0,
+                    isResample=False, useSaliency=False)
+    print(dl.y_train_binary)
+    print(dl.y_train_binary[dl.y_train_binary > 0].shape)

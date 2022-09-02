@@ -39,6 +39,7 @@ class GestuReNN_GRU:
         self.metrics = [tf.keras.metrics.SparseCategoricalAccuracy(),
                         tf.keras.metrics.MeanAbsoluteError()]  # ['accuracy']
         self.saliency_loss_clf = 'sparse_categorical_crossentropy'
+        self.loss_clf_arrow = 'sparse_categorical_crossentropy'
         self.loss_clf = tf.keras.losses.SparseCategoricalCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
         self.loss_reg = tf.keras.losses.MeanSquaredError(reduction=tf.keras.losses.Reduction.NONE)
         self.batch_size = batch_size
@@ -76,9 +77,16 @@ class GestuReNN_GRU:
                     activation=LeakyReLU(alpha=0.1),
                     name='Gate1')(mask)
         drop1 = Dropout(0.1, name='Reg1', seed=0)(lstm1)
+
         output0 = None
         if self.useSaliency:
             output0 = Dense(2, activation='softmax', name='Saliency_Clf')(drop1)
+
+        lstm_arrow_clf = GRU(self.lstm2_hid_dim, input_shape=(None, self.tup), return_sequences=False,
+                             reset_after=False,
+                             activation=LeakyReLU(alpha=0.1),
+                             name='Gate_Clf_Arrow')(drop1)
+        output_arrow = Dense(2, activation='softmax', name='Clf_Arrow')(lstm_arrow_clf)
 
         lstm_clf = GRU(self.lstm2_hid_dim, input_shape=(None, self.tup), return_sequences=True, reset_after=False,
                        activation=LeakyReLU(alpha=0.1),
@@ -93,13 +101,14 @@ class GestuReNN_GRU:
         output2 = Dense(1, activation='sigmoid', name='Reg')(lstm_reg)
 
         if self.useSaliency:
-            self.model = Model(inputs=[visible], outputs=[output0, output1, output2])
-            self.model.compile(loss=[self.saliency_loss_clf, self.custom_loss_clf, self.custom_loss_reg], optimizer=self.opt, metrics=None)
+            self.model = Model(inputs=[visible], outputs=[output0, output_arrow, output1, output2])
+            self.model.compile(
+                loss=[self.saliency_loss_clf, self.loss_clf_arrow, self.custom_loss_clf, self.custom_loss_reg],
+                optimizer=self.opt, metrics=None)
         else:
-            self.model = Model(inputs=[visible], outputs=[output1, output2])
-            self.model.compile(loss=[self.custom_loss_clf, self.custom_loss_reg],
+            self.model = Model(inputs=[visible], outputs=[output_arrow, output1, output2])
+            self.model.compile(loss=[self.loss_clf_arrow, self.custom_loss_clf, self.custom_loss_reg],
                                optimizer=self.opt, metrics=None)
-
 
     def custom_loss_clf(self, y_clf_gt, y_clf_pred):
         y0_gt = tf.expand_dims(y_clf_gt[:, :, 0], axis=2, name=None)
@@ -117,11 +126,16 @@ class GestuReNN_GRU:
     def concatenateWeight(self, y_clf, y_reg):
         weight = y_reg
         y_clf = np.expand_dims(y_clf, axis=2)
+        for i in range(y_clf.shape[0]):
+            for j in range(y_clf.shape[1]):
+                if y_clf[i, 0, 0] == 5:  # in case of arrow, weights are zero.
+                    weight[i, j, 0] = 0
         y_clf = np.concatenate((y_clf, weight), axis=2)
         y_reg = np.concatenate((y_reg, weight), axis=2)
         return y_clf, y_reg
 
-    def fit_model(self, train_clf, test_clf, train_reg, test_reg, y_saliency_train=None, y_saliency_test=None):
+    def fit_model(self, train_clf, test_clf, train_reg, test_reg, y_train_binary, y_test_binary, y_saliency_train=None,
+                  y_saliency_test=None):
 
         (x_train, y_train_clf), (x_test, y_test_clf) = train_clf, test_clf
         (_, y_train_reg), (_, y_test_reg) = train_reg, test_reg
@@ -130,7 +144,7 @@ class GestuReNN_GRU:
         cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=self.model_path,
                                                          save_weights_only=True,
                                                          save_best_only=True,
-                                                         monitor="val_Clf_loss",
+                                                         monitor="val_loss",
                                                          mode="min",
                                                          verbose=1)
         y_train_clf, y_train_reg = self.concatenateWeight(y_train_clf, y_train_reg)
@@ -142,16 +156,20 @@ class GestuReNN_GRU:
         history = None
         if y_saliency_test is None or y_saliency_train is None:
             history = self.model.fit(x_train,
-                                     {"Clf": y_train_clf, "Reg": y_train_reg},
+                                     {"Clf_Arrow": y_train_binary, "Clf": y_train_clf, "Reg": y_train_reg},
                                      epochs=self.epochs,
                                      batch_size=self.batch_size,
-                                     validation_data=(x_test, {"Clf": y_test_clf, "Reg": y_test_reg}),
+                                     validation_data=(
+                                     x_test, {"Clf_Arrow": y_test_binary, "Clf": y_test_clf, "Reg": y_test_reg}),
                                      callbacks=[cp_callback])
         else:
-          history = self.model.fit(x_train, {"Clf": y_train_clf, "Reg": y_train_reg, "Saliency_Clf": y_saliency_train},
+            history = self.model.fit(x_train, {"Clf_Arrow": y_train_binary, "Clf": y_train_clf, "Reg": y_train_reg,
+                                               "Saliency_Clf": y_saliency_train},
                                      epochs=self.epochs,
                                      batch_size=self.batch_size,
-                                     validation_data=(x_test, {"Clf": y_test_clf, "Reg": y_test_reg, "Saliency_Clf": y_saliency_test}),
+                                     validation_data=(x_test,
+                                                      {"Clf_Arrow": y_test_binary, "Clf": y_test_clf, "Reg": y_test_reg,
+                                                       "Saliency_Clf": y_saliency_test}),
                                      callbacks=[cp_callback])
         # Plotting the losses
         plt.plot(history.history['loss'])

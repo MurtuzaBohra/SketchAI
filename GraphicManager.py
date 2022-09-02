@@ -51,14 +51,14 @@ class GraphicManager:
 
             plt.show()
 
-    def generate_progressive_accuracy(self, model, data, plot_clf=True, plot_reg=True, best_of=1, indexToLabel=None):
+    def generate_progressive_accuracy(self, model, data,y_arrow=None, plot_clf=True, plot_reg=True, best_of=1, indexToLabel=None):
 
         # Basic data manipulation
         x, y = data
         mask = x.sum(-1) != 0
 
         # Predicting the values
-        clf_pred, reg_pred, rankings = self.__make_predictions(model, x, best_of)
+        clf_pred, reg_pred, rankings = self.__make_predictions(model, x,y_arrow, best_of)
         hist_tot, hist_clf, hist_reg, regressor_mse = self.__compute_histogram(clf_pred, reg_pred, x, y, rankings, mask,
                                                                                indexToLabel)
 
@@ -93,20 +93,39 @@ class GraphicManager:
                 # curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
         return curr_clf_pred, curr_reg_pred
 
-    def __make_predictions(self, model, x, best_of=1):
+    def __make_predictions(self, model, x,y_arrow=None, best_of=1):
         clf_pred = []
         reg_pred = []
         rankings = []
+        clf_arrow = []
         # Predicting the values
         if type(model) is GestuReNN_GRU or type(model) is GestuReNN:
-            clf_pred, reg_pred = model.model(x)
+            clf_arrow, clf_pred, reg_pred = model.model(x)
             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
             clf_pred = np.argmax(clf_pred, axis=2)
         else:
             print('Classifier and regressor should be instances of GestuReNN.')
             exit(1)
 
+        clf_arrow = np.argmax(clf_arrow, axis=1)
+        accuracyCount, totalCount = self.computeArrowAccuracy(clf_pred, y_arrow)
+        print("class: non-arrow, accuracy: {}, total: {}".format(accuracyCount[0] / totalCount[0], totalCount[0]))
+        print("class: arrow, accuracy: {}, total: {}".format(accuracyCount[1] / totalCount[1], totalCount[1]))
         return clf_pred, reg_pred, rankings
+
+    def computeArrowAccuracy(self, clf_pred, ground_truth):
+
+        n_predictions = clf_pred.shape[0]
+        accuracyCount = [0, 0]
+        totalCount = [0, 0]
+
+        for i in range(n_predictions):
+            # print("--------Sample - {}----------".format(i))
+            if ground_truth[i] == clf_pred[i]:
+                accuracyCount[ground_truth[i]] += 1
+            totalCount[ground_truth[i]] += 1
+        # accuracy = accuracyCount / totalCount
+        return accuracyCount, totalCount
 
     def __compute_histogram(self, clf_pred, reg_pred, x, ground_truth, rankings, big_mask, indexToLabel=None):
 
@@ -145,19 +164,13 @@ class GraphicManager:
                         svg = convert_curve_points_to_svg(points)
                         print(svg)
 
-                try:
-                    if abs(reg_pred[i, (index - 1)] - (j / float(self.n_bins - 1))) < self.acceptance_window:
-                        hist_reg[j] += 1
-                except:
-                    pass
+                if abs(reg_pred[i, (index - 1)] - (j / float(self.n_bins - 1))) < self.acceptance_window:
+                    hist_reg[j] += 1
 
                 hist_tot[j] += 1
-                try:
-                    reg_y = reg_pred[i, (index - 1)]
-                    regressor_mse[j] += abs(
-                        reg_y - (j / float(self.n_bins - 1)))  # * (reg_y - (j / float(self.n_bins-1)))
-                except:
-                    pass
+                reg_y = reg_pred[i, (index - 1)]
+                regressor_mse[j] += abs(
+                    reg_y - (j / float(self.n_bins - 1)))  # * (reg_y - (j / float(self.n_bins-1)))
         regressor_mse /= n_predictions
         plt.plot(regressor_mse)
         plt.show()
