@@ -39,7 +39,7 @@ class GestuReNN_GRU:
         self.metrics = [tf.keras.metrics.SparseCategoricalAccuracy(),
                         tf.keras.metrics.MeanAbsoluteError()]  # ['accuracy']
         self.saliency_loss_clf = 'sparse_categorical_crossentropy'
-        self.loss_clf_arrow = 'sparse_categorical_crossentropy'
+        self.loss_clf_arrow = tf.keras.losses.SparseCategoricalCrossentropy(reduction=tf.keras.losses.Reduction.SUM)
         self.loss_clf = tf.keras.losses.SparseCategoricalCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
         self.loss_reg = tf.keras.losses.MeanSquaredError(reduction=tf.keras.losses.Reduction.NONE)
         self.batch_size = batch_size
