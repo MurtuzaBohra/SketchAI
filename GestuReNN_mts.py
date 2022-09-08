@@ -43,7 +43,7 @@ class GestuReNN_GRU:
         self.loss_clf = tf.keras.losses.SparseCategoricalCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
         self.loss_reg = tf.keras.losses.MeanSquaredError(reduction=tf.keras.losses.Reduction.NONE)
         self.batch_size = batch_size
-        self.epochs = 1000
+        self.epochs = 100
         # self.opt = tf.keras.optimizers.Adam(lr=1e-3, decay=1e-5, beta_1=0.8, beta_2=0.85)
         self.opt = tf.keras.optimizers.Adam(learning_rate=1e-3, decay=1e-4, beta_1=0.8, beta_2=0.85)
 
@@ -51,7 +51,7 @@ class GestuReNN_GRU:
         root = "checkpoints/models/mts"
 
         # Checkpoints
-        self.model_path = root if model_path is None else model_path + "/mdcp_robust.ckpt"
+        self.model_path = root if model_path is None else model_path #+ "/mdcp_robust.ckpt"
 
         # Loss figure settings
         self.loss_model_path = root if model_path is None else model_path + "/loss_joined_robust.png"
@@ -135,18 +135,22 @@ class GestuReNN_GRU:
         return y_clf, y_reg
 
     def fit_model(self, train_clf, test_clf, train_reg, test_reg, y_train_binary, y_test_binary, y_saliency_train=None,
-                  y_saliency_test=None):
+                  y_saliency_test=None, wandbCallBacks=None):
 
         (x_train, y_train_clf), (x_test, y_test_clf) = train_clf, test_clf
         (_, y_train_reg), (_, y_test_reg) = train_reg, test_reg
 
         # Setting up the checkpoint
-        cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=self.model_path,
-                                                         save_weights_only=True,
-                                                         save_best_only=True,
-                                                         monitor="val_loss",
-                                                         mode="min",
-                                                         verbose=1)
+        cp_callback = []
+        if wandbCallBacks is None:
+            cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=self.model_path,
+                                                             save_weights_only=True,
+                                                             save_best_only=True,
+                                                             monitor="val_loss",
+                                                             mode="min",
+                                                             verbose=1)
+        else:
+            cp_callback = wandbCallBacks
         y_train_clf, y_train_reg = self.concatenateWeight(y_train_clf, y_train_reg)
         y_test_clf, y_test_reg = self.concatenateWeight(y_test_clf, y_test_reg)
         print("y_train_clf shape - {} \n y_test_clf shape - {} \n y_train_reg shape - {}".format(y_train_clf.shape,
@@ -181,12 +185,13 @@ class GestuReNN_GRU:
 
     def load_model(self):
         print(self.model_path)
-        self.model.load_weights(self.model_path)
+        self.model.load_weights(self.model_path, by_name=True)
 
     def define_model_with_state(self):
         # model inputs
         curve_input = tf.keras.Input(shape=(None, self.tup))
         lstm1_state_input = tf.keras.Input(shape=self.lstm1_hid_dim)
+        lstm_arrow_clf_state_input = tf.keras.Input(shape=self.lstm2_hid_dim)
         lstm_clf_state_input = tf.keras.Input(shape=self.lstm2_hid_dim)
         lstm_reg_state_input = tf.keras.Input(shape=self.lstm2_hid_dim)
 
@@ -194,6 +199,8 @@ class GestuReNN_GRU:
         lstm1 = GRU(self.lstm1_hid_dim, input_shape=(None, self.tup), return_sequences=True,
                     activation=LeakyReLU(alpha=0.1),
                     stateful=False, return_state=True, reset_after=False, name='Gate1')
+        lstm_arrow_clf = GRU(self.lstm2_hid_dim, return_sequences=False, reset_after=False,stateful=False,
+                             return_state=True, activation=LeakyReLU(alpha=0.1),name='Gate_Clf_Arrow')
         lstm_clf = GRU(self.lstm2_hid_dim, return_sequences=False, activation=LeakyReLU(alpha=0.1),
                        stateful=False, return_state=True, reset_after=False, name='Gate_Clf')
         lstm_reg = GRU(self.lstm2_hid_dim, return_sequences=False, activation=LeakyReLU(alpha=0.1),
@@ -203,17 +210,18 @@ class GestuReNN_GRU:
         lstm1_hid_output, lstm1_state_output_h = lstm1(curve_input, initial_state=lstm1_state_input)
         drop1 = Dropout(0.1, name='Reg1', seed=0)(lstm1_hid_output)
 
+        lstm_arrow_clf_hid_output, lstm_arrow_clf_state_output_h = lstm_arrow_clf(drop1, initial_state=lstm_arrow_clf_state_input)
+        output_arrow = Dense(2, activation='softmax', name='Clf_Arrow')(lstm_arrow_clf_hid_output)
+
         lstm_clf_hid_output, lstm_clf_state_output_h = lstm_clf(drop1, initial_state=lstm_clf_state_input)
-        # drop_clf = Dropout(0.2, name='Drop_Clf', seed=0)(lstm_clf_hid_output)
         output1 = Dense(self.n_labels, activation='softmax', name='Clf')(lstm_clf_hid_output)
 
         lstm_reg_hid_output, lstm_reg_state_output_h = lstm_reg(drop1, initial_state=lstm_reg_state_input)
-        # drop_reg = Dropout(0.2, name='Drop_Reg', seed=0)(lstm_reg_hid_output)
         output2 = Dense(1, activation='sigmoid', name='Reg')(lstm_reg_hid_output)
 
-        model_with_state = Model(inputs=[lstm1_state_input, lstm_clf_state_input, lstm_reg_state_input, curve_input],
-                                 outputs=[lstm1_state_output_h, lstm_clf_state_output_h, lstm_reg_state_output_h,
-                                          output1, output2])
+        model_with_state = Model(inputs=[lstm1_state_input, lstm_arrow_clf_state_input, lstm_clf_state_input, lstm_reg_state_input, curve_input],
+                                 outputs=[lstm1_state_output_h, lstm_arrow_clf_state_output_h, lstm_clf_state_output_h, lstm_reg_state_output_h,
+                                          output_arrow, output1, output2])
         return model_with_state
 
     def load_model_with_state(self):

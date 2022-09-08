@@ -1,0 +1,83 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.2
+    framework: keras
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    python_version: 3.7.13
+    start_time: 1662451005.011262
+    t:
+      1:
+      - 2
+      - 3
+      - 5
+      - 12
+      - 53
+      - 55
+      2:
+      - 2
+      - 3
+      - 5
+      - 12
+      - 53
+      - 55
+      3:
+      - 3
+      - 8
+      - 16
+      - 23
+      4: 3.7.13
+      5: 0.13.2
+      8:
+      - 1
+      - 5
+      10:
+      - 9
+augmentFactor:
+  desc: null
+  value: 6
+batchSize:
+  desc: null
+  value: 128
+dataset:
+  desc: null
+  value: Napkin
+datasetFolder:
+  desc: null
+  value: /content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/NewTrainSet/csv
+fileType:
+  desc: null
+  value: csv
+include_fingerup:
+  desc: null
+  value: false
+isResample:
+  desc: null
+  value: false
+labelJsonPath:
+  desc: null
+  value: /content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/dataset/NapkinData/labelDict_11_classes.json
+load_mode:
+  desc: null
+  value: train
+modelPath:
+  desc: null
+  value: /content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI/checkpoints/models/separate_arrow_dim_5_wandb_trial
+model_inputs:
+  desc: null
+  value: coord_and_tang
+pad:
+  desc: null
+  value: true
+project_name:
+  desc: null
+  value: shape recognition
+test_size:
+  desc: null
+  value: 0.2
+useSaliency:
+  desc: null
+  value: false
