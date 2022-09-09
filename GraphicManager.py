@@ -12,13 +12,12 @@ stroke_mapping_ndollar = np.array([2, 3, 2, 2, 1, 3, 2, 3, 1, 3, 2, 2, 2, 2, 2, 
 
 class GraphicManager:
 
-    def __init__(self, dataset, n_bins=100, acceptance_window=0.1, margin=0.1, save=False, plot=True):
+    def __init__(self, n_bins=100, acceptance_window=0.1, margin=0.1, save=False, plot=True):
         self.n_bins = n_bins
         self.acceptance_window = acceptance_window
         self.save = save
         self.plot = plot
         self.iterations = 65  # A number of iterations in test phase is needed for gpu memory issues
-        self.stroke_dataset = dataset
         self.margin = margin
 
     def plot_examples(self, model, x, y_reg, n_examples=100):
@@ -70,7 +69,7 @@ class GraphicManager:
         plt.ylim((-0.04, 1.04))
 
         # Plotting accuracies and setting title
-        title = 'Accuracy on {}'.format(self.stroke_dataset)
+        title = 'Accuracy on Napkin data'
         if plot_clf:
             title += ' - Best of {}'.format(best_of)
             plt.plot((hist_clf / hist_tot))
@@ -101,7 +100,7 @@ class GraphicManager:
         clf_arrow = []
         # Predicting the values
         if type(model) is GestuReNN_GRU or type(model) is GestuReNN:
-            clf_arrow, clf_pred, reg_pred = model.model(x)
+            clf_arrow,_,clf_pred, reg_pred = model.model(x)
             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
             # clf_pred = np.argmax(clf_pred, axis=2)
         else:

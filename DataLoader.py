@@ -11,11 +11,9 @@ import json
 from HelperFunctions import readJsonContentTestData
 
 # Used dataset macros
-ONE_DOLLAR_G3_SYNTH = "dataset/GGG/1$/csv-1dollar-synth-best"
-ONE_DOLLAR_G3_HUMAN = "dataset/GGG/1$/csv-1dollar-human"
-N_DOLLAR_G3_SYNTH = "dataset/GGG/N$/csv-ndollar-synth-best"
-N_DOLLAR_G3_HUMAN = "dataset/GGG/N$/csv-ndollar-human"
-Napkin_HUMAN = "/Users/murtuza/Desktop/ShapeRecognition/deep-stroke/dataset/NapkinData/csv"
+DefaultDatasetPath = "./dataset/NapkinData/train.json"
+
+random.seed(27)
 
 
 # DataLoader class, used for loading and saving the dataset and its attributes
@@ -26,8 +24,8 @@ class DataLoader:
 
     # Constructor of the class
     def __init__(self, pad=True, include_fingerup=False, model_inputs='tangents_and_norm', test_size=0.2,
-                 dataset='1$', load_mode='full', isResample=False, augmentFactor=3, datasetFolder=Napkin_HUMAN,
-                 fileType='', labelJsonPath=None, useSaliency=False, excludeClasses=['line']):
+                 load_mode='test', isResample=False, augmentFactor=3, dataFileName=DefaultDatasetPath,
+                 useSaliency=False):
 
         print('Starting the DataLoader construction ...')
 
@@ -35,38 +33,33 @@ class DataLoader:
         self.use_padding = pad
         self.include_fingerup = include_fingerup
         self.test_size = test_size
-        self.stroke_dataset = dataset
         self.load_mode = load_mode
         self.isResample = isResample
         self.augmentFactor = augmentFactor
         self.labels_dict = {}
-        self.fileType = fileType
         self.model_inputs = model_inputs
-        self.datasetFolder = datasetFolder
+        self.dataFileName = dataFileName
         self.useSaliency = useSaliency
-        self.excludeClasses = excludeClasses
-        if labelJsonPath is not None:
-            self.labels_dict = json.load(open(labelJsonPath, 'r'))
-        print("stroke_dataset - {}".format(self.stroke_dataset))
 
         print('.. Done with attribute settings. Loading the data ...')
 
         # Loading train, validation and test sets
         if self.load_mode in ['train', 'validation']:
-            self.train_set, self.validation_set, self.train_raw, self.validation_raw = self.__load_dataset_splitted(
-                stroke_type='SYNTH')
+            self.train_set, self.validation_set, self.train_raw, self.validation_raw = self.__load_dataset_splitted()
             self.test_set = self.validation_set
             self.test_raw = self.validation_raw
         if self.load_mode == 'test':
-            self.test_set, self.test_raw = self.__load_dataset(stroke_type='HUMAN')
+            self.test_set, self.test_raw = self.__load_dataset()
             self.train_set, self.validation_set = self.test_set, self.test_set
             self.train_raw, self.validation_raw = self.test_raw, self.test_raw
         if self.useSaliency:
             self.y_saliency_train = self.get_saliency_labels(self.train_set[0])
             self.y_saliency_test = self.get_saliency_labels(self.test_set[0])
 
-        self.y_train_binary = self.get_binary_label(self.train_set[1])
-        self.y_test_binary = self.get_binary_label(self.test_set[1])
+        self.y_arrowBinary_train = self.get_binary_label(self.train_set[1])
+        self.y_arrowBinary_test = self.get_binary_label(self.test_set[1])
+
+        self.y_arrowSplitMask_train, self.y_arrowSplitMask_test = self.createArrowSplitMask()
 
         self.raw_dataset = self.train_raw, self.validation_raw, self.test_raw
         self.raw_labels = self.train_set[1], self.validation_set[1], self.test_set[1]
@@ -95,6 +88,23 @@ class DataLoader:
 
         print('Done with DataLoader construction!')
 
+    def createArrowSplitMask(self):
+        x_train, _, y_arrowSplitIndex_train = self.train_set
+        x_test, _, y_arrowSplitIndex_test = self.test_set
+
+        y_arrowSplitMask_train = np.ones((x_train.shape[0], x_train.shape[1]))
+        for i in range(x_train.shape[0]):
+            if y_arrowSplitIndex_train[i] == -1:
+                continue
+            y_arrowSplitMask_train[i, y_arrowSplitIndex_train[i] + 1:] = 0
+
+        y_arrowSplitMask_test = np.ones((x_test.shape[0], x_test.shape[1]))
+        for i in range(x_test.shape[0]):
+            if y_arrowSplitIndex_test[i] == -1:
+                continue
+            y_arrowSplitMask_test[i, y_arrowSplitIndex_test[i] + 1:] = 0
+        return y_arrowSplitMask_train, y_arrowSplitMask_test
+
     def get_binary_label(self, y_clf):
         y = np.zeros(y_clf.shape[0])
         for i in range(y_clf.shape[0]):
@@ -121,123 +131,81 @@ class DataLoader:
             return True
         return False
 
-    # Function for reading a sample of the 1dollar class from csv
-    def __read_csv_1dollar(self, file_name):
-        df = pd.read_csv(file_name, sep=',')
-        df = df[['x', 'y']]  # / 100
-
-        # normalize w.r.t to initial point.
-        df['x'] -= df['x'].iloc[0]
-        df['y'] -= df['y'].iloc[0]
-
-        if (df.isnull().values.any()):
-            print(file_name)
-            print(df)
-
-        return df.values.tolist()
-
     # Function designed to load the $1 dataset
-    def __load_dataset_on_folder(self, folder_name):
+    def __load_dataset_from_file(self, filename):
 
         tensor_x = []
         tensor_y = []
-        labels_dict = self.labels_dict
-        index = len(self.labels_dict)
+        tensor_arrow_split_index = []
+        labels_dict = {}
 
-        files = os.listdir(folder_name)
-        if self.load_mode == 'reduced':
-            files = files[::30]
+        jsonData = json.load(open(filename, 'r'))
 
-        i = 1
-        for file in files:
-            if file[0] == '.' or any([ele == file.lower().split('-')[0] for ele in self.excludeClasses]):
-                continue
-
-            if i % 100 == 0:
-                print("{}%- Loading on {}".format('{0:.2f}'.format(i / len(files) * 100), folder_name))
-            i += 1
-
-            file_path = folder_name + '/' + file
-
-            current_label = ''
-            if self.stroke_dataset == "Napkin":
-                label = file.split('-')[0].lower()
-                if label == 'square':
-                    current_label = 'rectangle'
-                elif 'curly' in label:
-                    current_label = 'curly_braces'
-                elif 'bracket' in label:
-                    current_label = 'bracket'
-                else:
-                    current_label = label
-
-            else:
-                current_label = file.split('-')[1]
-
-            if self.stroke_dataset in ['1$', 'Napkin']:
-                x = self.__read_csv_1dollar(file_path)
-                if len(x) > 75 or len(x) < 3:
+        for clas, samples in jsonData.items():
+            for sample in samples:
+                if clas == "Arrow" and sample['arrowHeadStartIndex'] == -1 and self.load_mode != 'test':
                     continue
-                tensor_x.append(x)
+                if len(sample["points"]) > 75 or len(sample["points"]) < 3:
+                    continue
+                points = np.array(sample['points'])[:, 1:3]
+                points -= points[0]  # setting origin to first point
+                tensor_x.append(points)
+                tensor_y.append(sample['classID'])
+                tensor_arrow_split_index.append(sample['arrowHeadStartIndex'])
+                labels_dict[clas] = sample['classID']
 
-            if current_label not in labels_dict:
-                labels_dict[current_label] = index
-                index += 1
-
-            tensor_y.append(labels_dict[current_label])
-
-        print("Loading on {} completed.".format(folder_name))
+        print("Loading on {} completed.".format(filename))
         print(labels_dict)
         self.labels_dict = labels_dict
 
-        return tensor_x, tensor_y
-
-    def __load_json_data(self):
-        subFolders = [f.path for f in os.scandir(self.datasetFolder) if f.is_dir()]
-        tensor_x = []
-        tensor_y = []
-        for folder in subFolders:
-            label = folder.split('/')[-1]
-            files = [f.path for f in os.scandir(folder) if (not f.is_dir()) and f.path.split('/')[-1][0] != '.']
-            for file in files:
-                tensor_x.append(readJsonContentTestData(file))
-                tensor_y.append(self.labels_dict[label])
-        return tensor_x, tensor_y
+        return tensor_x, tensor_y, tensor_arrow_split_index
 
     # Function designed to load the $1 dataset
-    def __load_dataset(self, stroke_type='', preprocess=True):
+    def __load_dataset(self, preprocess=True):
 
         # Loading the dataset
-        if self.fileType == 'json' and self.load_mode == 'test':
-            x, y = self.__load_json_data()
-        else:
-            x, y = self.__load_dataset_on_folder(self.datasetFolder)
-        x, y = np.array(x), np.array(y)
+        x, y, y_arrowSplitIndex = self.__load_dataset_from_file(self.dataFileName)
+        x, y, y_arrowSplitIndex = np.array(x), np.array(y), np.array(y_arrowSplitIndex)
 
         x_raw = x
 
         if preprocess:
-            x, y, x_raw = self.__preprocess_data(x, y, load_mode='test')
+            x, y, y_arrowSplitIndex, x_raw = self.__preprocess_data(x, y, y_arrowSplitIndex)
 
-        return (x, y), x_raw
+        return (x, y, y_arrowSplitIndex), x_raw
 
     # Function designed to load the $1 dataset splitted in test and train sets
-    def __load_dataset_splitted(self, stroke_type):
+    def __load_dataset_splitted(self):
 
-        (x, y), x_raw = self.__load_dataset(stroke_type=stroke_type, preprocess=False)
+        (x, y, y_arrowSplitIndex), x_raw = self.__load_dataset(preprocess=False)
 
         # Splitting into test and training set
-        x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=self.test_size, random_state=4, stratify=y)
+        x_train, y_train, y_arrowSplitIndex_train, x_test, y_test, y_arrowSplitIndex_test = \
+            self.train_test_split(x, y, y_arrowSplitIndex, test_size=self.test_size)
 
         # Normalize x_train
         print('preprocessing train set ...')
-        x_train, y_train, x_train_raw = self.__preprocess_data(x_train, y_train, augment_data=True, load_mode='train')
+        x_train, y_train, y_arrowSplitIndex_train, x_train_raw = \
+            self.__preprocess_data(x_train, y_train, y_arrowSplitIndex_train, augment_data=True)
 
         # Normalize x_test
         print('preprocessing test set ...')
-        x_test, y_test, x_test_raw = self.__preprocess_data(x_test, y_test, augment_data=False, load_mode='validation')
+        x_test, y_test, y_arrowSplitIndex_test, x_test_raw = \
+            self.__preprocess_data(x_test, y_test, y_arrowSplitIndex_test, augment_data=False)
 
-        return (x_train, y_train), (x_test, y_test), x_train_raw, x_test_raw
+        return (x_train, y_train, y_arrowSplitIndex_train), (
+            x_test, y_test, y_arrowSplitIndex_test), x_train_raw, x_test_raw
+
+    def train_test_split(self, x, y, y_arrowSplitIndex, test_size=0.2):
+        total = x.shape[0]
+        indices = [i for i in range(total)]
+        random.shuffle(indices)
+        train_size = 1 - test_size
+        trainIndices = indices[:int(len(indices) * train_size)]
+        testIndices = indices[int(len(indices) * train_size):]
+        x_train, y_train, y_arrowSplitIndex_train = x[trainIndices], y[trainIndices], y_arrowSplitIndex[trainIndices]
+        x_test, y_test, y_arrowSplitIndex_test = x[testIndices], y[testIndices], y_arrowSplitIndex[testIndices]
+        return x_train, y_train, y_arrowSplitIndex_train, x_test, y_test, y_arrowSplitIndex_test
 
     def get_index_to_label(self):
         indexToLabel = {}
@@ -245,18 +213,20 @@ class DataLoader:
             indexToLabel[v] = k
         return indexToLabel
 
-    def __preprocess_data(self, x, y, augment_data=False, load_mode=''):
+    def __preprocess_data(self, x, y, y_arrowSplitIndex, augment_data=False):
 
         if augment_data:
-            x_augment, y_augment = [], []
+            x_augment, y_augment, y_arrowSplitIndex_augment = [], [], []
             indexToLabel = self.get_index_to_label()
             dataAugmentation = DataAugmentation(augmentFactor=self.augmentFactor)
             for i in range(x.shape[0]):
                 x_transformed = dataAugmentation.apply_data_transform(np.array(x[i]), className=indexToLabel[y[i]])
                 x_augment.extend(x_transformed)
-                y_augment.extend([y[i] for idx in range(self.augmentFactor)])
+                y_augment.extend([y[i] for idx in range(len(x_transformed))])
+                y_arrowSplitIndex_augment.extend([y_arrowSplitIndex[i] for idx in range(len(x_transformed))])
             x = np.concatenate((x, np.array(x_augment)), axis=0)
             y = np.concatenate((y, np.array(y_augment)), axis=0)
+            y_arrowSplitIndex = np.concatenate((y_arrowSplitIndex, np.array(y_arrowSplitIndex_augment)), axis=0)
 
         x = [self.length_normalize_unit_vector(x[i], isResample=self.isResample, min_length=5.0, dims=self.model_inputs)
              for i in range(x.shape[0])]
@@ -274,12 +244,12 @@ class DataLoader:
             x = np.array(x)
             x = tf.keras.preprocessing.sequence.pad_sequences(x, padding="post", dtype='float32')
 
-        return x, y, x_raw
+        return x, y, y_arrowSplitIndex, x_raw
 
     def __get_labels_repeated(self):
-        x_train, y_train = self.train_set
-        x_test, y_test = self.test_set
-        x_validation, y_validation = self.validation_set
+        x_train, y_train, _ = self.train_set
+        x_test, y_test, _ = self.test_set
+        x_validation, y_validation, _ = self.validation_set
 
         # Converting to numpy the label lists
         y_train = np.repeat(np.array(y_train), x_train.shape[1], axis=0).reshape((y_train.shape[0], x_train.shape[1]))
@@ -363,10 +333,9 @@ class DataLoader:
 
 
 if __name__ == "__main__":
-    labelJsonPath = 'dataset/NapkinData/labelDict_11_classes.json'
-    datasetFolder = 'dataset/NapkinData/TestCSV'
-    dl = DataLoader(dataset="Napkin", load_mode='test', labelJsonPath=labelJsonPath, datasetFolder=datasetFolder,
-                    fileType='csv', include_fingerup=False, model_inputs='coord_and_tang', augmentFactor=0,
-                    isResample=False, useSaliency=False)
-    print(dl.y_train_binary)
-    print(dl.y_train_binary[dl.y_train_binary > 0].shape)
+    filename = 'dataset/NapkinData/train.json'
+    dl = DataLoader(load_mode='test', dataFileName=filename, include_fingerup=False, model_inputs='coord_and_tang',
+                    augmentFactor=0, isResample=False, useSaliency=False)
+    print(dl.y_arrowSplitMask_train[dl.y_train_arrowBinary > 0][:5])
+    # print(dl.y_train_arrowBinary)
+    # print(dl.y_train_arrowBinary[dl.y_train_arrowBinary > 0].shape)

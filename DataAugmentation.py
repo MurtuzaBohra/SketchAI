@@ -105,7 +105,8 @@ class DataAugmentation:
 
     def apply_data_transform(self, sample, className=''):  # sample-> [#points on stroke, 2]
         samples = []
-        for i in range(self.augmentFactor):
+        augFactor = self.augmentFactor * 3 if className == 'Arrow' else self.augmentFactor
+        for i in range(augFactor):
             aug_sample = sample
             # if random.uniform(0, 1) < 0.5:
             #     aug_sample = self.elasticTransform.apply(aug_sample)
@@ -120,7 +121,6 @@ class DataAugmentation:
             if np.isnan(aug_sample).any():
                 print("Nan encountered in sample")
         return samples
-
 
 
 if __name__ == "__main__":
