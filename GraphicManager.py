@@ -1,7 +1,7 @@
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from GestuReNN_mts import GestuReNN_GRU
+from GestuReNN_mts import GestuReNN_GRU, BinaryArrowModel
 from HelperFunctions import convert_curve_points_to_svg
 from sklearn.metrics import mean_squared_error
 from matplotlib.ticker import FormatStrFormatter
@@ -84,14 +84,13 @@ class GraphicManager:
         plt.show()
         print((hist_clf / hist_tot))
 
-    def make_predictions(self, model, x):
-        curr_clf_pred = None
-        curr_reg_pred = None
-        if type(model) is GestuReNN:
-            if model.topology == 'mts' or model.topology == 'mtm':
-                curr_clf_pred, curr_reg_pred = model.model(x)
-                # curr_clf_pred = np.argmax(curr_clf_pred, axis=2)
-        return curr_clf_pred, curr_reg_pred
+    def make_arrow_predictions(self, model, x, y_arrow):
+        if type(model) is BinaryArrowModel:
+            arrow_pred = model.model(x)
+            arrow_pred = np.argmax(arrow_pred, axis=1)
+            accuracyCount, totalCount = self.computeArrowAccuracy(arrow_pred, y_arrow)
+            print("class: non-arrow, accuracy: {}, total: {}".format(accuracyCount[0] / totalCount[0], totalCount[0]))
+            print("class: arrow, accuracy: {}, total: {}".format(accuracyCount[1] / totalCount[1], totalCount[1]))
 
     def __make_predictions(self, model, x,y_arrow=None, best_of=1):
         clf_pred = []
@@ -100,7 +99,7 @@ class GraphicManager:
         clf_arrow = []
         # Predicting the values
         if type(model) is GestuReNN_GRU or type(model) is GestuReNN:
-            clf_arrow,_,clf_pred, reg_pred = model.model(x)
+            clf_arrow,clf_pred, reg_pred = model.model(x)
             rankings = np.argsort(clf_pred, axis=2)[:, :, -best_of:]
             # clf_pred = np.argmax(clf_pred, axis=2)
         else:

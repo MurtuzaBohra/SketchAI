@@ -226,7 +226,7 @@ class DataLoader:
                 y_arrowSplitIndex_augment.extend([y_arrowSplitIndex[i] for idx in range(len(x_transformed))])
             x = np.concatenate((x, np.array(x_augment)), axis=0)
             y = np.concatenate((y, np.array(y_augment)), axis=0)
-            y_arrowSplitIndex = np.concatenate((y_arrowSplitIndex, np.array(y_arrowSplitIndex_augment)), axis=0)
+            y_arrowSplitIndex = np.concatenate((y_arrowSplitIndex, np.array(y_arrowSplitIndex_augment, dtype=int)), axis=0)
 
         x = [self.length_normalize_unit_vector(x[i], isResample=self.isResample, min_length=5.0, dims=self.model_inputs)
              for i in range(x.shape[0])]
@@ -334,8 +334,8 @@ class DataLoader:
 
 if __name__ == "__main__":
     filename = 'dataset/NapkinData/train.json'
-    dl = DataLoader(load_mode='test', dataFileName=filename, include_fingerup=False, model_inputs='coord_and_tang',
+    dl = DataLoader(load_mode='train', dataFileName=filename, include_fingerup=False, model_inputs='coord_and_tang',
                     augmentFactor=0, isResample=False, useSaliency=False)
-    print(dl.y_arrowSplitMask_train[dl.y_train_arrowBinary > 0][:5])
+    print(dl.y_arrowSplitMask_train[dl.y_arrowBinary_train > 0][:5])
     # print(dl.y_train_arrowBinary)
     # print(dl.y_train_arrowBinary[dl.y_train_arrowBinary > 0].shape)

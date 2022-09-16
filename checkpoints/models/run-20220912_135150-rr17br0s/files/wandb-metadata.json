@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.10.133+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.13",
+    "heartbeatAt": "2022-09-12T13:51:56.108430",
+    "startedAt": "2022-09-12T13:51:50.933998",
+    "docker": null,
+    "cpu_count": 2,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/MurtuzaBohra/SketchAI.git",
+        "commit": "21e2fa24d6f136ccf0bf30cbb4f1f0de3df55f14"
+    },
+    "email": null,
+    "root": "/content/drive/MyDrive/second_layer_ai_model/SketchAI/SketchAI",
+    "host": "bb91347a5f1e",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}
